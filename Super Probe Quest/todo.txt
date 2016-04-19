@@ -1,0 +1,22 @@
+Please do the following:
+
+- 8-bit renderings of the parts from New-Horizons-Payload-FULL - Copy.jpg (look them up), in separate png files with transparent backgrounds (all at approximately 32x32) - 
+  - REX			done
+  - RTG			done
+  - PEPSSI		done
+  - SWAP		done
+  - thrusters
+  - LORRI		done
+  - RALPH		done
+  - ALICE		done
+  - heat shield
+
+- All of the above composited (keeping original files) where visible into an image of the probe from the same perspective as New-Horizons-Payload-FULL - Copy.jpg (64x64, 128x128)
+
+- A quaver symbol like mute.png and muteon.png except made by you so I don't have to credit some rando from an icon site
+
+- An 8-bit rendering of Pluto @ 256x256, 128x128, 64x64 and 32x32
+
+I'll credit you as co-creator
+
+vielen dank
