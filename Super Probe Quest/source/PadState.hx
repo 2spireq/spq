@@ -26,13 +26,17 @@ class PadState extends FlxState
 		add(back);
 
 		pad = new FlxSprite(0, 0);
-		if (Registry.launchReady == null)
+		/*if (Registry.launchReady == null)
 		{
 			pad.loadGraphic('assets/images/launchblock/pad-norocket.png');
-		}
-		else if (Registry.launchReady == true)
+		}*/
+		if (Registry.launchReady == true)
 		{
 			pad.loadGraphic('assets/images/launchblock/pad-rocket.png');
+		}
+		else
+		{
+			pad.loadGraphic('assets/images/launchblock/pad-norocket.png');
 		}
 		add(pad);
 

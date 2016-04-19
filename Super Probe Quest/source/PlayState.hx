@@ -61,11 +61,11 @@ class PlayState extends FlxState
 			aliceButton.loadGraphic('assets/images/component/buttonsprites/comp_alice_d.png', false, 64, 64);
 			trace('ALICE TRUE');
 		}
-		else if (Registry.haveAlice == null)
+		/*else if (Registry.haveAlice == null)
 		{
 			aliceButton.loadGraphic('assets/images/component/buttonsprites/comp_alice_alt.png', false, 64, 64);
 			trace('ALICE NULL');
-		}
+		}*/
 		else if (Registry.haveAlice == false)
 		{
 			aliceButton.loadGraphic('assets/images/component/buttonsprites/comp_alice_alt.png', false, 64, 64);
@@ -77,11 +77,11 @@ class PlayState extends FlxState
 			lorriButton.loadGraphic('assets/images/component/buttonsprites/comp_lorri_d.png', false, 64, 64);
 			trace('LORRI TRUE');
 		}
-		else if (Registry.haveLorri == null)
+		/*else if (Registry.haveLorri == null)
 		{
 			lorriButton.loadGraphic('assets/images/component/buttonsprites/comp_lorri_alt.png', false, 64, 64);
 			trace('LORRI NULL');
-		}
+		}*/
 		else if (Registry.haveLorri == false)
 		{
 			lorriButton.loadGraphic('assets/images/component/buttonsprites/comp_lorri_alt.png', false, 64, 64);
@@ -93,11 +93,11 @@ class PlayState extends FlxState
 			pepssiButton.loadGraphic('assets/images/component/buttonsprites/comp_pepssi_d.png', false, 64, 64);
 			trace('PEPSSI TRUE');
 		}
-		else if (Registry.havePepssi == null)
+		/*else if (Registry.havePepssi == null)
 		{
 			pepssiButton.loadGraphic('assets/images/component/buttonsprites/comp_pepssi_alt.png', false, 64, 64);
 			trace('PEPSSI NULL');
-		}
+		}*/
 		else if (Registry.havePepssi == false)
 		{
 			pepssiButton.loadGraphic('assets/images/component/buttonsprites/comp_pepssi_alt.png', false, 64, 64);
@@ -109,11 +109,11 @@ class PlayState extends FlxState
 			ralphButton.loadGraphic('assets/images/component/buttonsprites/comp_ralph_d.png', false, 64, 64);
 			trace('RALPH TRUE');
 		}
-		else if (Registry.haveRalph == null)
+		/*else if (Registry.haveRalph == null)
 		{
 			ralphButton.loadGraphic('assets/images/component/buttonsprites/comp_ralph_alt.png', false, 64, 64);
 			trace('RALPH NULL');
-		}
+		}*/
 		else if (Registry.haveRalph == false)
 		{
 			ralphButton.loadGraphic('assets/images/component/buttonsprites/comp_ralph_alt.png', false, 64, 64);
@@ -125,11 +125,11 @@ class PlayState extends FlxState
 			swapButton.loadGraphic('assets/images/component/buttonsprites/comp_swap_d.png', false, 64, 64);
 			trace('SWAP TRUE');
 		}
-		else if (Registry.haveSwap == null)
+		/*else if (Registry.haveSwap == null)
 		{
 			swapButton.loadGraphic('assets/images/component/buttonsprites/comp_swap_alt.png', false, 64, 64);
 			trace('SWAP NULL');
-		}
+		}*/
 		else if (Registry.haveSwap == false)
 		{
 			swapButton.loadGraphic('assets/images/component/buttonsprites/comp_swap_alt.png', false, 64, 64);
@@ -141,11 +141,11 @@ class PlayState extends FlxState
 			rtgButton.loadGraphic('assets/images/component/buttonsprites/comp_rtg_d.png', false, 64, 64);
 			trace('RTG TRUE');
 		}
-		else if (Registry.haveRtg == null)
+		/*else if (Registry.haveRtg == null)
 		{
 			rtgButton.loadGraphic('assets/images/component/buttonsprites/comp_rtg_alt.png', false, 64, 64);
 			trace('RTG NULL');
-		}
+		}*/
 		else if (Registry.haveRtg == false)
 		{
 			rtgButton.loadGraphic('assets/images/component/buttonsprites/comp_rtg_alt.png', false, 64, 64);
@@ -157,11 +157,11 @@ class PlayState extends FlxState
 			rexButton.loadGraphic('assets/images/component/buttonsprites/comp_rex_d.png', false, 64, 64);
 			trace('REX TRUE');
 		}
-		else if (Registry.haveRex == null)
+		/*else if (Registry.haveRex == null)
 		{
 			rexButton.loadGraphic('assets/images/component/buttonsprites/comp_rex_alt.png', false, 64, 64);
 			trace('REX NULL');
-		}
+		}*/
 		else if (Registry.haveRex == false)
 		{
 			rexButton.loadGraphic('assets/images/component/buttonsprites/comp_rex_alt.png', false, 64, 64);
@@ -173,11 +173,11 @@ class PlayState extends FlxState
 			heatButton.loadGraphic('assets/images/component/buttonsprites/comp_heat_d.png', false, 64, 64);
 			trace('HEAT TRUE');
 		}
-		else if (Registry.haveHeat == null)
+		/*else if (Registry.haveHeat == null)
 		{
 			heatButton.loadGraphic('assets/images/component/buttonsprites/comp_heat_alt.png', false, 64, 64);
 			trace('HEAT NULL');
-		}
+		}*/
 		else if (Registry.haveHeat == false)
 		{
 			heatButton.loadGraphic('assets/images/component/buttonsprites/comp_heat_alt.png', false, 64, 64);

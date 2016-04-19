@@ -47,6 +47,15 @@ class MenuState extends FlxState
 
 	override public function create():Void
 	{
+		Registry.haveAlice = false;
+		Registry.haveLorri = false;
+		Registry.havePepssi = false;
+		Registry.haveRalph = false;
+		Registry.haveSwap = false;
+		Registry.haveRtg = false;
+		Registry.haveRex = false;
+		Registry.haveHeat = false;
+		Registry.launchReady = false;
 		Registry.partsNo = 0;
 
 		trace('started');
@@ -173,7 +182,7 @@ class MenuState extends FlxState
 
 	private function quit():Void
 	{
-		Sys.exit(null);
+		Sys.exit(0);
 	}
 
 	private function toggleFull():Void
