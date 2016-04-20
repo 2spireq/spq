@@ -182,7 +182,9 @@ class MenuState extends FlxState
 
 	private function quit():Void
 	{
-		Sys.exit(0);
+		#if not html5
+			Sys.exit(0);
+		#end
 	}
 
 	private function toggleFull():Void

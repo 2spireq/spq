@@ -31,7 +31,7 @@
 	<classpath name="source" />
 	<assets path="assets" embed="true" />
 
-	<icon path="assets/images/icon.ico" />
+	<icon path="assets/images/NH.ico" />
 	
 	<!--------------------------------LIBRARIES------------------------------------->
 

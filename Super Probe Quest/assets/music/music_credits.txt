@@ -1,5 +1,12 @@
-"Cyborg Ninja" Kevin MacLeod (incompetech.com)
-Licensed under Creative Commons: By Attribution 3.0 License
+### Licence ###
+"Bumba Crossing", "Cyborg Ninja", "Wagon Wheel - Electronic"
+Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 3.0
 http://creativecommons.org/licenses/by/3.0/
 
-"menu-main2.wav" is a placeholder
+### Track usage ###
+ - Cyborg Ninja   : main menu
+ - Bumba Crossing : RTG minigame
+ - Wagon Wheel    : PEPSSI minigame
+
+'menu-main2.wav' is a placeholder.
