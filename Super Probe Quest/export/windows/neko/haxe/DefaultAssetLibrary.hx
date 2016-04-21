@@ -314,7 +314,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
-		
 		Font.registerFont (__ASSET__assets_fonts_nokiafc22_ttf);
 		Font.registerFont (__ASSET__assets_fonts_arial_ttf);
 		
@@ -338,8 +337,98 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/fonts/OratorStd.otf", __ASSET__assets_fonts_oratorstd_otf);
 		type.set ("assets/fonts/OratorStd.otf", AssetType.FONT);
 		
-		className.set ("assets/images/about/stemlogo.pdn", __ASSET__assets_images_about_stemlogo_pdn);
-		type.set ("assets/images/about/stemlogo.pdn", AssetType.TEXT);
+		className.set ("assets/images/!originals/bt_orig/comp_alice_alt.png", __ASSET__assets_images__originals_bt_orig_comp_alice_alt_png);
+		type.set ("assets/images/!originals/bt_orig/comp_alice_alt.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/bt_orig/comp_alice_hover.png", __ASSET__assets_images__originals_bt_orig_comp_alice_hover_png);
+		type.set ("assets/images/!originals/bt_orig/comp_alice_hover.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/bt_orig/comp_lorri_alt.png", __ASSET__assets_images__originals_bt_orig_comp_lorri_alt_png);
+		type.set ("assets/images/!originals/bt_orig/comp_lorri_alt.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/bt_orig/comp_lorri_hover.png", __ASSET__assets_images__originals_bt_orig_comp_lorri_hover_png);
+		type.set ("assets/images/!originals/bt_orig/comp_lorri_hover.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/bt_orig/comp_pepssi_alt.png", __ASSET__assets_images__originals_bt_orig_comp_pepssi_alt_png);
+		type.set ("assets/images/!originals/bt_orig/comp_pepssi_alt.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/bt_orig/comp_pepssi_hover.png", __ASSET__assets_images__originals_bt_orig_comp_pepssi_hover_png);
+		type.set ("assets/images/!originals/bt_orig/comp_pepssi_hover.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/bt_orig/comp_ralph_alt.png", __ASSET__assets_images__originals_bt_orig_comp_ralph_alt_png);
+		type.set ("assets/images/!originals/bt_orig/comp_ralph_alt.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/bt_orig/comp_ralph_hover.png", __ASSET__assets_images__originals_bt_orig_comp_ralph_hover_png);
+		type.set ("assets/images/!originals/bt_orig/comp_ralph_hover.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/intro_originals/beach.pdn", __ASSET__assets_images__originals_intro_originals_beach_pdn);
+		type.set ("assets/images/!originals/intro_originals/beach.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/intro_originals/Untitled.pdn", __ASSET__assets_images__originals_intro_originals_untitled_pdn);
+		type.set ("assets/images/!originals/intro_originals/Untitled.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/intro_originals/vab.pdn", __ASSET__assets_images__originals_intro_originals_vab_pdn);
+		type.set ("assets/images/!originals/intro_originals/vab.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-atlas-v.pdn", __ASSET__assets_images__originals_launchblock_other_nh_atlas_v_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-atlas-v.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg", __ASSET__assets_images__originals_launchblock_other_nh_launch_block_atlas_v_551_with_new_horizons_on_launch_pad_41_jpg);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-block/nh-static-atlasv-launch.jpg", __ASSET__assets_images__originals_launchblock_other_nh_launch_block_nh_static_atlasv_launch_jpg);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-block/nh-static-atlasv-launch.jpg", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-block.pdn", __ASSET__assets_images__originals_launchblock_other_nh_launch_block_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-block.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-block.png", __ASSET__assets_images__originals_launchblock_other_nh_launch_block_png);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-block.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-long - Copy.pdn", __ASSET__assets_images__originals_launchblock_other_nh_launch_long___copy_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-long - Copy.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-long-old.pdn", __ASSET__assets_images__originals_launchblock_other_nh_launch_long_old_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-long-old.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-long.pdn", __ASSET__assets_images__originals_launchblock_other_nh_launch_long_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-long.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-long.png", __ASSET__assets_images__originals_launchblock_other_nh_launch_long_png);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-long.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-pastel.png", __ASSET__assets_images__originals_launchblock_other_nh_pastel_png);
+		type.set ("assets/images/!originals/launchblock_other/nh-pastel.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-postcard - Copy.pdn", __ASSET__assets_images__originals_launchblock_other_nh_postcard___copy_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-postcard - Copy.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-postcard - Copy.png", __ASSET__assets_images__originals_launchblock_other_nh_postcard___copy_png);
+		type.set ("assets/images/!originals/launchblock_other/nh-postcard - Copy.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-postcard.pdn", __ASSET__assets_images__originals_launchblock_other_nh_postcard_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-postcard.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-postcard.png", __ASSET__assets_images__originals_launchblock_other_nh_postcard_png);
+		type.set ("assets/images/!originals/launchblock_other/nh-postcard.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/launchblock_other/pad-norocket.pdn", __ASSET__assets_images__originals_launchblock_other_pad_norocket_pdn);
+		type.set ("assets/images/!originals/launchblock_other/pad-norocket.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/pad-rocket.pdn", __ASSET__assets_images__originals_launchblock_other_pad_rocket_pdn);
+		type.set ("assets/images/!originals/launchblock_other/pad-rocket.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/splash/splash_x640.jpg", __ASSET__assets_images__originals_splash_splash_x640_jpg);
+		type.set ("assets/images/!originals/splash/splash_x640.jpg", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/splash/startup-splash-hero - Copy.png", __ASSET__assets_images__originals_splash_startup_splash_hero___copy_png);
+		type.set ("assets/images/!originals/splash/startup-splash-hero - Copy.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/splash/startup-splash-hero.png", __ASSET__assets_images__originals_splash_startup_splash_hero_png);
+		type.set ("assets/images/!originals/splash/startup-splash-hero.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/stemlogo.pdn", __ASSET__assets_images__originals_stemlogo_pdn);
+		type.set ("assets/images/!originals/stemlogo.pdn", AssetType.TEXT);
 		
 		className.set ("assets/images/about/stemlogo.png", __ASSET__assets_images_about_stemlogo_png);
 		type.set ("assets/images/about/stemlogo.png", AssetType.IMAGE);
@@ -440,30 +529,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/alicemaze/player.png", __ASSET__assets_images_alicemaze_player_png);
 		type.set ("assets/images/alicemaze/player.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/component/bt_orig/comp_alice_alt.png", __ASSET__assets_images_component_bt_orig_comp_alice_alt_png);
-		type.set ("assets/images/component/bt_orig/comp_alice_alt.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/component/bt_orig/comp_alice_hover.png", __ASSET__assets_images_component_bt_orig_comp_alice_hover_png);
-		type.set ("assets/images/component/bt_orig/comp_alice_hover.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/component/bt_orig/comp_lorri_alt.png", __ASSET__assets_images_component_bt_orig_comp_lorri_alt_png);
-		type.set ("assets/images/component/bt_orig/comp_lorri_alt.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/component/bt_orig/comp_lorri_hover.png", __ASSET__assets_images_component_bt_orig_comp_lorri_hover_png);
-		type.set ("assets/images/component/bt_orig/comp_lorri_hover.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/component/bt_orig/comp_pepssi_alt.png", __ASSET__assets_images_component_bt_orig_comp_pepssi_alt_png);
-		type.set ("assets/images/component/bt_orig/comp_pepssi_alt.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/component/bt_orig/comp_pepssi_hover.png", __ASSET__assets_images_component_bt_orig_comp_pepssi_hover_png);
-		type.set ("assets/images/component/bt_orig/comp_pepssi_hover.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/component/bt_orig/comp_ralph_alt.png", __ASSET__assets_images_component_bt_orig_comp_ralph_alt_png);
-		type.set ("assets/images/component/bt_orig/comp_ralph_alt.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/component/bt_orig/comp_ralph_hover.png", __ASSET__assets_images_component_bt_orig_comp_ralph_hover_png);
-		type.set ("assets/images/component/bt_orig/comp_ralph_hover.png", AssetType.IMAGE);
-		
 		className.set ("assets/images/component/buttonsprites/comp_alice_alt.png", __ASSET__assets_images_component_buttonsprites_comp_alice_alt_png);
 		type.set ("assets/images/component/buttonsprites/comp_alice_alt.png", AssetType.IMAGE);
 		
@@ -545,9 +610,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/component/nh_large.png", __ASSET__assets_images_component_nh_large_png);
 		type.set ("assets/images/component/nh_large.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/facts/earth-32x.png", __ASSET__assets_images_facts_earth_32x_png);
-		type.set ("assets/images/facts/earth-32x.png", AssetType.IMAGE);
-		
 		className.set ("assets/images/facts/fact0.png", __ASSET__assets_images_facts_fact0_png);
 		type.set ("assets/images/facts/fact0.png", AssetType.IMAGE);
 		
@@ -560,38 +622,32 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/facts/fact3.png", __ASSET__assets_images_facts_fact3_png);
 		type.set ("assets/images/facts/fact3.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/facts/facthide.png", __ASSET__assets_images_facts_facthide_png);
-		type.set ("assets/images/facts/facthide.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/found/alicefound.pdn", __ASSET__assets_images_found_alicefound_pdn);
-		type.set ("assets/images/found/alicefound.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/found/alicefound.png", __ASSET__assets_images_found_alicefound_png);
-		type.set ("assets/images/found/alicefound.png", AssetType.IMAGE);
-		
 		className.set ("assets/images/found/alice_button_backdrop.png", __ASSET__assets_images_found_alice_button_backdrop_png);
 		type.set ("assets/images/found/alice_button_backdrop.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/found/found-template.pdn", __ASSET__assets_images_found_found_template_pdn);
-		type.set ("assets/images/found/found-template.pdn", AssetType.TEXT);
 		
 		className.set ("assets/images/found/found_alice.png", __ASSET__assets_images_found_found_alice_png);
 		type.set ("assets/images/found/found_alice.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/found/found_alice_button.pdn", __ASSET__assets_images_found_found_alice_button_pdn);
-		type.set ("assets/images/found/found_alice_button.pdn", AssetType.TEXT);
-		
 		className.set ("assets/images/found/found_alice_button.png", __ASSET__assets_images_found_found_alice_button_png);
 		type.set ("assets/images/found/found_alice_button.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/found/found_originals/alicefound.pdn", __ASSET__assets_images_found_found_originals_alicefound_pdn);
+		type.set ("assets/images/found/found_originals/alicefound.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/found/found_originals/found-template.pdn", __ASSET__assets_images_found_found_originals_found_template_pdn);
+		type.set ("assets/images/found/found_originals/found-template.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/found/found_originals/found_alice_button.pdn", __ASSET__assets_images_found_found_originals_found_alice_button_pdn);
+		type.set ("assets/images/found/found_originals/found_alice_button.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/found/found_originals/rtg_found.pdn", __ASSET__assets_images_found_found_originals_rtg_found_pdn);
+		type.set ("assets/images/found/found_originals/rtg_found.pdn", AssetType.TEXT);
 		
 		className.set ("assets/images/found/found_pepssi.png", __ASSET__assets_images_found_found_pepssi_png);
 		type.set ("assets/images/found/found_pepssi.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/found/found_pepssi_button.png", __ASSET__assets_images_found_found_pepssi_button_png);
 		type.set ("assets/images/found/found_pepssi_button.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/found/rtg_found.pdn", __ASSET__assets_images_found_rtg_found_pdn);
-		type.set ("assets/images/found/rtg_found.pdn", AssetType.TEXT);
 		
 		className.set ("assets/images/hub/alice_info.png", __ASSET__assets_images_hub_alice_info_png);
 		type.set ("assets/images/hub/alice_info.png", AssetType.IMAGE);
@@ -623,23 +679,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/hub/swap_info.png", __ASSET__assets_images_hub_swap_info_png);
 		type.set ("assets/images/hub/swap_info.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/icon.ico", __ASSET__assets_images_icon_ico);
-		type.set ("assets/images/icon.ico", AssetType.BINARY);
-		
 		className.set ("assets/images/intro/beach.png", __ASSET__assets_images_intro_beach_png);
 		type.set ("assets/images/intro/beach.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/intro/name.png", __ASSET__assets_images_intro_name_png);
 		type.set ("assets/images/intro/name.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/intro/original/beach.pdn", __ASSET__assets_images_intro_original_beach_pdn);
-		type.set ("assets/images/intro/original/beach.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/intro/original/Untitled.pdn", __ASSET__assets_images_intro_original_untitled_pdn);
-		type.set ("assets/images/intro/original/Untitled.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/intro/original/vab.pdn", __ASSET__assets_images_intro_original_vab_pdn);
-		type.set ("assets/images/intro/original/vab.pdn", AssetType.TEXT);
 		
 		className.set ("assets/images/intro/plane.png", __ASSET__assets_images_intro_plane_png);
 		type.set ("assets/images/intro/plane.png", AssetType.IMAGE);
@@ -658,6 +702,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/intro/tower.png", __ASSET__assets_images_intro_tower_png);
 		type.set ("assets/images/intro/tower.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/intro/tutorial.png", __ASSET__assets_images_intro_tutorial_png);
+		type.set ("assets/images/intro/tutorial.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/intro/vab.png", __ASSET__assets_images_intro_vab_png);
 		type.set ("assets/images/intro/vab.png", AssetType.IMAGE);
@@ -715,54 +762,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/launchblock/nh-postcard.png.meta", __ASSET__assets_images_launchblock_nh_postcard_png_meta);
 		type.set ("assets/images/launchblock/nh-postcard.png.meta", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/nh-atlas-v.pdn", __ASSET__assets_images_launchblock_other_nh_atlas_v_pdn);
-		type.set ("assets/images/launchblock/other/nh-atlas-v.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg", __ASSET__assets_images_launchblock_other_nh_launch_block_atlas_v_551_with_new_horizons_on_launch_pad_41_jpg);
-		type.set ("assets/images/launchblock/other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg", AssetType.IMAGE);
-		
-		className.set ("assets/images/launchblock/other/nh-launch-block/nh-static-atlasv-launch.jpg", __ASSET__assets_images_launchblock_other_nh_launch_block_nh_static_atlasv_launch_jpg);
-		type.set ("assets/images/launchblock/other/nh-launch-block/nh-static-atlasv-launch.jpg", AssetType.IMAGE);
-		
-		className.set ("assets/images/launchblock/other/nh-launch-block.pdn", __ASSET__assets_images_launchblock_other_nh_launch_block_pdn);
-		type.set ("assets/images/launchblock/other/nh-launch-block.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/nh-launch-block.png", __ASSET__assets_images_launchblock_other_nh_launch_block_png);
-		type.set ("assets/images/launchblock/other/nh-launch-block.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/launchblock/other/nh-launch-long - Copy.pdn", __ASSET__assets_images_launchblock_other_nh_launch_long___copy_pdn);
-		type.set ("assets/images/launchblock/other/nh-launch-long - Copy.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/nh-launch-long-old.pdn", __ASSET__assets_images_launchblock_other_nh_launch_long_old_pdn);
-		type.set ("assets/images/launchblock/other/nh-launch-long-old.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/nh-launch-long.pdn", __ASSET__assets_images_launchblock_other_nh_launch_long_pdn);
-		type.set ("assets/images/launchblock/other/nh-launch-long.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/nh-launch-long.png", __ASSET__assets_images_launchblock_other_nh_launch_long_png);
-		type.set ("assets/images/launchblock/other/nh-launch-long.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/launchblock/other/nh-pastel.png", __ASSET__assets_images_launchblock_other_nh_pastel_png);
-		type.set ("assets/images/launchblock/other/nh-pastel.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/launchblock/other/nh-postcard - Copy.pdn", __ASSET__assets_images_launchblock_other_nh_postcard___copy_pdn);
-		type.set ("assets/images/launchblock/other/nh-postcard - Copy.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/nh-postcard - Copy.png", __ASSET__assets_images_launchblock_other_nh_postcard___copy_png);
-		type.set ("assets/images/launchblock/other/nh-postcard - Copy.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/launchblock/other/nh-postcard.pdn", __ASSET__assets_images_launchblock_other_nh_postcard_pdn);
-		type.set ("assets/images/launchblock/other/nh-postcard.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/nh-postcard.png", __ASSET__assets_images_launchblock_other_nh_postcard_png);
-		type.set ("assets/images/launchblock/other/nh-postcard.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/launchblock/other/pad-norocket.pdn", __ASSET__assets_images_launchblock_other_pad_norocket_pdn);
-		type.set ("assets/images/launchblock/other/pad-norocket.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/pad-rocket.pdn", __ASSET__assets_images_launchblock_other_pad_rocket_pdn);
-		type.set ("assets/images/launchblock/other/pad-rocket.pdn", AssetType.TEXT);
 		
 		className.set ("assets/images/launchblock/pad-norocket.png", __ASSET__assets_images_launchblock_pad_norocket_png);
 		type.set ("assets/images/launchblock/pad-norocket.png", AssetType.IMAGE);
@@ -896,29 +895,20 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/menu/moons/StyxOrbit.png", __ASSET__assets_images_menu_moons_styxorbit_png);
 		type.set ("assets/images/menu/moons/StyxOrbit.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/menu/splash/splash_x640.jpg", __ASSET__assets_images_menu_splash_splash_x640_jpg);
-		type.set ("assets/images/menu/splash/splash_x640.jpg", AssetType.IMAGE);
-		
-		className.set ("assets/images/menu/splash/startup-splash-hero - Copy.png", __ASSET__assets_images_menu_splash_startup_splash_hero___copy_png);
-		type.set ("assets/images/menu/splash/startup-splash-hero - Copy.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/menu/splash/startup-splash-hero.png", __ASSET__assets_images_menu_splash_startup_splash_hero_png);
-		type.set ("assets/images/menu/splash/startup-splash-hero.png", AssetType.IMAGE);
-		
 		className.set ("assets/images/menu/splash_x640.png", __ASSET__assets_images_menu_splash_x640_png);
 		type.set ("assets/images/menu/splash_x640.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/menu/starback.png", __ASSET__assets_images_menu_starback_png);
 		type.set ("assets/images/menu/starback.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/menu/tutorial.png", __ASSET__assets_images_menu_tutorial_png);
-		type.set ("assets/images/menu/tutorial.png", AssetType.IMAGE);
-		
 		className.set ("assets/images/misc/320xp.pdn", __ASSET__assets_images_misc_320xp_pdn);
 		type.set ("assets/images/misc/320xp.pdn", AssetType.TEXT);
 		
 		className.set ("assets/images/misc/320xp.png", __ASSET__assets_images_misc_320xp_png);
 		type.set ("assets/images/misc/320xp.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/misc/earth-32x.png", __ASSET__assets_images_misc_earth_32x_png);
+		type.set ("assets/images/misc/earth-32x.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/misc/pls.png", __ASSET__assets_images_misc_pls_png);
 		type.set ("assets/images/misc/pls.png", AssetType.IMAGE);
@@ -928,6 +918,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/mute/MuteOn.png", __ASSET__assets_images_mute_muteon_png);
 		type.set ("assets/images/mute/MuteOn.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/NH.ico", __ASSET__assets_images_nh_ico);
+		type.set ("assets/images/NH.ico", AssetType.BINARY);
+		
+		className.set ("assets/images/nh_large.svg", __ASSET__assets_images_nh_large_svg);
+		type.set ("assets/images/nh_large.svg", AssetType.TEXT);
 		
 		className.set ("assets/images/pepssiwire/background.png", __ASSET__assets_images_pepssiwire_background_png);
 		type.set ("assets/images/pepssiwire/background.png", AssetType.IMAGE);
@@ -1511,7 +1507,37 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:file("assets/data/plats.oel") @:keep #if display private #end class __ASSET__assets_data_plats_oel extends flash.utils.ByteArray {}
 @:file("assets/data/rtgmap.oep") @:keep #if display private #end class __ASSET__assets_data_rtgmap_oep extends flash.utils.ByteArray {}
 @:font("assets/fonts/OratorStd.otf") @:keep #if display private #end class __ASSET__assets_fonts_oratorstd_otf extends flash.text.Font {}
-@:file("assets/images/about/stemlogo.pdn") @:keep #if display private #end class __ASSET__assets_images_about_stemlogo_pdn extends flash.utils.ByteArray {}
+@:bitmap("assets/images/!originals/bt_orig/comp_alice_alt.png") @:keep #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_alice_alt_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/!originals/bt_orig/comp_alice_hover.png") @:keep #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_alice_hover_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/!originals/bt_orig/comp_lorri_alt.png") @:keep #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_lorri_alt_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/!originals/bt_orig/comp_lorri_hover.png") @:keep #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_lorri_hover_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/!originals/bt_orig/comp_pepssi_alt.png") @:keep #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_pepssi_alt_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/!originals/bt_orig/comp_pepssi_hover.png") @:keep #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_pepssi_hover_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/!originals/bt_orig/comp_ralph_alt.png") @:keep #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_ralph_alt_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/!originals/bt_orig/comp_ralph_hover.png") @:keep #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_ralph_hover_png extends flash.display.BitmapData {}
+@:file("assets/images/!originals/intro_originals/beach.pdn") @:keep #if display private #end class __ASSET__assets_images__originals_intro_originals_beach_pdn extends flash.utils.ByteArray {}
+@:file("assets/images/!originals/intro_originals/Untitled.pdn") @:keep #if display private #end class __ASSET__assets_images__originals_intro_originals_untitled_pdn extends flash.utils.ByteArray {}
+@:file("assets/images/!originals/intro_originals/vab.pdn") @:keep #if display private #end class __ASSET__assets_images__originals_intro_originals_vab_pdn extends flash.utils.ByteArray {}
+@:file("assets/images/!originals/launchblock_other/nh-atlas-v.pdn") @:keep #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_atlas_v_pdn extends flash.utils.ByteArray {}
+@:bitmap("assets/images/!originals/launchblock_other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg") @:keep #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_block_atlas_v_551_with_new_horizons_on_launch_pad_41_jpg extends flash.display.BitmapData {}
+@:bitmap("assets/images/!originals/launchblock_other/nh-launch-block/nh-static-atlasv-launch.jpg") @:keep #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_block_nh_static_atlasv_launch_jpg extends flash.display.BitmapData {}
+@:file("assets/images/!originals/launchblock_other/nh-launch-block.pdn") @:keep #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_block_pdn extends flash.utils.ByteArray {}
+@:bitmap("assets/images/!originals/launchblock_other/nh-launch-block.png") @:keep #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_block_png extends flash.display.BitmapData {}
+@:file("assets/images/!originals/launchblock_other/nh-launch-long - Copy.pdn") @:keep #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_long___copy_pdn extends flash.utils.ByteArray {}
+@:file("assets/images/!originals/launchblock_other/nh-launch-long-old.pdn") @:keep #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_long_old_pdn extends flash.utils.ByteArray {}
+@:file("assets/images/!originals/launchblock_other/nh-launch-long.pdn") @:keep #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_long_pdn extends flash.utils.ByteArray {}
+@:bitmap("assets/images/!originals/launchblock_other/nh-launch-long.png") @:keep #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_long_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/!originals/launchblock_other/nh-pastel.png") @:keep #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_pastel_png extends flash.display.BitmapData {}
+@:file("assets/images/!originals/launchblock_other/nh-postcard - Copy.pdn") @:keep #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_postcard___copy_pdn extends flash.utils.ByteArray {}
+@:bitmap("assets/images/!originals/launchblock_other/nh-postcard - Copy.png") @:keep #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_postcard___copy_png extends flash.display.BitmapData {}
+@:file("assets/images/!originals/launchblock_other/nh-postcard.pdn") @:keep #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_postcard_pdn extends flash.utils.ByteArray {}
+@:bitmap("assets/images/!originals/launchblock_other/nh-postcard.png") @:keep #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_postcard_png extends flash.display.BitmapData {}
+@:file("assets/images/!originals/launchblock_other/pad-norocket.pdn") @:keep #if display private #end class __ASSET__assets_images__originals_launchblock_other_pad_norocket_pdn extends flash.utils.ByteArray {}
+@:file("assets/images/!originals/launchblock_other/pad-rocket.pdn") @:keep #if display private #end class __ASSET__assets_images__originals_launchblock_other_pad_rocket_pdn extends flash.utils.ByteArray {}
+@:bitmap("assets/images/!originals/splash/splash_x640.jpg") @:keep #if display private #end class __ASSET__assets_images__originals_splash_splash_x640_jpg extends flash.display.BitmapData {}
+@:bitmap("assets/images/!originals/splash/startup-splash-hero - Copy.png") @:keep #if display private #end class __ASSET__assets_images__originals_splash_startup_splash_hero___copy_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/!originals/splash/startup-splash-hero.png") @:keep #if display private #end class __ASSET__assets_images__originals_splash_startup_splash_hero_png extends flash.display.BitmapData {}
+@:file("assets/images/!originals/stemlogo.pdn") @:keep #if display private #end class __ASSET__assets_images__originals_stemlogo_pdn extends flash.utils.ByteArray {}
 @:bitmap("assets/images/about/stemlogo.png") @:keep #if display private #end class __ASSET__assets_images_about_stemlogo_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/about/title_about.png") @:keep #if display private #end class __ASSET__assets_images_about_title_about_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/alicemaze/alice_hit.png") @:keep #if display private #end class __ASSET__assets_images_alicemaze_alice_hit_png extends flash.display.BitmapData {}
@@ -1545,14 +1571,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:bitmap("assets/images/alicemaze/dialogue/wasd/wasd_w.png") @:keep #if display private #end class __ASSET__assets_images_alicemaze_dialogue_wasd_wasd_w_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/alicemaze/dialogue/wasd.png") @:keep #if display private #end class __ASSET__assets_images_alicemaze_dialogue_wasd_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/alicemaze/player.png") @:keep #if display private #end class __ASSET__assets_images_alicemaze_player_png extends flash.display.BitmapData {}
-@:bitmap("assets/images/component/bt_orig/comp_alice_alt.png") @:keep #if display private #end class __ASSET__assets_images_component_bt_orig_comp_alice_alt_png extends flash.display.BitmapData {}
-@:bitmap("assets/images/component/bt_orig/comp_alice_hover.png") @:keep #if display private #end class __ASSET__assets_images_component_bt_orig_comp_alice_hover_png extends flash.display.BitmapData {}
-@:bitmap("assets/images/component/bt_orig/comp_lorri_alt.png") @:keep #if display private #end class __ASSET__assets_images_component_bt_orig_comp_lorri_alt_png extends flash.display.BitmapData {}
-@:bitmap("assets/images/component/bt_orig/comp_lorri_hover.png") @:keep #if display private #end class __ASSET__assets_images_component_bt_orig_comp_lorri_hover_png extends flash.display.BitmapData {}
-@:bitmap("assets/images/component/bt_orig/comp_pepssi_alt.png") @:keep #if display private #end class __ASSET__assets_images_component_bt_orig_comp_pepssi_alt_png extends flash.display.BitmapData {}
-@:bitmap("assets/images/component/bt_orig/comp_pepssi_hover.png") @:keep #if display private #end class __ASSET__assets_images_component_bt_orig_comp_pepssi_hover_png extends flash.display.BitmapData {}
-@:bitmap("assets/images/component/bt_orig/comp_ralph_alt.png") @:keep #if display private #end class __ASSET__assets_images_component_bt_orig_comp_ralph_alt_png extends flash.display.BitmapData {}
-@:bitmap("assets/images/component/bt_orig/comp_ralph_hover.png") @:keep #if display private #end class __ASSET__assets_images_component_bt_orig_comp_ralph_hover_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/component/buttonsprites/comp_alice_alt.png") @:keep #if display private #end class __ASSET__assets_images_component_buttonsprites_comp_alice_alt_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/component/buttonsprites/comp_alice_d.png") @:keep #if display private #end class __ASSET__assets_images_component_buttonsprites_comp_alice_d_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/component/buttonsprites/comp_heat_alt.png") @:keep #if display private #end class __ASSET__assets_images_component_buttonsprites_comp_heat_alt_png extends flash.display.BitmapData {}
@@ -1580,22 +1598,19 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:bitmap("assets/images/component/comp_swap.png") @:keep #if display private #end class __ASSET__assets_images_component_comp_swap_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/component/NH.png") @:keep #if display private #end class __ASSET__assets_images_component_nh_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/component/nh_large.png") @:keep #if display private #end class __ASSET__assets_images_component_nh_large_png extends flash.display.BitmapData {}
-@:bitmap("assets/images/facts/earth-32x.png") @:keep #if display private #end class __ASSET__assets_images_facts_earth_32x_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/facts/fact0.png") @:keep #if display private #end class __ASSET__assets_images_facts_fact0_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/facts/fact1.png") @:keep #if display private #end class __ASSET__assets_images_facts_fact1_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/facts/fact2.png") @:keep #if display private #end class __ASSET__assets_images_facts_fact2_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/facts/fact3.png") @:keep #if display private #end class __ASSET__assets_images_facts_fact3_png extends flash.display.BitmapData {}
-@:bitmap("assets/images/facts/facthide.png") @:keep #if display private #end class __ASSET__assets_images_facts_facthide_png extends flash.display.BitmapData {}
-@:file("assets/images/found/alicefound.pdn") @:keep #if display private #end class __ASSET__assets_images_found_alicefound_pdn extends flash.utils.ByteArray {}
-@:bitmap("assets/images/found/alicefound.png") @:keep #if display private #end class __ASSET__assets_images_found_alicefound_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/found/alice_button_backdrop.png") @:keep #if display private #end class __ASSET__assets_images_found_alice_button_backdrop_png extends flash.display.BitmapData {}
-@:file("assets/images/found/found-template.pdn") @:keep #if display private #end class __ASSET__assets_images_found_found_template_pdn extends flash.utils.ByteArray {}
 @:bitmap("assets/images/found/found_alice.png") @:keep #if display private #end class __ASSET__assets_images_found_found_alice_png extends flash.display.BitmapData {}
-@:file("assets/images/found/found_alice_button.pdn") @:keep #if display private #end class __ASSET__assets_images_found_found_alice_button_pdn extends flash.utils.ByteArray {}
 @:bitmap("assets/images/found/found_alice_button.png") @:keep #if display private #end class __ASSET__assets_images_found_found_alice_button_png extends flash.display.BitmapData {}
+@:file("assets/images/found/found_originals/alicefound.pdn") @:keep #if display private #end class __ASSET__assets_images_found_found_originals_alicefound_pdn extends flash.utils.ByteArray {}
+@:file("assets/images/found/found_originals/found-template.pdn") @:keep #if display private #end class __ASSET__assets_images_found_found_originals_found_template_pdn extends flash.utils.ByteArray {}
+@:file("assets/images/found/found_originals/found_alice_button.pdn") @:keep #if display private #end class __ASSET__assets_images_found_found_originals_found_alice_button_pdn extends flash.utils.ByteArray {}
+@:file("assets/images/found/found_originals/rtg_found.pdn") @:keep #if display private #end class __ASSET__assets_images_found_found_originals_rtg_found_pdn extends flash.utils.ByteArray {}
 @:bitmap("assets/images/found/found_pepssi.png") @:keep #if display private #end class __ASSET__assets_images_found_found_pepssi_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/found/found_pepssi_button.png") @:keep #if display private #end class __ASSET__assets_images_found_found_pepssi_button_png extends flash.display.BitmapData {}
-@:file("assets/images/found/rtg_found.pdn") @:keep #if display private #end class __ASSET__assets_images_found_rtg_found_pdn extends flash.utils.ByteArray {}
 @:bitmap("assets/images/hub/alice_info.png") @:keep #if display private #end class __ASSET__assets_images_hub_alice_info_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/hub/blockout.png") @:keep #if display private #end class __ASSET__assets_images_hub_blockout_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/hub/components_hero.png") @:keep #if display private #end class __ASSET__assets_images_hub_components_hero_png extends flash.display.BitmapData {}
@@ -1606,18 +1621,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:bitmap("assets/images/hub/rex_info.png") @:keep #if display private #end class __ASSET__assets_images_hub_rex_info_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/hub/rtg_info.png") @:keep #if display private #end class __ASSET__assets_images_hub_rtg_info_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/hub/swap_info.png") @:keep #if display private #end class __ASSET__assets_images_hub_swap_info_png extends flash.display.BitmapData {}
-@:file("assets/images/icon.ico") @:keep #if display private #end class __ASSET__assets_images_icon_ico extends flash.utils.ByteArray {}
 @:bitmap("assets/images/intro/beach.png") @:keep #if display private #end class __ASSET__assets_images_intro_beach_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/intro/name.png") @:keep #if display private #end class __ASSET__assets_images_intro_name_png extends flash.display.BitmapData {}
-@:file("assets/images/intro/original/beach.pdn") @:keep #if display private #end class __ASSET__assets_images_intro_original_beach_pdn extends flash.utils.ByteArray {}
-@:file("assets/images/intro/original/Untitled.pdn") @:keep #if display private #end class __ASSET__assets_images_intro_original_untitled_pdn extends flash.utils.ByteArray {}
-@:file("assets/images/intro/original/vab.pdn") @:keep #if display private #end class __ASSET__assets_images_intro_original_vab_pdn extends flash.utils.ByteArray {}
 @:bitmap("assets/images/intro/plane.png") @:keep #if display private #end class __ASSET__assets_images_intro_plane_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/intro/text0.png") @:keep #if display private #end class __ASSET__assets_images_intro_text0_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/intro/text1.png") @:keep #if display private #end class __ASSET__assets_images_intro_text1_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/intro/text2.png") @:keep #if display private #end class __ASSET__assets_images_intro_text2_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/intro/text3.png") @:keep #if display private #end class __ASSET__assets_images_intro_text3_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/intro/tower.png") @:keep #if display private #end class __ASSET__assets_images_intro_tower_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/intro/tutorial.png") @:keep #if display private #end class __ASSET__assets_images_intro_tutorial_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/intro/vab.png") @:keep #if display private #end class __ASSET__assets_images_intro_vab_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/launchblock/cloud0.png") @:keep #if display private #end class __ASSET__assets_images_launchblock_cloud0_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/launchblock/cloud1.png") @:keep #if display private #end class __ASSET__assets_images_launchblock_cloud1_png extends flash.display.BitmapData {}
@@ -1637,22 +1649,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:file("assets/images/launchblock/nh-postcard-skeu.png.meta") @:keep #if display private #end class __ASSET__assets_images_launchblock_nh_postcard_skeu_png_meta extends flash.utils.ByteArray {}
 @:file("assets/images/launchblock/nh-postcard.pdn.meta") @:keep #if display private #end class __ASSET__assets_images_launchblock_nh_postcard_pdn_meta extends flash.utils.ByteArray {}
 @:file("assets/images/launchblock/nh-postcard.png.meta") @:keep #if display private #end class __ASSET__assets_images_launchblock_nh_postcard_png_meta extends flash.utils.ByteArray {}
-@:file("assets/images/launchblock/other/nh-atlas-v.pdn") @:keep #if display private #end class __ASSET__assets_images_launchblock_other_nh_atlas_v_pdn extends flash.utils.ByteArray {}
-@:bitmap("assets/images/launchblock/other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg") @:keep #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_block_atlas_v_551_with_new_horizons_on_launch_pad_41_jpg extends flash.display.BitmapData {}
-@:bitmap("assets/images/launchblock/other/nh-launch-block/nh-static-atlasv-launch.jpg") @:keep #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_block_nh_static_atlasv_launch_jpg extends flash.display.BitmapData {}
-@:file("assets/images/launchblock/other/nh-launch-block.pdn") @:keep #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_block_pdn extends flash.utils.ByteArray {}
-@:bitmap("assets/images/launchblock/other/nh-launch-block.png") @:keep #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_block_png extends flash.display.BitmapData {}
-@:file("assets/images/launchblock/other/nh-launch-long - Copy.pdn") @:keep #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_long___copy_pdn extends flash.utils.ByteArray {}
-@:file("assets/images/launchblock/other/nh-launch-long-old.pdn") @:keep #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_long_old_pdn extends flash.utils.ByteArray {}
-@:file("assets/images/launchblock/other/nh-launch-long.pdn") @:keep #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_long_pdn extends flash.utils.ByteArray {}
-@:bitmap("assets/images/launchblock/other/nh-launch-long.png") @:keep #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_long_png extends flash.display.BitmapData {}
-@:bitmap("assets/images/launchblock/other/nh-pastel.png") @:keep #if display private #end class __ASSET__assets_images_launchblock_other_nh_pastel_png extends flash.display.BitmapData {}
-@:file("assets/images/launchblock/other/nh-postcard - Copy.pdn") @:keep #if display private #end class __ASSET__assets_images_launchblock_other_nh_postcard___copy_pdn extends flash.utils.ByteArray {}
-@:bitmap("assets/images/launchblock/other/nh-postcard - Copy.png") @:keep #if display private #end class __ASSET__assets_images_launchblock_other_nh_postcard___copy_png extends flash.display.BitmapData {}
-@:file("assets/images/launchblock/other/nh-postcard.pdn") @:keep #if display private #end class __ASSET__assets_images_launchblock_other_nh_postcard_pdn extends flash.utils.ByteArray {}
-@:bitmap("assets/images/launchblock/other/nh-postcard.png") @:keep #if display private #end class __ASSET__assets_images_launchblock_other_nh_postcard_png extends flash.display.BitmapData {}
-@:file("assets/images/launchblock/other/pad-norocket.pdn") @:keep #if display private #end class __ASSET__assets_images_launchblock_other_pad_norocket_pdn extends flash.utils.ByteArray {}
-@:file("assets/images/launchblock/other/pad-rocket.pdn") @:keep #if display private #end class __ASSET__assets_images_launchblock_other_pad_rocket_pdn extends flash.utils.ByteArray {}
 @:bitmap("assets/images/launchblock/pad-norocket.png") @:keep #if display private #end class __ASSET__assets_images_launchblock_pad_norocket_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/launchblock/pad-rocket.png") @:keep #if display private #end class __ASSET__assets_images_launchblock_pad_rocket_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/launchblock/skyback - Copy.png") @:keep #if display private #end class __ASSET__assets_images_launchblock_skyback___copy_png extends flash.display.BitmapData {}
@@ -1697,17 +1693,16 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:bitmap("assets/images/menu/moons/original/Styx.png") @:keep #if display private #end class __ASSET__assets_images_menu_moons_original_styx_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/menu/moons/Pluto.png") @:keep #if display private #end class __ASSET__assets_images_menu_moons_pluto_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/menu/moons/StyxOrbit.png") @:keep #if display private #end class __ASSET__assets_images_menu_moons_styxorbit_png extends flash.display.BitmapData {}
-@:bitmap("assets/images/menu/splash/splash_x640.jpg") @:keep #if display private #end class __ASSET__assets_images_menu_splash_splash_x640_jpg extends flash.display.BitmapData {}
-@:bitmap("assets/images/menu/splash/startup-splash-hero - Copy.png") @:keep #if display private #end class __ASSET__assets_images_menu_splash_startup_splash_hero___copy_png extends flash.display.BitmapData {}
-@:bitmap("assets/images/menu/splash/startup-splash-hero.png") @:keep #if display private #end class __ASSET__assets_images_menu_splash_startup_splash_hero_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/menu/splash_x640.png") @:keep #if display private #end class __ASSET__assets_images_menu_splash_x640_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/menu/starback.png") @:keep #if display private #end class __ASSET__assets_images_menu_starback_png extends flash.display.BitmapData {}
-@:bitmap("assets/images/menu/tutorial.png") @:keep #if display private #end class __ASSET__assets_images_menu_tutorial_png extends flash.display.BitmapData {}
 @:file("assets/images/misc/320xp.pdn") @:keep #if display private #end class __ASSET__assets_images_misc_320xp_pdn extends flash.utils.ByteArray {}
 @:bitmap("assets/images/misc/320xp.png") @:keep #if display private #end class __ASSET__assets_images_misc_320xp_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/misc/earth-32x.png") @:keep #if display private #end class __ASSET__assets_images_misc_earth_32x_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/misc/pls.png") @:keep #if display private #end class __ASSET__assets_images_misc_pls_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/mute/Mute.png") @:keep #if display private #end class __ASSET__assets_images_mute_mute_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/mute/MuteOn.png") @:keep #if display private #end class __ASSET__assets_images_mute_muteon_png extends flash.display.BitmapData {}
+@:file("assets/images/NH.ico") @:keep #if display private #end class __ASSET__assets_images_nh_ico extends flash.utils.ByteArray {}
+@:file("assets/images/nh_large.svg") @:keep #if display private #end class __ASSET__assets_images_nh_large_svg extends flash.utils.ByteArray {}
 @:bitmap("assets/images/pepssiwire/background.png") @:keep #if display private #end class __ASSET__assets_images_pepssiwire_background_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/pepssiwire/bblue.png") @:keep #if display private #end class __ASSET__assets_images_pepssiwire_bblue_png extends flash.display.BitmapData {}
 @:file("assets/images/pepssiwire/box - Copy.pdn") @:keep #if display private #end class __ASSET__assets_images_pepssiwire_box___copy_pdn extends flash.utils.ByteArray {}
@@ -2096,7 +2091,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
-		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_fonts_arial_ttf);
 		
@@ -2114,8 +2108,68 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/data/rtgmap.oep", AssetType.TEXT);
 		className.set ("assets/fonts/OratorStd.otf", __ASSET__assets_fonts_oratorstd_otf);
 		type.set ("assets/fonts/OratorStd.otf", AssetType.FONT);
-		className.set ("assets/images/about/stemlogo.pdn", __ASSET__assets_images_about_stemlogo_pdn);
-		type.set ("assets/images/about/stemlogo.pdn", AssetType.TEXT);
+		className.set ("assets/images/!originals/bt_orig/comp_alice_alt.png", __ASSET__assets_images__originals_bt_orig_comp_alice_alt_png);
+		type.set ("assets/images/!originals/bt_orig/comp_alice_alt.png", AssetType.IMAGE);
+		className.set ("assets/images/!originals/bt_orig/comp_alice_hover.png", __ASSET__assets_images__originals_bt_orig_comp_alice_hover_png);
+		type.set ("assets/images/!originals/bt_orig/comp_alice_hover.png", AssetType.IMAGE);
+		className.set ("assets/images/!originals/bt_orig/comp_lorri_alt.png", __ASSET__assets_images__originals_bt_orig_comp_lorri_alt_png);
+		type.set ("assets/images/!originals/bt_orig/comp_lorri_alt.png", AssetType.IMAGE);
+		className.set ("assets/images/!originals/bt_orig/comp_lorri_hover.png", __ASSET__assets_images__originals_bt_orig_comp_lorri_hover_png);
+		type.set ("assets/images/!originals/bt_orig/comp_lorri_hover.png", AssetType.IMAGE);
+		className.set ("assets/images/!originals/bt_orig/comp_pepssi_alt.png", __ASSET__assets_images__originals_bt_orig_comp_pepssi_alt_png);
+		type.set ("assets/images/!originals/bt_orig/comp_pepssi_alt.png", AssetType.IMAGE);
+		className.set ("assets/images/!originals/bt_orig/comp_pepssi_hover.png", __ASSET__assets_images__originals_bt_orig_comp_pepssi_hover_png);
+		type.set ("assets/images/!originals/bt_orig/comp_pepssi_hover.png", AssetType.IMAGE);
+		className.set ("assets/images/!originals/bt_orig/comp_ralph_alt.png", __ASSET__assets_images__originals_bt_orig_comp_ralph_alt_png);
+		type.set ("assets/images/!originals/bt_orig/comp_ralph_alt.png", AssetType.IMAGE);
+		className.set ("assets/images/!originals/bt_orig/comp_ralph_hover.png", __ASSET__assets_images__originals_bt_orig_comp_ralph_hover_png);
+		type.set ("assets/images/!originals/bt_orig/comp_ralph_hover.png", AssetType.IMAGE);
+		className.set ("assets/images/!originals/intro_originals/beach.pdn", __ASSET__assets_images__originals_intro_originals_beach_pdn);
+		type.set ("assets/images/!originals/intro_originals/beach.pdn", AssetType.TEXT);
+		className.set ("assets/images/!originals/intro_originals/Untitled.pdn", __ASSET__assets_images__originals_intro_originals_untitled_pdn);
+		type.set ("assets/images/!originals/intro_originals/Untitled.pdn", AssetType.TEXT);
+		className.set ("assets/images/!originals/intro_originals/vab.pdn", __ASSET__assets_images__originals_intro_originals_vab_pdn);
+		type.set ("assets/images/!originals/intro_originals/vab.pdn", AssetType.TEXT);
+		className.set ("assets/images/!originals/launchblock_other/nh-atlas-v.pdn", __ASSET__assets_images__originals_launchblock_other_nh_atlas_v_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-atlas-v.pdn", AssetType.TEXT);
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg", __ASSET__assets_images__originals_launchblock_other_nh_launch_block_atlas_v_551_with_new_horizons_on_launch_pad_41_jpg);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg", AssetType.IMAGE);
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-block/nh-static-atlasv-launch.jpg", __ASSET__assets_images__originals_launchblock_other_nh_launch_block_nh_static_atlasv_launch_jpg);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-block/nh-static-atlasv-launch.jpg", AssetType.IMAGE);
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-block.pdn", __ASSET__assets_images__originals_launchblock_other_nh_launch_block_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-block.pdn", AssetType.TEXT);
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-block.png", __ASSET__assets_images__originals_launchblock_other_nh_launch_block_png);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-block.png", AssetType.IMAGE);
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-long - Copy.pdn", __ASSET__assets_images__originals_launchblock_other_nh_launch_long___copy_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-long - Copy.pdn", AssetType.TEXT);
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-long-old.pdn", __ASSET__assets_images__originals_launchblock_other_nh_launch_long_old_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-long-old.pdn", AssetType.TEXT);
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-long.pdn", __ASSET__assets_images__originals_launchblock_other_nh_launch_long_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-long.pdn", AssetType.TEXT);
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-long.png", __ASSET__assets_images__originals_launchblock_other_nh_launch_long_png);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-long.png", AssetType.IMAGE);
+		className.set ("assets/images/!originals/launchblock_other/nh-pastel.png", __ASSET__assets_images__originals_launchblock_other_nh_pastel_png);
+		type.set ("assets/images/!originals/launchblock_other/nh-pastel.png", AssetType.IMAGE);
+		className.set ("assets/images/!originals/launchblock_other/nh-postcard - Copy.pdn", __ASSET__assets_images__originals_launchblock_other_nh_postcard___copy_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-postcard - Copy.pdn", AssetType.TEXT);
+		className.set ("assets/images/!originals/launchblock_other/nh-postcard - Copy.png", __ASSET__assets_images__originals_launchblock_other_nh_postcard___copy_png);
+		type.set ("assets/images/!originals/launchblock_other/nh-postcard - Copy.png", AssetType.IMAGE);
+		className.set ("assets/images/!originals/launchblock_other/nh-postcard.pdn", __ASSET__assets_images__originals_launchblock_other_nh_postcard_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-postcard.pdn", AssetType.TEXT);
+		className.set ("assets/images/!originals/launchblock_other/nh-postcard.png", __ASSET__assets_images__originals_launchblock_other_nh_postcard_png);
+		type.set ("assets/images/!originals/launchblock_other/nh-postcard.png", AssetType.IMAGE);
+		className.set ("assets/images/!originals/launchblock_other/pad-norocket.pdn", __ASSET__assets_images__originals_launchblock_other_pad_norocket_pdn);
+		type.set ("assets/images/!originals/launchblock_other/pad-norocket.pdn", AssetType.TEXT);
+		className.set ("assets/images/!originals/launchblock_other/pad-rocket.pdn", __ASSET__assets_images__originals_launchblock_other_pad_rocket_pdn);
+		type.set ("assets/images/!originals/launchblock_other/pad-rocket.pdn", AssetType.TEXT);
+		className.set ("assets/images/!originals/splash/splash_x640.jpg", __ASSET__assets_images__originals_splash_splash_x640_jpg);
+		type.set ("assets/images/!originals/splash/splash_x640.jpg", AssetType.IMAGE);
+		className.set ("assets/images/!originals/splash/startup-splash-hero - Copy.png", __ASSET__assets_images__originals_splash_startup_splash_hero___copy_png);
+		type.set ("assets/images/!originals/splash/startup-splash-hero - Copy.png", AssetType.IMAGE);
+		className.set ("assets/images/!originals/splash/startup-splash-hero.png", __ASSET__assets_images__originals_splash_startup_splash_hero_png);
+		type.set ("assets/images/!originals/splash/startup-splash-hero.png", AssetType.IMAGE);
+		className.set ("assets/images/!originals/stemlogo.pdn", __ASSET__assets_images__originals_stemlogo_pdn);
+		type.set ("assets/images/!originals/stemlogo.pdn", AssetType.TEXT);
 		className.set ("assets/images/about/stemlogo.png", __ASSET__assets_images_about_stemlogo_png);
 		type.set ("assets/images/about/stemlogo.png", AssetType.IMAGE);
 		className.set ("assets/images/about/title_about.png", __ASSET__assets_images_about_title_about_png);
@@ -2182,22 +2236,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/alicemaze/dialogue/wasd.png", AssetType.IMAGE);
 		className.set ("assets/images/alicemaze/player.png", __ASSET__assets_images_alicemaze_player_png);
 		type.set ("assets/images/alicemaze/player.png", AssetType.IMAGE);
-		className.set ("assets/images/component/bt_orig/comp_alice_alt.png", __ASSET__assets_images_component_bt_orig_comp_alice_alt_png);
-		type.set ("assets/images/component/bt_orig/comp_alice_alt.png", AssetType.IMAGE);
-		className.set ("assets/images/component/bt_orig/comp_alice_hover.png", __ASSET__assets_images_component_bt_orig_comp_alice_hover_png);
-		type.set ("assets/images/component/bt_orig/comp_alice_hover.png", AssetType.IMAGE);
-		className.set ("assets/images/component/bt_orig/comp_lorri_alt.png", __ASSET__assets_images_component_bt_orig_comp_lorri_alt_png);
-		type.set ("assets/images/component/bt_orig/comp_lorri_alt.png", AssetType.IMAGE);
-		className.set ("assets/images/component/bt_orig/comp_lorri_hover.png", __ASSET__assets_images_component_bt_orig_comp_lorri_hover_png);
-		type.set ("assets/images/component/bt_orig/comp_lorri_hover.png", AssetType.IMAGE);
-		className.set ("assets/images/component/bt_orig/comp_pepssi_alt.png", __ASSET__assets_images_component_bt_orig_comp_pepssi_alt_png);
-		type.set ("assets/images/component/bt_orig/comp_pepssi_alt.png", AssetType.IMAGE);
-		className.set ("assets/images/component/bt_orig/comp_pepssi_hover.png", __ASSET__assets_images_component_bt_orig_comp_pepssi_hover_png);
-		type.set ("assets/images/component/bt_orig/comp_pepssi_hover.png", AssetType.IMAGE);
-		className.set ("assets/images/component/bt_orig/comp_ralph_alt.png", __ASSET__assets_images_component_bt_orig_comp_ralph_alt_png);
-		type.set ("assets/images/component/bt_orig/comp_ralph_alt.png", AssetType.IMAGE);
-		className.set ("assets/images/component/bt_orig/comp_ralph_hover.png", __ASSET__assets_images_component_bt_orig_comp_ralph_hover_png);
-		type.set ("assets/images/component/bt_orig/comp_ralph_hover.png", AssetType.IMAGE);
 		className.set ("assets/images/component/buttonsprites/comp_alice_alt.png", __ASSET__assets_images_component_buttonsprites_comp_alice_alt_png);
 		type.set ("assets/images/component/buttonsprites/comp_alice_alt.png", AssetType.IMAGE);
 		className.set ("assets/images/component/buttonsprites/comp_alice_d.png", __ASSET__assets_images_component_buttonsprites_comp_alice_d_png);
@@ -2252,8 +2290,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/component/NH.png", AssetType.IMAGE);
 		className.set ("assets/images/component/nh_large.png", __ASSET__assets_images_component_nh_large_png);
 		type.set ("assets/images/component/nh_large.png", AssetType.IMAGE);
-		className.set ("assets/images/facts/earth-32x.png", __ASSET__assets_images_facts_earth_32x_png);
-		type.set ("assets/images/facts/earth-32x.png", AssetType.IMAGE);
 		className.set ("assets/images/facts/fact0.png", __ASSET__assets_images_facts_fact0_png);
 		type.set ("assets/images/facts/fact0.png", AssetType.IMAGE);
 		className.set ("assets/images/facts/fact1.png", __ASSET__assets_images_facts_fact1_png);
@@ -2262,28 +2298,24 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/facts/fact2.png", AssetType.IMAGE);
 		className.set ("assets/images/facts/fact3.png", __ASSET__assets_images_facts_fact3_png);
 		type.set ("assets/images/facts/fact3.png", AssetType.IMAGE);
-		className.set ("assets/images/facts/facthide.png", __ASSET__assets_images_facts_facthide_png);
-		type.set ("assets/images/facts/facthide.png", AssetType.IMAGE);
-		className.set ("assets/images/found/alicefound.pdn", __ASSET__assets_images_found_alicefound_pdn);
-		type.set ("assets/images/found/alicefound.pdn", AssetType.TEXT);
-		className.set ("assets/images/found/alicefound.png", __ASSET__assets_images_found_alicefound_png);
-		type.set ("assets/images/found/alicefound.png", AssetType.IMAGE);
 		className.set ("assets/images/found/alice_button_backdrop.png", __ASSET__assets_images_found_alice_button_backdrop_png);
 		type.set ("assets/images/found/alice_button_backdrop.png", AssetType.IMAGE);
-		className.set ("assets/images/found/found-template.pdn", __ASSET__assets_images_found_found_template_pdn);
-		type.set ("assets/images/found/found-template.pdn", AssetType.TEXT);
 		className.set ("assets/images/found/found_alice.png", __ASSET__assets_images_found_found_alice_png);
 		type.set ("assets/images/found/found_alice.png", AssetType.IMAGE);
-		className.set ("assets/images/found/found_alice_button.pdn", __ASSET__assets_images_found_found_alice_button_pdn);
-		type.set ("assets/images/found/found_alice_button.pdn", AssetType.TEXT);
 		className.set ("assets/images/found/found_alice_button.png", __ASSET__assets_images_found_found_alice_button_png);
 		type.set ("assets/images/found/found_alice_button.png", AssetType.IMAGE);
+		className.set ("assets/images/found/found_originals/alicefound.pdn", __ASSET__assets_images_found_found_originals_alicefound_pdn);
+		type.set ("assets/images/found/found_originals/alicefound.pdn", AssetType.TEXT);
+		className.set ("assets/images/found/found_originals/found-template.pdn", __ASSET__assets_images_found_found_originals_found_template_pdn);
+		type.set ("assets/images/found/found_originals/found-template.pdn", AssetType.TEXT);
+		className.set ("assets/images/found/found_originals/found_alice_button.pdn", __ASSET__assets_images_found_found_originals_found_alice_button_pdn);
+		type.set ("assets/images/found/found_originals/found_alice_button.pdn", AssetType.TEXT);
+		className.set ("assets/images/found/found_originals/rtg_found.pdn", __ASSET__assets_images_found_found_originals_rtg_found_pdn);
+		type.set ("assets/images/found/found_originals/rtg_found.pdn", AssetType.TEXT);
 		className.set ("assets/images/found/found_pepssi.png", __ASSET__assets_images_found_found_pepssi_png);
 		type.set ("assets/images/found/found_pepssi.png", AssetType.IMAGE);
 		className.set ("assets/images/found/found_pepssi_button.png", __ASSET__assets_images_found_found_pepssi_button_png);
 		type.set ("assets/images/found/found_pepssi_button.png", AssetType.IMAGE);
-		className.set ("assets/images/found/rtg_found.pdn", __ASSET__assets_images_found_rtg_found_pdn);
-		type.set ("assets/images/found/rtg_found.pdn", AssetType.TEXT);
 		className.set ("assets/images/hub/alice_info.png", __ASSET__assets_images_hub_alice_info_png);
 		type.set ("assets/images/hub/alice_info.png", AssetType.IMAGE);
 		className.set ("assets/images/hub/blockout.png", __ASSET__assets_images_hub_blockout_png);
@@ -2304,18 +2336,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/hub/rtg_info.png", AssetType.IMAGE);
 		className.set ("assets/images/hub/swap_info.png", __ASSET__assets_images_hub_swap_info_png);
 		type.set ("assets/images/hub/swap_info.png", AssetType.IMAGE);
-		className.set ("assets/images/icon.ico", __ASSET__assets_images_icon_ico);
-		type.set ("assets/images/icon.ico", AssetType.BINARY);
 		className.set ("assets/images/intro/beach.png", __ASSET__assets_images_intro_beach_png);
 		type.set ("assets/images/intro/beach.png", AssetType.IMAGE);
 		className.set ("assets/images/intro/name.png", __ASSET__assets_images_intro_name_png);
 		type.set ("assets/images/intro/name.png", AssetType.IMAGE);
-		className.set ("assets/images/intro/original/beach.pdn", __ASSET__assets_images_intro_original_beach_pdn);
-		type.set ("assets/images/intro/original/beach.pdn", AssetType.TEXT);
-		className.set ("assets/images/intro/original/Untitled.pdn", __ASSET__assets_images_intro_original_untitled_pdn);
-		type.set ("assets/images/intro/original/Untitled.pdn", AssetType.TEXT);
-		className.set ("assets/images/intro/original/vab.pdn", __ASSET__assets_images_intro_original_vab_pdn);
-		type.set ("assets/images/intro/original/vab.pdn", AssetType.TEXT);
 		className.set ("assets/images/intro/plane.png", __ASSET__assets_images_intro_plane_png);
 		type.set ("assets/images/intro/plane.png", AssetType.IMAGE);
 		className.set ("assets/images/intro/text0.png", __ASSET__assets_images_intro_text0_png);
@@ -2328,6 +2352,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/intro/text3.png", AssetType.IMAGE);
 		className.set ("assets/images/intro/tower.png", __ASSET__assets_images_intro_tower_png);
 		type.set ("assets/images/intro/tower.png", AssetType.IMAGE);
+		className.set ("assets/images/intro/tutorial.png", __ASSET__assets_images_intro_tutorial_png);
+		type.set ("assets/images/intro/tutorial.png", AssetType.IMAGE);
 		className.set ("assets/images/intro/vab.png", __ASSET__assets_images_intro_vab_png);
 		type.set ("assets/images/intro/vab.png", AssetType.IMAGE);
 		className.set ("assets/images/launchblock/cloud0.png", __ASSET__assets_images_launchblock_cloud0_png);
@@ -2366,38 +2392,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/launchblock/nh-postcard.pdn.meta", AssetType.TEXT);
 		className.set ("assets/images/launchblock/nh-postcard.png.meta", __ASSET__assets_images_launchblock_nh_postcard_png_meta);
 		type.set ("assets/images/launchblock/nh-postcard.png.meta", AssetType.TEXT);
-		className.set ("assets/images/launchblock/other/nh-atlas-v.pdn", __ASSET__assets_images_launchblock_other_nh_atlas_v_pdn);
-		type.set ("assets/images/launchblock/other/nh-atlas-v.pdn", AssetType.TEXT);
-		className.set ("assets/images/launchblock/other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg", __ASSET__assets_images_launchblock_other_nh_launch_block_atlas_v_551_with_new_horizons_on_launch_pad_41_jpg);
-		type.set ("assets/images/launchblock/other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg", AssetType.IMAGE);
-		className.set ("assets/images/launchblock/other/nh-launch-block/nh-static-atlasv-launch.jpg", __ASSET__assets_images_launchblock_other_nh_launch_block_nh_static_atlasv_launch_jpg);
-		type.set ("assets/images/launchblock/other/nh-launch-block/nh-static-atlasv-launch.jpg", AssetType.IMAGE);
-		className.set ("assets/images/launchblock/other/nh-launch-block.pdn", __ASSET__assets_images_launchblock_other_nh_launch_block_pdn);
-		type.set ("assets/images/launchblock/other/nh-launch-block.pdn", AssetType.TEXT);
-		className.set ("assets/images/launchblock/other/nh-launch-block.png", __ASSET__assets_images_launchblock_other_nh_launch_block_png);
-		type.set ("assets/images/launchblock/other/nh-launch-block.png", AssetType.IMAGE);
-		className.set ("assets/images/launchblock/other/nh-launch-long - Copy.pdn", __ASSET__assets_images_launchblock_other_nh_launch_long___copy_pdn);
-		type.set ("assets/images/launchblock/other/nh-launch-long - Copy.pdn", AssetType.TEXT);
-		className.set ("assets/images/launchblock/other/nh-launch-long-old.pdn", __ASSET__assets_images_launchblock_other_nh_launch_long_old_pdn);
-		type.set ("assets/images/launchblock/other/nh-launch-long-old.pdn", AssetType.TEXT);
-		className.set ("assets/images/launchblock/other/nh-launch-long.pdn", __ASSET__assets_images_launchblock_other_nh_launch_long_pdn);
-		type.set ("assets/images/launchblock/other/nh-launch-long.pdn", AssetType.TEXT);
-		className.set ("assets/images/launchblock/other/nh-launch-long.png", __ASSET__assets_images_launchblock_other_nh_launch_long_png);
-		type.set ("assets/images/launchblock/other/nh-launch-long.png", AssetType.IMAGE);
-		className.set ("assets/images/launchblock/other/nh-pastel.png", __ASSET__assets_images_launchblock_other_nh_pastel_png);
-		type.set ("assets/images/launchblock/other/nh-pastel.png", AssetType.IMAGE);
-		className.set ("assets/images/launchblock/other/nh-postcard - Copy.pdn", __ASSET__assets_images_launchblock_other_nh_postcard___copy_pdn);
-		type.set ("assets/images/launchblock/other/nh-postcard - Copy.pdn", AssetType.TEXT);
-		className.set ("assets/images/launchblock/other/nh-postcard - Copy.png", __ASSET__assets_images_launchblock_other_nh_postcard___copy_png);
-		type.set ("assets/images/launchblock/other/nh-postcard - Copy.png", AssetType.IMAGE);
-		className.set ("assets/images/launchblock/other/nh-postcard.pdn", __ASSET__assets_images_launchblock_other_nh_postcard_pdn);
-		type.set ("assets/images/launchblock/other/nh-postcard.pdn", AssetType.TEXT);
-		className.set ("assets/images/launchblock/other/nh-postcard.png", __ASSET__assets_images_launchblock_other_nh_postcard_png);
-		type.set ("assets/images/launchblock/other/nh-postcard.png", AssetType.IMAGE);
-		className.set ("assets/images/launchblock/other/pad-norocket.pdn", __ASSET__assets_images_launchblock_other_pad_norocket_pdn);
-		type.set ("assets/images/launchblock/other/pad-norocket.pdn", AssetType.TEXT);
-		className.set ("assets/images/launchblock/other/pad-rocket.pdn", __ASSET__assets_images_launchblock_other_pad_rocket_pdn);
-		type.set ("assets/images/launchblock/other/pad-rocket.pdn", AssetType.TEXT);
 		className.set ("assets/images/launchblock/pad-norocket.png", __ASSET__assets_images_launchblock_pad_norocket_png);
 		type.set ("assets/images/launchblock/pad-norocket.png", AssetType.IMAGE);
 		className.set ("assets/images/launchblock/pad-rocket.png", __ASSET__assets_images_launchblock_pad_rocket_png);
@@ -2486,28 +2480,26 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/menu/moons/Pluto.png", AssetType.IMAGE);
 		className.set ("assets/images/menu/moons/StyxOrbit.png", __ASSET__assets_images_menu_moons_styxorbit_png);
 		type.set ("assets/images/menu/moons/StyxOrbit.png", AssetType.IMAGE);
-		className.set ("assets/images/menu/splash/splash_x640.jpg", __ASSET__assets_images_menu_splash_splash_x640_jpg);
-		type.set ("assets/images/menu/splash/splash_x640.jpg", AssetType.IMAGE);
-		className.set ("assets/images/menu/splash/startup-splash-hero - Copy.png", __ASSET__assets_images_menu_splash_startup_splash_hero___copy_png);
-		type.set ("assets/images/menu/splash/startup-splash-hero - Copy.png", AssetType.IMAGE);
-		className.set ("assets/images/menu/splash/startup-splash-hero.png", __ASSET__assets_images_menu_splash_startup_splash_hero_png);
-		type.set ("assets/images/menu/splash/startup-splash-hero.png", AssetType.IMAGE);
 		className.set ("assets/images/menu/splash_x640.png", __ASSET__assets_images_menu_splash_x640_png);
 		type.set ("assets/images/menu/splash_x640.png", AssetType.IMAGE);
 		className.set ("assets/images/menu/starback.png", __ASSET__assets_images_menu_starback_png);
 		type.set ("assets/images/menu/starback.png", AssetType.IMAGE);
-		className.set ("assets/images/menu/tutorial.png", __ASSET__assets_images_menu_tutorial_png);
-		type.set ("assets/images/menu/tutorial.png", AssetType.IMAGE);
 		className.set ("assets/images/misc/320xp.pdn", __ASSET__assets_images_misc_320xp_pdn);
 		type.set ("assets/images/misc/320xp.pdn", AssetType.TEXT);
 		className.set ("assets/images/misc/320xp.png", __ASSET__assets_images_misc_320xp_png);
 		type.set ("assets/images/misc/320xp.png", AssetType.IMAGE);
+		className.set ("assets/images/misc/earth-32x.png", __ASSET__assets_images_misc_earth_32x_png);
+		type.set ("assets/images/misc/earth-32x.png", AssetType.IMAGE);
 		className.set ("assets/images/misc/pls.png", __ASSET__assets_images_misc_pls_png);
 		type.set ("assets/images/misc/pls.png", AssetType.IMAGE);
 		className.set ("assets/images/mute/Mute.png", __ASSET__assets_images_mute_mute_png);
 		type.set ("assets/images/mute/Mute.png", AssetType.IMAGE);
 		className.set ("assets/images/mute/MuteOn.png", __ASSET__assets_images_mute_muteon_png);
 		type.set ("assets/images/mute/MuteOn.png", AssetType.IMAGE);
+		className.set ("assets/images/NH.ico", __ASSET__assets_images_nh_ico);
+		type.set ("assets/images/NH.ico", AssetType.BINARY);
+		className.set ("assets/images/nh_large.svg", __ASSET__assets_images_nh_large_svg);
+		type.set ("assets/images/nh_large.svg", AssetType.TEXT);
 		className.set ("assets/images/pepssiwire/background.png", __ASSET__assets_images_pepssiwire_background_png);
 		type.set ("assets/images/pepssiwire/background.png", AssetType.IMAGE);
 		className.set ("assets/images/pepssiwire/bblue.png", __ASSET__assets_images_pepssiwire_bblue_png);
@@ -2651,7 +2643,127 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set (id, __ASSET__assets_fonts_oratorstd_otf);
 		
 		type.set (id, AssetType.FONT);
-		id = "assets/images/about/stemlogo.pdn";
+		id = "assets/images/!originals/bt_orig/comp_alice_alt.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/bt_orig/comp_alice_hover.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/bt_orig/comp_lorri_alt.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/bt_orig/comp_lorri_hover.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/bt_orig/comp_pepssi_alt.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/bt_orig/comp_pepssi_hover.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/bt_orig/comp_ralph_alt.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/bt_orig/comp_ralph_hover.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/intro_originals/beach.pdn";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/!originals/intro_originals/Untitled.pdn";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/!originals/intro_originals/vab.pdn";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/!originals/launchblock_other/nh-atlas-v.pdn";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/!originals/launchblock_other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/launchblock_other/nh-launch-block/nh-static-atlasv-launch.jpg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/launchblock_other/nh-launch-block.pdn";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/!originals/launchblock_other/nh-launch-block.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/launchblock_other/nh-launch-long - Copy.pdn";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/!originals/launchblock_other/nh-launch-long-old.pdn";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/!originals/launchblock_other/nh-launch-long.pdn";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/!originals/launchblock_other/nh-launch-long.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/launchblock_other/nh-pastel.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/launchblock_other/nh-postcard - Copy.pdn";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/!originals/launchblock_other/nh-postcard - Copy.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/launchblock_other/nh-postcard.pdn";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/!originals/launchblock_other/nh-postcard.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/launchblock_other/pad-norocket.pdn";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/!originals/launchblock_other/pad-rocket.pdn";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/!originals/splash/splash_x640.jpg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/splash/startup-splash-hero - Copy.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/splash/startup-splash-hero.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/!originals/stemlogo.pdn";
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
@@ -2787,38 +2899,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/component/bt_orig/comp_alice_alt.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/component/bt_orig/comp_alice_hover.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/component/bt_orig/comp_lorri_alt.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/component/bt_orig/comp_lorri_hover.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/component/bt_orig/comp_pepssi_alt.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/component/bt_orig/comp_pepssi_hover.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/component/bt_orig/comp_ralph_alt.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/component/bt_orig/comp_ralph_hover.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
 		id = "assets/images/component/buttonsprites/comp_alice_alt.png";
 		path.set (id, id);
 		
@@ -2927,10 +3007,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/facts/earth-32x.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
 		id = "assets/images/facts/fact0.png";
 		path.set (id, id);
 		
@@ -2947,38 +3023,34 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/facts/facthide.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/found/alicefound.pdn";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
-		id = "assets/images/found/alicefound.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
 		id = "assets/images/found/alice_button_backdrop.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/found/found-template.pdn";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
 		id = "assets/images/found/found_alice.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/found/found_alice_button.pdn";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
 		id = "assets/images/found/found_alice_button.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/found/found_originals/alicefound.pdn";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/found/found_originals/found-template.pdn";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/found/found_originals/found_alice_button.pdn";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/images/found/found_originals/rtg_found.pdn";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
 		id = "assets/images/found/found_pepssi.png";
 		path.set (id, id);
 		
@@ -2987,10 +3059,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/found/rtg_found.pdn";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
 		id = "assets/images/hub/alice_info.png";
 		path.set (id, id);
 		
@@ -3031,10 +3099,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/icon.ico";
-		path.set (id, id);
-		
-		type.set (id, AssetType.BINARY);
 		id = "assets/images/intro/beach.png";
 		path.set (id, id);
 		
@@ -3043,18 +3107,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/intro/original/beach.pdn";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
-		id = "assets/images/intro/original/Untitled.pdn";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
-		id = "assets/images/intro/original/vab.pdn";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
 		id = "assets/images/intro/plane.png";
 		path.set (id, id);
 		
@@ -3076,6 +3128,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/intro/tower.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/intro/tutorial.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -3152,70 +3208,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		type.set (id, AssetType.TEXT);
 		id = "assets/images/launchblock/nh-postcard.png.meta";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
-		id = "assets/images/launchblock/other/nh-atlas-v.pdn";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
-		id = "assets/images/launchblock/other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/launchblock/other/nh-launch-block/nh-static-atlasv-launch.jpg";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/launchblock/other/nh-launch-block.pdn";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
-		id = "assets/images/launchblock/other/nh-launch-block.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/launchblock/other/nh-launch-long - Copy.pdn";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
-		id = "assets/images/launchblock/other/nh-launch-long-old.pdn";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
-		id = "assets/images/launchblock/other/nh-launch-long.pdn";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
-		id = "assets/images/launchblock/other/nh-launch-long.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/launchblock/other/nh-pastel.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/launchblock/other/nh-postcard - Copy.pdn";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
-		id = "assets/images/launchblock/other/nh-postcard - Copy.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/launchblock/other/nh-postcard.pdn";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
-		id = "assets/images/launchblock/other/nh-postcard.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/launchblock/other/pad-norocket.pdn";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
-		id = "assets/images/launchblock/other/pad-rocket.pdn";
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
@@ -3395,18 +3387,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/menu/splash/splash_x640.jpg";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/menu/splash/startup-splash-hero - Copy.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/menu/splash/startup-splash-hero.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
 		id = "assets/images/menu/splash_x640.png";
 		path.set (id, id);
 		
@@ -3415,15 +3395,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/menu/tutorial.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
 		id = "assets/images/misc/320xp.pdn";
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
 		id = "assets/images/misc/320xp.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/misc/earth-32x.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -3439,6 +3419,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/NH.ico";
+		path.set (id, id);
+		
+		type.set (id, AssetType.BINARY);
+		id = "assets/images/nh_large.svg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
 		id = "assets/images/pepssiwire/background.png";
 		path.set (id, id);
 		
@@ -3706,8 +3694,98 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/fonts/OratorStd.otf", __ASSET__assets_fonts_oratorstd_otf);
 		type.set ("assets/fonts/OratorStd.otf", AssetType.FONT);
 		
-		className.set ("assets/images/about/stemlogo.pdn", __ASSET__assets_images_about_stemlogo_pdn);
-		type.set ("assets/images/about/stemlogo.pdn", AssetType.TEXT);
+		className.set ("assets/images/!originals/bt_orig/comp_alice_alt.png", __ASSET__assets_images__originals_bt_orig_comp_alice_alt_png);
+		type.set ("assets/images/!originals/bt_orig/comp_alice_alt.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/bt_orig/comp_alice_hover.png", __ASSET__assets_images__originals_bt_orig_comp_alice_hover_png);
+		type.set ("assets/images/!originals/bt_orig/comp_alice_hover.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/bt_orig/comp_lorri_alt.png", __ASSET__assets_images__originals_bt_orig_comp_lorri_alt_png);
+		type.set ("assets/images/!originals/bt_orig/comp_lorri_alt.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/bt_orig/comp_lorri_hover.png", __ASSET__assets_images__originals_bt_orig_comp_lorri_hover_png);
+		type.set ("assets/images/!originals/bt_orig/comp_lorri_hover.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/bt_orig/comp_pepssi_alt.png", __ASSET__assets_images__originals_bt_orig_comp_pepssi_alt_png);
+		type.set ("assets/images/!originals/bt_orig/comp_pepssi_alt.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/bt_orig/comp_pepssi_hover.png", __ASSET__assets_images__originals_bt_orig_comp_pepssi_hover_png);
+		type.set ("assets/images/!originals/bt_orig/comp_pepssi_hover.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/bt_orig/comp_ralph_alt.png", __ASSET__assets_images__originals_bt_orig_comp_ralph_alt_png);
+		type.set ("assets/images/!originals/bt_orig/comp_ralph_alt.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/bt_orig/comp_ralph_hover.png", __ASSET__assets_images__originals_bt_orig_comp_ralph_hover_png);
+		type.set ("assets/images/!originals/bt_orig/comp_ralph_hover.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/intro_originals/beach.pdn", __ASSET__assets_images__originals_intro_originals_beach_pdn);
+		type.set ("assets/images/!originals/intro_originals/beach.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/intro_originals/Untitled.pdn", __ASSET__assets_images__originals_intro_originals_untitled_pdn);
+		type.set ("assets/images/!originals/intro_originals/Untitled.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/intro_originals/vab.pdn", __ASSET__assets_images__originals_intro_originals_vab_pdn);
+		type.set ("assets/images/!originals/intro_originals/vab.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-atlas-v.pdn", __ASSET__assets_images__originals_launchblock_other_nh_atlas_v_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-atlas-v.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg", __ASSET__assets_images__originals_launchblock_other_nh_launch_block_atlas_v_551_with_new_horizons_on_launch_pad_41_jpg);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-block/nh-static-atlasv-launch.jpg", __ASSET__assets_images__originals_launchblock_other_nh_launch_block_nh_static_atlasv_launch_jpg);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-block/nh-static-atlasv-launch.jpg", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-block.pdn", __ASSET__assets_images__originals_launchblock_other_nh_launch_block_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-block.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-block.png", __ASSET__assets_images__originals_launchblock_other_nh_launch_block_png);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-block.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-long - Copy.pdn", __ASSET__assets_images__originals_launchblock_other_nh_launch_long___copy_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-long - Copy.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-long-old.pdn", __ASSET__assets_images__originals_launchblock_other_nh_launch_long_old_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-long-old.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-long.pdn", __ASSET__assets_images__originals_launchblock_other_nh_launch_long_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-long.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-launch-long.png", __ASSET__assets_images__originals_launchblock_other_nh_launch_long_png);
+		type.set ("assets/images/!originals/launchblock_other/nh-launch-long.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-pastel.png", __ASSET__assets_images__originals_launchblock_other_nh_pastel_png);
+		type.set ("assets/images/!originals/launchblock_other/nh-pastel.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-postcard - Copy.pdn", __ASSET__assets_images__originals_launchblock_other_nh_postcard___copy_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-postcard - Copy.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-postcard - Copy.png", __ASSET__assets_images__originals_launchblock_other_nh_postcard___copy_png);
+		type.set ("assets/images/!originals/launchblock_other/nh-postcard - Copy.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-postcard.pdn", __ASSET__assets_images__originals_launchblock_other_nh_postcard_pdn);
+		type.set ("assets/images/!originals/launchblock_other/nh-postcard.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/nh-postcard.png", __ASSET__assets_images__originals_launchblock_other_nh_postcard_png);
+		type.set ("assets/images/!originals/launchblock_other/nh-postcard.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/launchblock_other/pad-norocket.pdn", __ASSET__assets_images__originals_launchblock_other_pad_norocket_pdn);
+		type.set ("assets/images/!originals/launchblock_other/pad-norocket.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/launchblock_other/pad-rocket.pdn", __ASSET__assets_images__originals_launchblock_other_pad_rocket_pdn);
+		type.set ("assets/images/!originals/launchblock_other/pad-rocket.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/!originals/splash/splash_x640.jpg", __ASSET__assets_images__originals_splash_splash_x640_jpg);
+		type.set ("assets/images/!originals/splash/splash_x640.jpg", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/splash/startup-splash-hero - Copy.png", __ASSET__assets_images__originals_splash_startup_splash_hero___copy_png);
+		type.set ("assets/images/!originals/splash/startup-splash-hero - Copy.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/splash/startup-splash-hero.png", __ASSET__assets_images__originals_splash_startup_splash_hero_png);
+		type.set ("assets/images/!originals/splash/startup-splash-hero.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/!originals/stemlogo.pdn", __ASSET__assets_images__originals_stemlogo_pdn);
+		type.set ("assets/images/!originals/stemlogo.pdn", AssetType.TEXT);
 		
 		className.set ("assets/images/about/stemlogo.png", __ASSET__assets_images_about_stemlogo_png);
 		type.set ("assets/images/about/stemlogo.png", AssetType.IMAGE);
@@ -3808,30 +3886,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/alicemaze/player.png", __ASSET__assets_images_alicemaze_player_png);
 		type.set ("assets/images/alicemaze/player.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/component/bt_orig/comp_alice_alt.png", __ASSET__assets_images_component_bt_orig_comp_alice_alt_png);
-		type.set ("assets/images/component/bt_orig/comp_alice_alt.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/component/bt_orig/comp_alice_hover.png", __ASSET__assets_images_component_bt_orig_comp_alice_hover_png);
-		type.set ("assets/images/component/bt_orig/comp_alice_hover.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/component/bt_orig/comp_lorri_alt.png", __ASSET__assets_images_component_bt_orig_comp_lorri_alt_png);
-		type.set ("assets/images/component/bt_orig/comp_lorri_alt.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/component/bt_orig/comp_lorri_hover.png", __ASSET__assets_images_component_bt_orig_comp_lorri_hover_png);
-		type.set ("assets/images/component/bt_orig/comp_lorri_hover.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/component/bt_orig/comp_pepssi_alt.png", __ASSET__assets_images_component_bt_orig_comp_pepssi_alt_png);
-		type.set ("assets/images/component/bt_orig/comp_pepssi_alt.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/component/bt_orig/comp_pepssi_hover.png", __ASSET__assets_images_component_bt_orig_comp_pepssi_hover_png);
-		type.set ("assets/images/component/bt_orig/comp_pepssi_hover.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/component/bt_orig/comp_ralph_alt.png", __ASSET__assets_images_component_bt_orig_comp_ralph_alt_png);
-		type.set ("assets/images/component/bt_orig/comp_ralph_alt.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/component/bt_orig/comp_ralph_hover.png", __ASSET__assets_images_component_bt_orig_comp_ralph_hover_png);
-		type.set ("assets/images/component/bt_orig/comp_ralph_hover.png", AssetType.IMAGE);
-		
 		className.set ("assets/images/component/buttonsprites/comp_alice_alt.png", __ASSET__assets_images_component_buttonsprites_comp_alice_alt_png);
 		type.set ("assets/images/component/buttonsprites/comp_alice_alt.png", AssetType.IMAGE);
 		
@@ -3913,9 +3967,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/component/nh_large.png", __ASSET__assets_images_component_nh_large_png);
 		type.set ("assets/images/component/nh_large.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/facts/earth-32x.png", __ASSET__assets_images_facts_earth_32x_png);
-		type.set ("assets/images/facts/earth-32x.png", AssetType.IMAGE);
-		
 		className.set ("assets/images/facts/fact0.png", __ASSET__assets_images_facts_fact0_png);
 		type.set ("assets/images/facts/fact0.png", AssetType.IMAGE);
 		
@@ -3928,38 +3979,32 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/facts/fact3.png", __ASSET__assets_images_facts_fact3_png);
 		type.set ("assets/images/facts/fact3.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/facts/facthide.png", __ASSET__assets_images_facts_facthide_png);
-		type.set ("assets/images/facts/facthide.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/found/alicefound.pdn", __ASSET__assets_images_found_alicefound_pdn);
-		type.set ("assets/images/found/alicefound.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/found/alicefound.png", __ASSET__assets_images_found_alicefound_png);
-		type.set ("assets/images/found/alicefound.png", AssetType.IMAGE);
-		
 		className.set ("assets/images/found/alice_button_backdrop.png", __ASSET__assets_images_found_alice_button_backdrop_png);
 		type.set ("assets/images/found/alice_button_backdrop.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/found/found-template.pdn", __ASSET__assets_images_found_found_template_pdn);
-		type.set ("assets/images/found/found-template.pdn", AssetType.TEXT);
 		
 		className.set ("assets/images/found/found_alice.png", __ASSET__assets_images_found_found_alice_png);
 		type.set ("assets/images/found/found_alice.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/found/found_alice_button.pdn", __ASSET__assets_images_found_found_alice_button_pdn);
-		type.set ("assets/images/found/found_alice_button.pdn", AssetType.TEXT);
-		
 		className.set ("assets/images/found/found_alice_button.png", __ASSET__assets_images_found_found_alice_button_png);
 		type.set ("assets/images/found/found_alice_button.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/found/found_originals/alicefound.pdn", __ASSET__assets_images_found_found_originals_alicefound_pdn);
+		type.set ("assets/images/found/found_originals/alicefound.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/found/found_originals/found-template.pdn", __ASSET__assets_images_found_found_originals_found_template_pdn);
+		type.set ("assets/images/found/found_originals/found-template.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/found/found_originals/found_alice_button.pdn", __ASSET__assets_images_found_found_originals_found_alice_button_pdn);
+		type.set ("assets/images/found/found_originals/found_alice_button.pdn", AssetType.TEXT);
+		
+		className.set ("assets/images/found/found_originals/rtg_found.pdn", __ASSET__assets_images_found_found_originals_rtg_found_pdn);
+		type.set ("assets/images/found/found_originals/rtg_found.pdn", AssetType.TEXT);
 		
 		className.set ("assets/images/found/found_pepssi.png", __ASSET__assets_images_found_found_pepssi_png);
 		type.set ("assets/images/found/found_pepssi.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/found/found_pepssi_button.png", __ASSET__assets_images_found_found_pepssi_button_png);
 		type.set ("assets/images/found/found_pepssi_button.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/found/rtg_found.pdn", __ASSET__assets_images_found_rtg_found_pdn);
-		type.set ("assets/images/found/rtg_found.pdn", AssetType.TEXT);
 		
 		className.set ("assets/images/hub/alice_info.png", __ASSET__assets_images_hub_alice_info_png);
 		type.set ("assets/images/hub/alice_info.png", AssetType.IMAGE);
@@ -3991,23 +4036,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/hub/swap_info.png", __ASSET__assets_images_hub_swap_info_png);
 		type.set ("assets/images/hub/swap_info.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/icon.ico", __ASSET__assets_images_icon_ico);
-		type.set ("assets/images/icon.ico", AssetType.BINARY);
-		
 		className.set ("assets/images/intro/beach.png", __ASSET__assets_images_intro_beach_png);
 		type.set ("assets/images/intro/beach.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/intro/name.png", __ASSET__assets_images_intro_name_png);
 		type.set ("assets/images/intro/name.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/intro/original/beach.pdn", __ASSET__assets_images_intro_original_beach_pdn);
-		type.set ("assets/images/intro/original/beach.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/intro/original/Untitled.pdn", __ASSET__assets_images_intro_original_untitled_pdn);
-		type.set ("assets/images/intro/original/Untitled.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/intro/original/vab.pdn", __ASSET__assets_images_intro_original_vab_pdn);
-		type.set ("assets/images/intro/original/vab.pdn", AssetType.TEXT);
 		
 		className.set ("assets/images/intro/plane.png", __ASSET__assets_images_intro_plane_png);
 		type.set ("assets/images/intro/plane.png", AssetType.IMAGE);
@@ -4026,6 +4059,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/intro/tower.png", __ASSET__assets_images_intro_tower_png);
 		type.set ("assets/images/intro/tower.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/intro/tutorial.png", __ASSET__assets_images_intro_tutorial_png);
+		type.set ("assets/images/intro/tutorial.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/intro/vab.png", __ASSET__assets_images_intro_vab_png);
 		type.set ("assets/images/intro/vab.png", AssetType.IMAGE);
@@ -4083,54 +4119,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/launchblock/nh-postcard.png.meta", __ASSET__assets_images_launchblock_nh_postcard_png_meta);
 		type.set ("assets/images/launchblock/nh-postcard.png.meta", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/nh-atlas-v.pdn", __ASSET__assets_images_launchblock_other_nh_atlas_v_pdn);
-		type.set ("assets/images/launchblock/other/nh-atlas-v.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg", __ASSET__assets_images_launchblock_other_nh_launch_block_atlas_v_551_with_new_horizons_on_launch_pad_41_jpg);
-		type.set ("assets/images/launchblock/other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg", AssetType.IMAGE);
-		
-		className.set ("assets/images/launchblock/other/nh-launch-block/nh-static-atlasv-launch.jpg", __ASSET__assets_images_launchblock_other_nh_launch_block_nh_static_atlasv_launch_jpg);
-		type.set ("assets/images/launchblock/other/nh-launch-block/nh-static-atlasv-launch.jpg", AssetType.IMAGE);
-		
-		className.set ("assets/images/launchblock/other/nh-launch-block.pdn", __ASSET__assets_images_launchblock_other_nh_launch_block_pdn);
-		type.set ("assets/images/launchblock/other/nh-launch-block.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/nh-launch-block.png", __ASSET__assets_images_launchblock_other_nh_launch_block_png);
-		type.set ("assets/images/launchblock/other/nh-launch-block.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/launchblock/other/nh-launch-long - Copy.pdn", __ASSET__assets_images_launchblock_other_nh_launch_long___copy_pdn);
-		type.set ("assets/images/launchblock/other/nh-launch-long - Copy.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/nh-launch-long-old.pdn", __ASSET__assets_images_launchblock_other_nh_launch_long_old_pdn);
-		type.set ("assets/images/launchblock/other/nh-launch-long-old.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/nh-launch-long.pdn", __ASSET__assets_images_launchblock_other_nh_launch_long_pdn);
-		type.set ("assets/images/launchblock/other/nh-launch-long.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/nh-launch-long.png", __ASSET__assets_images_launchblock_other_nh_launch_long_png);
-		type.set ("assets/images/launchblock/other/nh-launch-long.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/launchblock/other/nh-pastel.png", __ASSET__assets_images_launchblock_other_nh_pastel_png);
-		type.set ("assets/images/launchblock/other/nh-pastel.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/launchblock/other/nh-postcard - Copy.pdn", __ASSET__assets_images_launchblock_other_nh_postcard___copy_pdn);
-		type.set ("assets/images/launchblock/other/nh-postcard - Copy.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/nh-postcard - Copy.png", __ASSET__assets_images_launchblock_other_nh_postcard___copy_png);
-		type.set ("assets/images/launchblock/other/nh-postcard - Copy.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/launchblock/other/nh-postcard.pdn", __ASSET__assets_images_launchblock_other_nh_postcard_pdn);
-		type.set ("assets/images/launchblock/other/nh-postcard.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/nh-postcard.png", __ASSET__assets_images_launchblock_other_nh_postcard_png);
-		type.set ("assets/images/launchblock/other/nh-postcard.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/launchblock/other/pad-norocket.pdn", __ASSET__assets_images_launchblock_other_pad_norocket_pdn);
-		type.set ("assets/images/launchblock/other/pad-norocket.pdn", AssetType.TEXT);
-		
-		className.set ("assets/images/launchblock/other/pad-rocket.pdn", __ASSET__assets_images_launchblock_other_pad_rocket_pdn);
-		type.set ("assets/images/launchblock/other/pad-rocket.pdn", AssetType.TEXT);
 		
 		className.set ("assets/images/launchblock/pad-norocket.png", __ASSET__assets_images_launchblock_pad_norocket_png);
 		type.set ("assets/images/launchblock/pad-norocket.png", AssetType.IMAGE);
@@ -4264,29 +4252,20 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/menu/moons/StyxOrbit.png", __ASSET__assets_images_menu_moons_styxorbit_png);
 		type.set ("assets/images/menu/moons/StyxOrbit.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/menu/splash/splash_x640.jpg", __ASSET__assets_images_menu_splash_splash_x640_jpg);
-		type.set ("assets/images/menu/splash/splash_x640.jpg", AssetType.IMAGE);
-		
-		className.set ("assets/images/menu/splash/startup-splash-hero - Copy.png", __ASSET__assets_images_menu_splash_startup_splash_hero___copy_png);
-		type.set ("assets/images/menu/splash/startup-splash-hero - Copy.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/menu/splash/startup-splash-hero.png", __ASSET__assets_images_menu_splash_startup_splash_hero_png);
-		type.set ("assets/images/menu/splash/startup-splash-hero.png", AssetType.IMAGE);
-		
 		className.set ("assets/images/menu/splash_x640.png", __ASSET__assets_images_menu_splash_x640_png);
 		type.set ("assets/images/menu/splash_x640.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/menu/starback.png", __ASSET__assets_images_menu_starback_png);
 		type.set ("assets/images/menu/starback.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/menu/tutorial.png", __ASSET__assets_images_menu_tutorial_png);
-		type.set ("assets/images/menu/tutorial.png", AssetType.IMAGE);
-		
 		className.set ("assets/images/misc/320xp.pdn", __ASSET__assets_images_misc_320xp_pdn);
 		type.set ("assets/images/misc/320xp.pdn", AssetType.TEXT);
 		
 		className.set ("assets/images/misc/320xp.png", __ASSET__assets_images_misc_320xp_png);
 		type.set ("assets/images/misc/320xp.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/misc/earth-32x.png", __ASSET__assets_images_misc_earth_32x_png);
+		type.set ("assets/images/misc/earth-32x.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/misc/pls.png", __ASSET__assets_images_misc_pls_png);
 		type.set ("assets/images/misc/pls.png", AssetType.IMAGE);
@@ -4296,6 +4275,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/mute/MuteOn.png", __ASSET__assets_images_mute_muteon_png);
 		type.set ("assets/images/mute/MuteOn.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/NH.ico", __ASSET__assets_images_nh_ico);
+		type.set ("assets/images/NH.ico", AssetType.BINARY);
+		
+		className.set ("assets/images/nh_large.svg", __ASSET__assets_images_nh_large_svg);
+		type.set ("assets/images/nh_large.svg", AssetType.TEXT);
 		
 		className.set ("assets/images/pepssiwire/background.png", __ASSET__assets_images_pepssiwire_background_png);
 		type.set ("assets/images/pepssiwire/background.png", AssetType.IMAGE);
@@ -5192,7 +5177,37 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_data_plats_oel extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_data_rtgmap_oep extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_fonts_oratorstd_otf extends null { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_about_stemlogo_pdn extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_alice_alt_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_alice_hover_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_lorri_alt_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_lorri_hover_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_pepssi_alt_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_pepssi_hover_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_ralph_alt_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_ralph_hover_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_intro_originals_beach_pdn extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_intro_originals_untitled_pdn extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_intro_originals_vab_pdn extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_atlas_v_pdn extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_block_atlas_v_551_with_new_horizons_on_launch_pad_41_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_block_nh_static_atlasv_launch_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_block_pdn extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_block_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_long___copy_pdn extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_long_old_pdn extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_long_pdn extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_long_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_pastel_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_postcard___copy_pdn extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_postcard___copy_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_postcard_pdn extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_postcard_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_launchblock_other_pad_norocket_pdn extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_launchblock_other_pad_rocket_pdn extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_splash_splash_x640_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_splash_startup_splash_hero___copy_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_splash_startup_splash_hero_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images__originals_stemlogo_pdn extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_about_stemlogo_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_about_title_about_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_alicemaze_alice_hit_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -5226,14 +5241,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_alicemaze_dialogue_wasd_wasd_w_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_alicemaze_dialogue_wasd_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_alicemaze_player_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_component_bt_orig_comp_alice_alt_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_component_bt_orig_comp_alice_hover_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_component_bt_orig_comp_lorri_alt_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_component_bt_orig_comp_lorri_hover_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_component_bt_orig_comp_pepssi_alt_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_component_bt_orig_comp_pepssi_hover_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_component_bt_orig_comp_ralph_alt_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_component_bt_orig_comp_ralph_hover_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_component_buttonsprites_comp_alice_alt_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_component_buttonsprites_comp_alice_d_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_component_buttonsprites_comp_heat_alt_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -5261,22 +5268,19 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_component_comp_swap_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_component_nh_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_component_nh_large_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_facts_earth_32x_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_facts_fact0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_facts_fact1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_facts_fact2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_facts_fact3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_facts_facthide_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_found_alicefound_pdn extends null { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_found_alicefound_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_found_alice_button_backdrop_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_found_found_template_pdn extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_found_found_alice_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_found_found_alice_button_pdn extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_found_found_alice_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_found_found_originals_alicefound_pdn extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_found_found_originals_found_template_pdn extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_found_found_originals_found_alice_button_pdn extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_found_found_originals_rtg_found_pdn extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_found_found_pepssi_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_found_found_pepssi_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_found_rtg_found_pdn extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_hub_alice_info_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_hub_blockout_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_hub_components_hero_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -5287,18 +5291,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_hub_rex_info_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_hub_rtg_info_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_hub_swap_info_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_icon_ico extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_intro_beach_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_intro_name_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_intro_original_beach_pdn extends null { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_intro_original_untitled_pdn extends null { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_intro_original_vab_pdn extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_intro_plane_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_intro_text0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_intro_text1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_intro_text2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_intro_text3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_intro_tower_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_intro_tutorial_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_intro_vab_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_cloud0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_cloud1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -5318,22 +5319,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_nh_postcard_skeu_png_meta extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_nh_postcard_pdn_meta extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_nh_postcard_png_meta extends null { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_other_nh_atlas_v_pdn extends null { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_block_atlas_v_551_with_new_horizons_on_launch_pad_41_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_block_nh_static_atlasv_launch_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_block_pdn extends null { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_block_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_long___copy_pdn extends null { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_long_old_pdn extends null { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_long_pdn extends null { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_long_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_other_nh_pastel_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_other_nh_postcard___copy_pdn extends null { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_other_nh_postcard___copy_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_other_nh_postcard_pdn extends null { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_other_nh_postcard_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_other_pad_norocket_pdn extends null { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_other_pad_rocket_pdn extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_pad_norocket_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_pad_rocket_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_launchblock_skyback___copy_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -5378,17 +5363,16 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_menu_moons_original_styx_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_menu_moons_pluto_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_menu_moons_styxorbit_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_menu_splash_splash_x640_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_menu_splash_startup_splash_hero___copy_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_menu_splash_startup_splash_hero_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_menu_splash_x640_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_menu_starback_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_menu_tutorial_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_misc_320xp_pdn extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_misc_320xp_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_misc_earth_32x_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_misc_pls_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_mute_mute_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_mute_muteon_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_nh_ico extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_nh_large_svg extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_pepssiwire_background_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_pepssiwire_bblue_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_pepssiwire_box___copy_pdn extends null { }
@@ -5710,7 +5694,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
-
 @:keep #if display private #end class __ASSET__assets_fonts_nokiafc22_ttf extends lime.text.Font { public function new () { super (); name = "Nokia Cellphone FC Small"; } } 
 @:keep #if display private #end class __ASSET__assets_fonts_arial_ttf extends lime.text.Font { public function new () { super (); name = "Arial"; } } 
 
@@ -5727,7 +5710,37 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:file("assets/data/plats.oel") #if display private #end class __ASSET__assets_data_plats_oel extends lime.utils.ByteArray {}
 @:file("assets/data/rtgmap.oep") #if display private #end class __ASSET__assets_data_rtgmap_oep extends lime.utils.ByteArray {}
 @:font("assets/fonts/OratorStd.otf") #if display private #end class __ASSET__assets_fonts_oratorstd_otf extends lime.text.Font {}
-@:file("assets/images/about/stemlogo.pdn") #if display private #end class __ASSET__assets_images_about_stemlogo_pdn extends lime.utils.ByteArray {}
+@:image("assets/images/!originals/bt_orig/comp_alice_alt.png") #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_alice_alt_png extends lime.graphics.Image {}
+@:image("assets/images/!originals/bt_orig/comp_alice_hover.png") #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_alice_hover_png extends lime.graphics.Image {}
+@:image("assets/images/!originals/bt_orig/comp_lorri_alt.png") #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_lorri_alt_png extends lime.graphics.Image {}
+@:image("assets/images/!originals/bt_orig/comp_lorri_hover.png") #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_lorri_hover_png extends lime.graphics.Image {}
+@:image("assets/images/!originals/bt_orig/comp_pepssi_alt.png") #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_pepssi_alt_png extends lime.graphics.Image {}
+@:image("assets/images/!originals/bt_orig/comp_pepssi_hover.png") #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_pepssi_hover_png extends lime.graphics.Image {}
+@:image("assets/images/!originals/bt_orig/comp_ralph_alt.png") #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_ralph_alt_png extends lime.graphics.Image {}
+@:image("assets/images/!originals/bt_orig/comp_ralph_hover.png") #if display private #end class __ASSET__assets_images__originals_bt_orig_comp_ralph_hover_png extends lime.graphics.Image {}
+@:file("assets/images/!originals/intro_originals/beach.pdn") #if display private #end class __ASSET__assets_images__originals_intro_originals_beach_pdn extends lime.utils.ByteArray {}
+@:file("assets/images/!originals/intro_originals/Untitled.pdn") #if display private #end class __ASSET__assets_images__originals_intro_originals_untitled_pdn extends lime.utils.ByteArray {}
+@:file("assets/images/!originals/intro_originals/vab.pdn") #if display private #end class __ASSET__assets_images__originals_intro_originals_vab_pdn extends lime.utils.ByteArray {}
+@:file("assets/images/!originals/launchblock_other/nh-atlas-v.pdn") #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_atlas_v_pdn extends lime.utils.ByteArray {}
+@:image("assets/images/!originals/launchblock_other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg") #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_block_atlas_v_551_with_new_horizons_on_launch_pad_41_jpg extends lime.graphics.Image {}
+@:image("assets/images/!originals/launchblock_other/nh-launch-block/nh-static-atlasv-launch.jpg") #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_block_nh_static_atlasv_launch_jpg extends lime.graphics.Image {}
+@:file("assets/images/!originals/launchblock_other/nh-launch-block.pdn") #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_block_pdn extends lime.utils.ByteArray {}
+@:image("assets/images/!originals/launchblock_other/nh-launch-block.png") #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_block_png extends lime.graphics.Image {}
+@:file("assets/images/!originals/launchblock_other/nh-launch-long - Copy.pdn") #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_long___copy_pdn extends lime.utils.ByteArray {}
+@:file("assets/images/!originals/launchblock_other/nh-launch-long-old.pdn") #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_long_old_pdn extends lime.utils.ByteArray {}
+@:file("assets/images/!originals/launchblock_other/nh-launch-long.pdn") #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_long_pdn extends lime.utils.ByteArray {}
+@:image("assets/images/!originals/launchblock_other/nh-launch-long.png") #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_launch_long_png extends lime.graphics.Image {}
+@:image("assets/images/!originals/launchblock_other/nh-pastel.png") #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_pastel_png extends lime.graphics.Image {}
+@:file("assets/images/!originals/launchblock_other/nh-postcard - Copy.pdn") #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_postcard___copy_pdn extends lime.utils.ByteArray {}
+@:image("assets/images/!originals/launchblock_other/nh-postcard - Copy.png") #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_postcard___copy_png extends lime.graphics.Image {}
+@:file("assets/images/!originals/launchblock_other/nh-postcard.pdn") #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_postcard_pdn extends lime.utils.ByteArray {}
+@:image("assets/images/!originals/launchblock_other/nh-postcard.png") #if display private #end class __ASSET__assets_images__originals_launchblock_other_nh_postcard_png extends lime.graphics.Image {}
+@:file("assets/images/!originals/launchblock_other/pad-norocket.pdn") #if display private #end class __ASSET__assets_images__originals_launchblock_other_pad_norocket_pdn extends lime.utils.ByteArray {}
+@:file("assets/images/!originals/launchblock_other/pad-rocket.pdn") #if display private #end class __ASSET__assets_images__originals_launchblock_other_pad_rocket_pdn extends lime.utils.ByteArray {}
+@:image("assets/images/!originals/splash/splash_x640.jpg") #if display private #end class __ASSET__assets_images__originals_splash_splash_x640_jpg extends lime.graphics.Image {}
+@:image("assets/images/!originals/splash/startup-splash-hero - Copy.png") #if display private #end class __ASSET__assets_images__originals_splash_startup_splash_hero___copy_png extends lime.graphics.Image {}
+@:image("assets/images/!originals/splash/startup-splash-hero.png") #if display private #end class __ASSET__assets_images__originals_splash_startup_splash_hero_png extends lime.graphics.Image {}
+@:file("assets/images/!originals/stemlogo.pdn") #if display private #end class __ASSET__assets_images__originals_stemlogo_pdn extends lime.utils.ByteArray {}
 @:image("assets/images/about/stemlogo.png") #if display private #end class __ASSET__assets_images_about_stemlogo_png extends lime.graphics.Image {}
 @:image("assets/images/about/title_about.png") #if display private #end class __ASSET__assets_images_about_title_about_png extends lime.graphics.Image {}
 @:image("assets/images/alicemaze/alice_hit.png") #if display private #end class __ASSET__assets_images_alicemaze_alice_hit_png extends lime.graphics.Image {}
@@ -5761,14 +5774,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:image("assets/images/alicemaze/dialogue/wasd/wasd_w.png") #if display private #end class __ASSET__assets_images_alicemaze_dialogue_wasd_wasd_w_png extends lime.graphics.Image {}
 @:image("assets/images/alicemaze/dialogue/wasd.png") #if display private #end class __ASSET__assets_images_alicemaze_dialogue_wasd_png extends lime.graphics.Image {}
 @:image("assets/images/alicemaze/player.png") #if display private #end class __ASSET__assets_images_alicemaze_player_png extends lime.graphics.Image {}
-@:image("assets/images/component/bt_orig/comp_alice_alt.png") #if display private #end class __ASSET__assets_images_component_bt_orig_comp_alice_alt_png extends lime.graphics.Image {}
-@:image("assets/images/component/bt_orig/comp_alice_hover.png") #if display private #end class __ASSET__assets_images_component_bt_orig_comp_alice_hover_png extends lime.graphics.Image {}
-@:image("assets/images/component/bt_orig/comp_lorri_alt.png") #if display private #end class __ASSET__assets_images_component_bt_orig_comp_lorri_alt_png extends lime.graphics.Image {}
-@:image("assets/images/component/bt_orig/comp_lorri_hover.png") #if display private #end class __ASSET__assets_images_component_bt_orig_comp_lorri_hover_png extends lime.graphics.Image {}
-@:image("assets/images/component/bt_orig/comp_pepssi_alt.png") #if display private #end class __ASSET__assets_images_component_bt_orig_comp_pepssi_alt_png extends lime.graphics.Image {}
-@:image("assets/images/component/bt_orig/comp_pepssi_hover.png") #if display private #end class __ASSET__assets_images_component_bt_orig_comp_pepssi_hover_png extends lime.graphics.Image {}
-@:image("assets/images/component/bt_orig/comp_ralph_alt.png") #if display private #end class __ASSET__assets_images_component_bt_orig_comp_ralph_alt_png extends lime.graphics.Image {}
-@:image("assets/images/component/bt_orig/comp_ralph_hover.png") #if display private #end class __ASSET__assets_images_component_bt_orig_comp_ralph_hover_png extends lime.graphics.Image {}
 @:image("assets/images/component/buttonsprites/comp_alice_alt.png") #if display private #end class __ASSET__assets_images_component_buttonsprites_comp_alice_alt_png extends lime.graphics.Image {}
 @:image("assets/images/component/buttonsprites/comp_alice_d.png") #if display private #end class __ASSET__assets_images_component_buttonsprites_comp_alice_d_png extends lime.graphics.Image {}
 @:image("assets/images/component/buttonsprites/comp_heat_alt.png") #if display private #end class __ASSET__assets_images_component_buttonsprites_comp_heat_alt_png extends lime.graphics.Image {}
@@ -5796,22 +5801,19 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:image("assets/images/component/comp_swap.png") #if display private #end class __ASSET__assets_images_component_comp_swap_png extends lime.graphics.Image {}
 @:image("assets/images/component/NH.png") #if display private #end class __ASSET__assets_images_component_nh_png extends lime.graphics.Image {}
 @:image("assets/images/component/nh_large.png") #if display private #end class __ASSET__assets_images_component_nh_large_png extends lime.graphics.Image {}
-@:image("assets/images/facts/earth-32x.png") #if display private #end class __ASSET__assets_images_facts_earth_32x_png extends lime.graphics.Image {}
 @:image("assets/images/facts/fact0.png") #if display private #end class __ASSET__assets_images_facts_fact0_png extends lime.graphics.Image {}
 @:image("assets/images/facts/fact1.png") #if display private #end class __ASSET__assets_images_facts_fact1_png extends lime.graphics.Image {}
 @:image("assets/images/facts/fact2.png") #if display private #end class __ASSET__assets_images_facts_fact2_png extends lime.graphics.Image {}
 @:image("assets/images/facts/fact3.png") #if display private #end class __ASSET__assets_images_facts_fact3_png extends lime.graphics.Image {}
-@:image("assets/images/facts/facthide.png") #if display private #end class __ASSET__assets_images_facts_facthide_png extends lime.graphics.Image {}
-@:file("assets/images/found/alicefound.pdn") #if display private #end class __ASSET__assets_images_found_alicefound_pdn extends lime.utils.ByteArray {}
-@:image("assets/images/found/alicefound.png") #if display private #end class __ASSET__assets_images_found_alicefound_png extends lime.graphics.Image {}
 @:image("assets/images/found/alice_button_backdrop.png") #if display private #end class __ASSET__assets_images_found_alice_button_backdrop_png extends lime.graphics.Image {}
-@:file("assets/images/found/found-template.pdn") #if display private #end class __ASSET__assets_images_found_found_template_pdn extends lime.utils.ByteArray {}
 @:image("assets/images/found/found_alice.png") #if display private #end class __ASSET__assets_images_found_found_alice_png extends lime.graphics.Image {}
-@:file("assets/images/found/found_alice_button.pdn") #if display private #end class __ASSET__assets_images_found_found_alice_button_pdn extends lime.utils.ByteArray {}
 @:image("assets/images/found/found_alice_button.png") #if display private #end class __ASSET__assets_images_found_found_alice_button_png extends lime.graphics.Image {}
+@:file("assets/images/found/found_originals/alicefound.pdn") #if display private #end class __ASSET__assets_images_found_found_originals_alicefound_pdn extends lime.utils.ByteArray {}
+@:file("assets/images/found/found_originals/found-template.pdn") #if display private #end class __ASSET__assets_images_found_found_originals_found_template_pdn extends lime.utils.ByteArray {}
+@:file("assets/images/found/found_originals/found_alice_button.pdn") #if display private #end class __ASSET__assets_images_found_found_originals_found_alice_button_pdn extends lime.utils.ByteArray {}
+@:file("assets/images/found/found_originals/rtg_found.pdn") #if display private #end class __ASSET__assets_images_found_found_originals_rtg_found_pdn extends lime.utils.ByteArray {}
 @:image("assets/images/found/found_pepssi.png") #if display private #end class __ASSET__assets_images_found_found_pepssi_png extends lime.graphics.Image {}
 @:image("assets/images/found/found_pepssi_button.png") #if display private #end class __ASSET__assets_images_found_found_pepssi_button_png extends lime.graphics.Image {}
-@:file("assets/images/found/rtg_found.pdn") #if display private #end class __ASSET__assets_images_found_rtg_found_pdn extends lime.utils.ByteArray {}
 @:image("assets/images/hub/alice_info.png") #if display private #end class __ASSET__assets_images_hub_alice_info_png extends lime.graphics.Image {}
 @:image("assets/images/hub/blockout.png") #if display private #end class __ASSET__assets_images_hub_blockout_png extends lime.graphics.Image {}
 @:image("assets/images/hub/components_hero.png") #if display private #end class __ASSET__assets_images_hub_components_hero_png extends lime.graphics.Image {}
@@ -5822,18 +5824,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:image("assets/images/hub/rex_info.png") #if display private #end class __ASSET__assets_images_hub_rex_info_png extends lime.graphics.Image {}
 @:image("assets/images/hub/rtg_info.png") #if display private #end class __ASSET__assets_images_hub_rtg_info_png extends lime.graphics.Image {}
 @:image("assets/images/hub/swap_info.png") #if display private #end class __ASSET__assets_images_hub_swap_info_png extends lime.graphics.Image {}
-@:file("assets/images/icon.ico") #if display private #end class __ASSET__assets_images_icon_ico extends lime.utils.ByteArray {}
 @:image("assets/images/intro/beach.png") #if display private #end class __ASSET__assets_images_intro_beach_png extends lime.graphics.Image {}
 @:image("assets/images/intro/name.png") #if display private #end class __ASSET__assets_images_intro_name_png extends lime.graphics.Image {}
-@:file("assets/images/intro/original/beach.pdn") #if display private #end class __ASSET__assets_images_intro_original_beach_pdn extends lime.utils.ByteArray {}
-@:file("assets/images/intro/original/Untitled.pdn") #if display private #end class __ASSET__assets_images_intro_original_untitled_pdn extends lime.utils.ByteArray {}
-@:file("assets/images/intro/original/vab.pdn") #if display private #end class __ASSET__assets_images_intro_original_vab_pdn extends lime.utils.ByteArray {}
 @:image("assets/images/intro/plane.png") #if display private #end class __ASSET__assets_images_intro_plane_png extends lime.graphics.Image {}
 @:image("assets/images/intro/text0.png") #if display private #end class __ASSET__assets_images_intro_text0_png extends lime.graphics.Image {}
 @:image("assets/images/intro/text1.png") #if display private #end class __ASSET__assets_images_intro_text1_png extends lime.graphics.Image {}
 @:image("assets/images/intro/text2.png") #if display private #end class __ASSET__assets_images_intro_text2_png extends lime.graphics.Image {}
 @:image("assets/images/intro/text3.png") #if display private #end class __ASSET__assets_images_intro_text3_png extends lime.graphics.Image {}
 @:image("assets/images/intro/tower.png") #if display private #end class __ASSET__assets_images_intro_tower_png extends lime.graphics.Image {}
+@:image("assets/images/intro/tutorial.png") #if display private #end class __ASSET__assets_images_intro_tutorial_png extends lime.graphics.Image {}
 @:image("assets/images/intro/vab.png") #if display private #end class __ASSET__assets_images_intro_vab_png extends lime.graphics.Image {}
 @:image("assets/images/launchblock/cloud0.png") #if display private #end class __ASSET__assets_images_launchblock_cloud0_png extends lime.graphics.Image {}
 @:image("assets/images/launchblock/cloud1.png") #if display private #end class __ASSET__assets_images_launchblock_cloud1_png extends lime.graphics.Image {}
@@ -5853,22 +5852,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:file("assets/images/launchblock/nh-postcard-skeu.png.meta") #if display private #end class __ASSET__assets_images_launchblock_nh_postcard_skeu_png_meta extends lime.utils.ByteArray {}
 @:file("assets/images/launchblock/nh-postcard.pdn.meta") #if display private #end class __ASSET__assets_images_launchblock_nh_postcard_pdn_meta extends lime.utils.ByteArray {}
 @:file("assets/images/launchblock/nh-postcard.png.meta") #if display private #end class __ASSET__assets_images_launchblock_nh_postcard_png_meta extends lime.utils.ByteArray {}
-@:file("assets/images/launchblock/other/nh-atlas-v.pdn") #if display private #end class __ASSET__assets_images_launchblock_other_nh_atlas_v_pdn extends lime.utils.ByteArray {}
-@:image("assets/images/launchblock/other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg") #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_block_atlas_v_551_with_new_horizons_on_launch_pad_41_jpg extends lime.graphics.Image {}
-@:image("assets/images/launchblock/other/nh-launch-block/nh-static-atlasv-launch.jpg") #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_block_nh_static_atlasv_launch_jpg extends lime.graphics.Image {}
-@:file("assets/images/launchblock/other/nh-launch-block.pdn") #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_block_pdn extends lime.utils.ByteArray {}
-@:image("assets/images/launchblock/other/nh-launch-block.png") #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_block_png extends lime.graphics.Image {}
-@:file("assets/images/launchblock/other/nh-launch-long - Copy.pdn") #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_long___copy_pdn extends lime.utils.ByteArray {}
-@:file("assets/images/launchblock/other/nh-launch-long-old.pdn") #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_long_old_pdn extends lime.utils.ByteArray {}
-@:file("assets/images/launchblock/other/nh-launch-long.pdn") #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_long_pdn extends lime.utils.ByteArray {}
-@:image("assets/images/launchblock/other/nh-launch-long.png") #if display private #end class __ASSET__assets_images_launchblock_other_nh_launch_long_png extends lime.graphics.Image {}
-@:image("assets/images/launchblock/other/nh-pastel.png") #if display private #end class __ASSET__assets_images_launchblock_other_nh_pastel_png extends lime.graphics.Image {}
-@:file("assets/images/launchblock/other/nh-postcard - Copy.pdn") #if display private #end class __ASSET__assets_images_launchblock_other_nh_postcard___copy_pdn extends lime.utils.ByteArray {}
-@:image("assets/images/launchblock/other/nh-postcard - Copy.png") #if display private #end class __ASSET__assets_images_launchblock_other_nh_postcard___copy_png extends lime.graphics.Image {}
-@:file("assets/images/launchblock/other/nh-postcard.pdn") #if display private #end class __ASSET__assets_images_launchblock_other_nh_postcard_pdn extends lime.utils.ByteArray {}
-@:image("assets/images/launchblock/other/nh-postcard.png") #if display private #end class __ASSET__assets_images_launchblock_other_nh_postcard_png extends lime.graphics.Image {}
-@:file("assets/images/launchblock/other/pad-norocket.pdn") #if display private #end class __ASSET__assets_images_launchblock_other_pad_norocket_pdn extends lime.utils.ByteArray {}
-@:file("assets/images/launchblock/other/pad-rocket.pdn") #if display private #end class __ASSET__assets_images_launchblock_other_pad_rocket_pdn extends lime.utils.ByteArray {}
 @:image("assets/images/launchblock/pad-norocket.png") #if display private #end class __ASSET__assets_images_launchblock_pad_norocket_png extends lime.graphics.Image {}
 @:image("assets/images/launchblock/pad-rocket.png") #if display private #end class __ASSET__assets_images_launchblock_pad_rocket_png extends lime.graphics.Image {}
 @:image("assets/images/launchblock/skyback - Copy.png") #if display private #end class __ASSET__assets_images_launchblock_skyback___copy_png extends lime.graphics.Image {}
@@ -5913,17 +5896,16 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:image("assets/images/menu/moons/original/Styx.png") #if display private #end class __ASSET__assets_images_menu_moons_original_styx_png extends lime.graphics.Image {}
 @:image("assets/images/menu/moons/Pluto.png") #if display private #end class __ASSET__assets_images_menu_moons_pluto_png extends lime.graphics.Image {}
 @:image("assets/images/menu/moons/StyxOrbit.png") #if display private #end class __ASSET__assets_images_menu_moons_styxorbit_png extends lime.graphics.Image {}
-@:image("assets/images/menu/splash/splash_x640.jpg") #if display private #end class __ASSET__assets_images_menu_splash_splash_x640_jpg extends lime.graphics.Image {}
-@:image("assets/images/menu/splash/startup-splash-hero - Copy.png") #if display private #end class __ASSET__assets_images_menu_splash_startup_splash_hero___copy_png extends lime.graphics.Image {}
-@:image("assets/images/menu/splash/startup-splash-hero.png") #if display private #end class __ASSET__assets_images_menu_splash_startup_splash_hero_png extends lime.graphics.Image {}
 @:image("assets/images/menu/splash_x640.png") #if display private #end class __ASSET__assets_images_menu_splash_x640_png extends lime.graphics.Image {}
 @:image("assets/images/menu/starback.png") #if display private #end class __ASSET__assets_images_menu_starback_png extends lime.graphics.Image {}
-@:image("assets/images/menu/tutorial.png") #if display private #end class __ASSET__assets_images_menu_tutorial_png extends lime.graphics.Image {}
 @:file("assets/images/misc/320xp.pdn") #if display private #end class __ASSET__assets_images_misc_320xp_pdn extends lime.utils.ByteArray {}
 @:image("assets/images/misc/320xp.png") #if display private #end class __ASSET__assets_images_misc_320xp_png extends lime.graphics.Image {}
+@:image("assets/images/misc/earth-32x.png") #if display private #end class __ASSET__assets_images_misc_earth_32x_png extends lime.graphics.Image {}
 @:image("assets/images/misc/pls.png") #if display private #end class __ASSET__assets_images_misc_pls_png extends lime.graphics.Image {}
 @:image("assets/images/mute/Mute.png") #if display private #end class __ASSET__assets_images_mute_mute_png extends lime.graphics.Image {}
 @:image("assets/images/mute/MuteOn.png") #if display private #end class __ASSET__assets_images_mute_muteon_png extends lime.graphics.Image {}
+@:file("assets/images/NH.ico") #if display private #end class __ASSET__assets_images_nh_ico extends lime.utils.ByteArray {}
+@:file("assets/images/nh_large.svg") #if display private #end class __ASSET__assets_images_nh_large_svg extends lime.utils.ByteArray {}
 @:image("assets/images/pepssiwire/background.png") #if display private #end class __ASSET__assets_images_pepssiwire_background_png extends lime.graphics.Image {}
 @:image("assets/images/pepssiwire/bblue.png") #if display private #end class __ASSET__assets_images_pepssiwire_bblue_png extends lime.graphics.Image {}
 @:file("assets/images/pepssiwire/box - Copy.pdn") #if display private #end class __ASSET__assets_images_pepssiwire_box___copy_pdn extends lime.utils.ByteArray {}

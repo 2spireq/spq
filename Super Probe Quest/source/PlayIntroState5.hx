@@ -18,7 +18,7 @@ class PlayIntroState5 extends FlxState
 		FlxG.camera.flash(0xff000000, 1, null, false);
 
 		background = new FlxSprite(0, 0);
-		background.loadGraphic('assets/images/menu/tutorial.png');
+		background.loadGraphic('assets/images/intro/tutorial.png');
 		add(background);
 
 		buttonNext = new FlxButton(287, 400, '', loadNext);

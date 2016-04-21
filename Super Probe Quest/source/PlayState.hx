@@ -41,7 +41,7 @@ class PlayState extends FlxState
 	private var padButton:FlxButton;
 
 	private var startX:Int = 10;
-	private var startY:Int = 300;
+	private var startY:Int = 30;
 
 	override public function create():Void
 	{

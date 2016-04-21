@@ -451,7 +451,127 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.FONT);
 		
 		
-		urls.push ("assets/images/about/stemlogo.pdn");
+		urls.push ("assets/images/!originals/bt_orig/comp_alice_alt.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/bt_orig/comp_alice_hover.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/bt_orig/comp_lorri_alt.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/bt_orig/comp_lorri_hover.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/bt_orig/comp_pepssi_alt.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/bt_orig/comp_pepssi_hover.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/bt_orig/comp_ralph_alt.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/bt_orig/comp_ralph_hover.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/intro_originals/beach.pdn");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/images/!originals/intro_originals/Untitled.pdn");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/images/!originals/intro_originals/vab.pdn");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/images/!originals/launchblock_other/nh-atlas-v.pdn");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/images/!originals/launchblock_other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/launchblock_other/nh-launch-block/nh-static-atlasv-launch.jpg");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/launchblock_other/nh-launch-block.pdn");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/images/!originals/launchblock_other/nh-launch-block.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/launchblock_other/nh-launch-long - Copy.pdn");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/images/!originals/launchblock_other/nh-launch-long-old.pdn");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/images/!originals/launchblock_other/nh-launch-long.pdn");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/images/!originals/launchblock_other/nh-launch-long.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/launchblock_other/nh-pastel.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/launchblock_other/nh-postcard - Copy.pdn");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/images/!originals/launchblock_other/nh-postcard - Copy.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/launchblock_other/nh-postcard.pdn");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/images/!originals/launchblock_other/nh-postcard.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/launchblock_other/pad-norocket.pdn");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/images/!originals/launchblock_other/pad-rocket.pdn");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/images/!originals/splash/splash_x640.jpg");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/splash/startup-splash-hero - Copy.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/splash/startup-splash-hero.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/!originals/stemlogo.pdn");
 		types.push (lime.Assets.AssetType.TEXT);
 		
 		
@@ -587,38 +707,6 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/component/bt_orig/comp_alice_alt.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/component/bt_orig/comp_alice_hover.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/component/bt_orig/comp_lorri_alt.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/component/bt_orig/comp_lorri_hover.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/component/bt_orig/comp_pepssi_alt.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/component/bt_orig/comp_pepssi_hover.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/component/bt_orig/comp_ralph_alt.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/component/bt_orig/comp_ralph_hover.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
 		urls.push ("assets/images/component/buttonsprites/comp_alice_alt.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
@@ -727,10 +815,6 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/facts/earth-32x.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
 		urls.push ("assets/images/facts/fact0.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
@@ -747,36 +831,32 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/facts/facthide.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/found/alicefound.pdn");
-		types.push (lime.Assets.AssetType.TEXT);
-		
-		
-		urls.push ("assets/images/found/alicefound.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
 		urls.push ("assets/images/found/alice_button_backdrop.png");
 		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/found/found-template.pdn");
-		types.push (lime.Assets.AssetType.TEXT);
 		
 		
 		urls.push ("assets/images/found/found_alice.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/found/found_alice_button.pdn");
+		urls.push ("assets/images/found/found_alice_button.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/found/found_originals/alicefound.pdn");
 		types.push (lime.Assets.AssetType.TEXT);
 		
 		
-		urls.push ("assets/images/found/found_alice_button.png");
-		types.push (lime.Assets.AssetType.IMAGE);
+		urls.push ("assets/images/found/found_originals/found-template.pdn");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/images/found/found_originals/found_alice_button.pdn");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/images/found/found_originals/rtg_found.pdn");
+		types.push (lime.Assets.AssetType.TEXT);
 		
 		
 		urls.push ("assets/images/found/found_pepssi.png");
@@ -785,10 +865,6 @@ class ApplicationMain {
 		
 		urls.push ("assets/images/found/found_pepssi_button.png");
 		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/found/rtg_found.pdn");
-		types.push (lime.Assets.AssetType.TEXT);
 		
 		
 		urls.push ("assets/images/hub/alice_info.png");
@@ -831,28 +907,12 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/icon.ico");
-		types.push (lime.Assets.AssetType.BINARY);
-		
-		
 		urls.push ("assets/images/intro/beach.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
 		urls.push ("assets/images/intro/name.png");
 		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/intro/original/beach.pdn");
-		types.push (lime.Assets.AssetType.TEXT);
-		
-		
-		urls.push ("assets/images/intro/original/Untitled.pdn");
-		types.push (lime.Assets.AssetType.TEXT);
-		
-		
-		urls.push ("assets/images/intro/original/vab.pdn");
-		types.push (lime.Assets.AssetType.TEXT);
 		
 		
 		urls.push ("assets/images/intro/plane.png");
@@ -876,6 +936,10 @@ class ApplicationMain {
 		
 		
 		urls.push ("assets/images/intro/tower.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/intro/tutorial.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
@@ -952,70 +1016,6 @@ class ApplicationMain {
 		
 		
 		urls.push ("assets/images/launchblock/nh-postcard.png.meta");
-		types.push (lime.Assets.AssetType.TEXT);
-		
-		
-		urls.push ("assets/images/launchblock/other/nh-atlas-v.pdn");
-		types.push (lime.Assets.AssetType.TEXT);
-		
-		
-		urls.push ("assets/images/launchblock/other/nh-launch-block/Atlas_V_551_with_New_Horizons_on_Launch_Pad_41.jpg");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/launchblock/other/nh-launch-block/nh-static-atlasv-launch.jpg");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/launchblock/other/nh-launch-block.pdn");
-		types.push (lime.Assets.AssetType.TEXT);
-		
-		
-		urls.push ("assets/images/launchblock/other/nh-launch-block.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/launchblock/other/nh-launch-long - Copy.pdn");
-		types.push (lime.Assets.AssetType.TEXT);
-		
-		
-		urls.push ("assets/images/launchblock/other/nh-launch-long-old.pdn");
-		types.push (lime.Assets.AssetType.TEXT);
-		
-		
-		urls.push ("assets/images/launchblock/other/nh-launch-long.pdn");
-		types.push (lime.Assets.AssetType.TEXT);
-		
-		
-		urls.push ("assets/images/launchblock/other/nh-launch-long.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/launchblock/other/nh-pastel.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/launchblock/other/nh-postcard - Copy.pdn");
-		types.push (lime.Assets.AssetType.TEXT);
-		
-		
-		urls.push ("assets/images/launchblock/other/nh-postcard - Copy.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/launchblock/other/nh-postcard.pdn");
-		types.push (lime.Assets.AssetType.TEXT);
-		
-		
-		urls.push ("assets/images/launchblock/other/nh-postcard.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/launchblock/other/pad-norocket.pdn");
-		types.push (lime.Assets.AssetType.TEXT);
-		
-		
-		urls.push ("assets/images/launchblock/other/pad-rocket.pdn");
 		types.push (lime.Assets.AssetType.TEXT);
 		
 		
@@ -1195,18 +1195,6 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/menu/splash/splash_x640.jpg");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/menu/splash/startup-splash-hero - Copy.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/menu/splash/startup-splash-hero.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
 		urls.push ("assets/images/menu/splash_x640.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
@@ -1215,15 +1203,15 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/menu/tutorial.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
 		urls.push ("assets/images/misc/320xp.pdn");
 		types.push (lime.Assets.AssetType.TEXT);
 		
 		
 		urls.push ("assets/images/misc/320xp.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/misc/earth-32x.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
@@ -1237,6 +1225,14 @@ class ApplicationMain {
 		
 		urls.push ("assets/images/mute/MuteOn.png");
 		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/NH.ico");
+		types.push (lime.Assets.AssetType.BINARY);
+		
+		
+		urls.push ("assets/images/nh_large.svg");
+		types.push (lime.Assets.AssetType.TEXT);
 		
 		
 		urls.push ("assets/images/pepssiwire/background.png");
@@ -1527,7 +1523,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "1173",
+			build: "1183",
 			company: "Floating Point",
 			file: "Super Probe Quest",
 			fps: 60,
