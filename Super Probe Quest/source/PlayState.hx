@@ -40,19 +40,25 @@ class PlayState extends FlxState
 
 	private var padButton:FlxButton;
 
+	private var starBack:FlxSprite;
+
 	private var startX:Int = 10;
 	private var startY:Int = 30;
 
 	override public function create():Void
 	{
-		var aliceButton = new FlxButton(startX, startY, '', loadAlice);
-		var lorriButton = new FlxButton(startX + 66, startY, '', loadLorri);
-		var pepssiButton = new FlxButton(startX + 132, startY, '', loadPepssi);
-		var ralphButton = new FlxButton(startX + 198, startY, '', loadRalph);
-		var swapButton = new FlxButton(startX, startY + 66, '', loadSwap);
-		var rtgButton = new FlxButton(startX + 66, startY + 66, '', loadRtg);
-		var rexButton = new FlxButton(startX + 132, startY + 66, '', loadRex);
-		var heatButton = new FlxButton(startX + 198, startY + 66, '', loadHeat);
+		starBack = new FlxSprite(0, 0);
+		starBack.loadGraphic('assets/images/hub/starback_2.png');
+		add(starBack);
+
+		aliceButton = new FlxButton(startX, startY, '', loadAlice);
+		lorriButton = new FlxButton(startX + 66, startY, '', loadLorri);
+		pepssiButton = new FlxButton(startX + 132, startY, '', loadPepssi);
+		ralphButton = new FlxButton(startX + 198, startY, '', loadRalph);
+		swapButton = new FlxButton(startX, startY + 66, '', loadSwap);
+		rtgButton = new FlxButton(startX + 66, startY + 66, '', loadRtg);
+		rexButton = new FlxButton(startX + 132, startY + 66, '', loadRex);
+		heatButton = new FlxButton(startX + 198, startY + 66, '', loadHeat);
 
 		trace(Registry.partsNo);
 

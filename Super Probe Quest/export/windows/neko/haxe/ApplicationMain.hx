@@ -1523,7 +1523,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "1183",
+			build: "1184",
 			company: "Floating Point",
 			file: "Super Probe Quest",
 			fps: 60,

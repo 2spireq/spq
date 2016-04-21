@@ -15,6 +15,8 @@ class AliceFoundState extends FlxState
 
 	override public function create():Void
 	{
+		FlxG.camera.flash(0xff000000, 1, null, false);
+
 		if (Registry.haveAlice != true)
 		{
 			Registry.partsNo++;

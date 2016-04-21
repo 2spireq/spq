@@ -64,8 +64,7 @@ class AliceState extends FlxState
 	private function hitInteract():Void
 	{
 		trace('alice get');
-		
-		FlxG.switchState(new AliceFoundState());
+		FlxG.camera.fade(0xff000000, 1, nextState, false);
 	}
 
 	private function playerCleanerInteract(P:Player, C:Cleaner):Void
@@ -117,5 +116,10 @@ class AliceState extends FlxState
 	    {
 	    	_grpHit.add(new Alice_Hit(x, y));
 	    }
+	}
+
+	private function nextState():Void
+	{
+		FlxG.switchState(new AliceFoundState());
 	}
 }
