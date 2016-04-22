@@ -138,8 +138,6 @@ class MenuState extends FlxState
 		add(splashAboutButton);
 		add(splashFactButton);
 		add(splashQuitButton);
-		//add(splashFullButton);
-		//add(splashDebugButton);
 
 		add(splashSettingsButton);
 

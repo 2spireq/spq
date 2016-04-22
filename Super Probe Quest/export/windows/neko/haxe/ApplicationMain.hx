@@ -903,6 +903,10 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/hub/starback_2.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/hub/swap_info.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
@@ -1523,7 +1527,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "1184",
+			build: "1186",
 			company: "Floating Point",
 			file: "Super Probe Quest",
 			fps: 60,

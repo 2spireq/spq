@@ -314,6 +314,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
 		Font.registerFont (__ASSET__assets_fonts_nokiafc22_ttf);
 		Font.registerFont (__ASSET__assets_fonts_arial_ttf);
 		
@@ -675,6 +676,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/hub/rtg_info.png", __ASSET__assets_images_hub_rtg_info_png);
 		type.set ("assets/images/hub/rtg_info.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/hub/starback_2.png", __ASSET__assets_images_hub_starback_2_png);
+		type.set ("assets/images/hub/starback_2.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/hub/swap_info.png", __ASSET__assets_images_hub_swap_info_png);
 		type.set ("assets/images/hub/swap_info.png", AssetType.IMAGE);
@@ -1620,6 +1624,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:bitmap("assets/images/hub/ralph_info.png") @:keep #if display private #end class __ASSET__assets_images_hub_ralph_info_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/hub/rex_info.png") @:keep #if display private #end class __ASSET__assets_images_hub_rex_info_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/hub/rtg_info.png") @:keep #if display private #end class __ASSET__assets_images_hub_rtg_info_png extends flash.display.BitmapData {}
+@:bitmap("assets/images/hub/starback_2.png") @:keep #if display private #end class __ASSET__assets_images_hub_starback_2_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/hub/swap_info.png") @:keep #if display private #end class __ASSET__assets_images_hub_swap_info_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/intro/beach.png") @:keep #if display private #end class __ASSET__assets_images_intro_beach_png extends flash.display.BitmapData {}
 @:bitmap("assets/images/intro/name.png") @:keep #if display private #end class __ASSET__assets_images_intro_name_png extends flash.display.BitmapData {}
@@ -1838,6 +1843,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_fonts_oratorstd_otf);
+		
 		
 		
 		
@@ -2334,6 +2340,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/hub/rex_info.png", AssetType.IMAGE);
 		className.set ("assets/images/hub/rtg_info.png", __ASSET__assets_images_hub_rtg_info_png);
 		type.set ("assets/images/hub/rtg_info.png", AssetType.IMAGE);
+		className.set ("assets/images/hub/starback_2.png", __ASSET__assets_images_hub_starback_2_png);
+		type.set ("assets/images/hub/starback_2.png", AssetType.IMAGE);
 		className.set ("assets/images/hub/swap_info.png", __ASSET__assets_images_hub_swap_info_png);
 		type.set ("assets/images/hub/swap_info.png", AssetType.IMAGE);
 		className.set ("assets/images/intro/beach.png", __ASSET__assets_images_intro_beach_png);
@@ -3092,6 +3100,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/hub/rtg_info.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/hub/starback_2.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -4032,6 +4044,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/hub/rtg_info.png", __ASSET__assets_images_hub_rtg_info_png);
 		type.set ("assets/images/hub/rtg_info.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/hub/starback_2.png", __ASSET__assets_images_hub_starback_2_png);
+		type.set ("assets/images/hub/starback_2.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/hub/swap_info.png", __ASSET__assets_images_hub_swap_info_png);
 		type.set ("assets/images/hub/swap_info.png", AssetType.IMAGE);
@@ -5290,6 +5305,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_hub_ralph_info_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_hub_rex_info_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_hub_rtg_info_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_hub_starback_2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_hub_swap_info_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_intro_beach_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_intro_name_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -5694,6 +5710,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
 @:keep #if display private #end class __ASSET__assets_fonts_nokiafc22_ttf extends lime.text.Font { public function new () { super (); name = "Nokia Cellphone FC Small"; } } 
 @:keep #if display private #end class __ASSET__assets_fonts_arial_ttf extends lime.text.Font { public function new () { super (); name = "Arial"; } } 
 
@@ -5823,6 +5840,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:image("assets/images/hub/ralph_info.png") #if display private #end class __ASSET__assets_images_hub_ralph_info_png extends lime.graphics.Image {}
 @:image("assets/images/hub/rex_info.png") #if display private #end class __ASSET__assets_images_hub_rex_info_png extends lime.graphics.Image {}
 @:image("assets/images/hub/rtg_info.png") #if display private #end class __ASSET__assets_images_hub_rtg_info_png extends lime.graphics.Image {}
+@:image("assets/images/hub/starback_2.png") #if display private #end class __ASSET__assets_images_hub_starback_2_png extends lime.graphics.Image {}
 @:image("assets/images/hub/swap_info.png") #if display private #end class __ASSET__assets_images_hub_swap_info_png extends lime.graphics.Image {}
 @:image("assets/images/intro/beach.png") #if display private #end class __ASSET__assets_images_intro_beach_png extends lime.graphics.Image {}
 @:image("assets/images/intro/name.png") #if display private #end class __ASSET__assets_images_intro_name_png extends lime.graphics.Image {}
