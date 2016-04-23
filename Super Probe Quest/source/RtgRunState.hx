@@ -29,10 +29,12 @@ class RtgRunState extends FlxState
 
 		clouds = new FlxSprite(-800, 0);
 		clouds.loadGraphic('assets/images/rtgrun/clouds.png');
+		//clouds.scrollFactor.x = -0.3;
 		add(clouds);
 
 		background = new FlxSprite(0, 0);
 		background.loadGraphic('assets/images/rtgrun/background.png');
+		background.scrollFactor.x = 0.2;
 		add(background);
 
 		map = new FlxOgmoLoader('assets/data/plats.oel');
@@ -45,7 +47,7 @@ class RtgRunState extends FlxState
 		walls.setTileProperties(2, FlxObject.NONE);
 		walls.setTileProperties(3, FlxObject.NONE);
 		walls.setTileProperties(4, FlxObject.NONE);
-		walls.setTileProperties(5, FlxObject.NONE);
+		//walls.setTileProperties(5, FlxObject.NONE);
 		walls.setTileProperties(14, FlxObject.NONE);
 
 		player = new RtgPlayer(20, 20);
@@ -82,7 +84,7 @@ class RtgRunState extends FlxState
 		FlxG.switchState(new PlayState());
 	}
 
-	/*private function placeEntities(entityName:String, entityData:Xml):Void
+	private function placeEntities(entityName:String, entityData:Xml):Void
  	{
 	    var x:Int = Std.parseInt(entityData.get('x'));
 	    var y:Int = Std.parseInt(entityData.get('y'));
@@ -91,5 +93,5 @@ class RtgRunState extends FlxState
 	        player.x = x;
 	        player.y = y;
 	    }
-	}*/
+	}
 }
