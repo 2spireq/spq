@@ -9,6 +9,7 @@ import flixel.addons.editors.ogmo.FlxOgmoLoader;
 import flixel.tile.FlxTilemap;
 import flixel.FlxCamera;
 import flixel.FlxObject;
+import flixel.group.FlxTypedGroup;
 
 class RtgRunState extends FlxState
 {
@@ -20,6 +21,13 @@ class RtgRunState extends FlxState
 	private var walls:FlxTilemap;
 
 	private var player:RtgPlayer;
+
+	private var grpParts0:FlxTypedGroup<Rtg0>;
+	private var grpParts1:FlxTypedGroup<Rtg1>;
+	private var grpParts2:FlxTypedGroup<Rtg2>;
+	private var grpParts3:FlxTypedGroup<Rtg3>;
+
+	private var p0:Rtg0;
 
 	override public function create():Void
 	{
@@ -38,20 +46,25 @@ class RtgRunState extends FlxState
 		add(background);
 
 		map = new FlxOgmoLoader('assets/data/plats.oel');
-		//map.loadEntities(placeEntities, "entities");
+		
 
 		walls = map.loadTilemap('assets/images/rtgrun/placeholder.png', 16, 16, 'walls');
 		add(walls);
+
+		grpParts0 = new FlxTypedGroup<Rtg0>();
+		add(grpParts0);
+
+		player = new RtgPlayer(20, 200);
+
+		map.loadEntities(placeEntities, 'entities');
+		
+		add(player);
 
 		walls.setTileProperties(1, FlxObject.NONE);
 		walls.setTileProperties(2, FlxObject.NONE);
 		walls.setTileProperties(3, FlxObject.NONE);
 		walls.setTileProperties(4, FlxObject.NONE);
-		//walls.setTileProperties(5, FlxObject.NONE);
 		walls.setTileProperties(14, FlxObject.NONE);
-
-		player = new RtgPlayer(20, 20);
-		add(player);
 
 		FlxG.camera.follow(player, FlxCamera.STYLE_TOPDOWN, 1);
 
@@ -75,6 +88,7 @@ class RtgRunState extends FlxState
 		}
 
 		FlxG.collide(walls, player);
+		//FlxG.overlap(player, grpParts0, interact0);
 
 		super.update();
 	}	
@@ -93,5 +107,14 @@ class RtgRunState extends FlxState
 	        player.x = x;
 	        player.y = y;
 	    }
+	    else if (entityName == 'p0')
+	    {
+	    	grpParts0.add(new Rtg0(x, y));
+	    }
+	}
+
+	private function interact0():Void
+	{
+		trace('0');
 	}
 }

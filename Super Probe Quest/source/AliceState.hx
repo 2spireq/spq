@@ -55,7 +55,7 @@ class AliceState extends FlxState
 
 		FlxG.camera.height = 240;
 		FlxG.camera.width = 320;
-		FlxG.camera.zoom = 1;
+		FlxG.camera.zoom = 2;
 		FlxG.camera.follow(_player, FlxCamera.STYLE_TOPDOWN, 1);
 
 		super.create();

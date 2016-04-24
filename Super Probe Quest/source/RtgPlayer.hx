@@ -25,9 +25,9 @@ class RtgPlayer extends FlxSprite
 		animation.add('up', [6, 7, 6, 8], 6, false);
 		animation.add('down', [3], 6, false);
 
-		drag.x = 1000;
+		drag.x = 1200;
 		acceleration.y = 420;
-		maxVelocity.set(120, 170);
+		maxVelocity.set(120, 200);
 		setSize(14, 14);
 		//offset.set(4, 2);
 	}
@@ -56,7 +56,7 @@ class RtgPlayer extends FlxSprite
 		if (FlxG.keys.pressed.W && velocity.y == 0 && isTouching(FlxObject.UP) == false)
 		{
 			y -= 1;
-			velocity.y = -170;
+			velocity.y = -200;
 			velocity.x = 0;
 		}
 
