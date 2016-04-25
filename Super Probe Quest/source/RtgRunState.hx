@@ -17,9 +17,10 @@ class RtgRunState extends FlxState
 	private var background:FlxSprite;
 	private var clouds:FlxSprite;
 
+	private var cloudsRepeat:Bool;
+
 	private var map:FlxOgmoLoader;
 	private var walls:FlxTilemap;
-
 	private var player:RtgPlayer;
 
 	private var grpParts0:FlxTypedGroup<Rtg0>;
@@ -31,13 +32,16 @@ class RtgRunState extends FlxState
 
 	override public function create():Void
 	{
+		cloudsRepeat = false;
+
 		sky = new FlxSprite(0, 0);
 		sky.loadGraphic('assets/images/rtgrun/sky.png');
 		add(sky);
 
 		clouds = new FlxSprite(-800, 0);
 		clouds.loadGraphic('assets/images/rtgrun/clouds.png');
-		//clouds.scrollFactor.x = -0.3;
+		if (cloudsRepeat == false)
+			clouds.scrollFactor.x = -0.3;
 		add(clouds);
 
 		background = new FlxSprite(0, 0);
@@ -46,18 +50,12 @@ class RtgRunState extends FlxState
 		add(background);
 
 		map = new FlxOgmoLoader('assets/data/plats.oel');
-		
-
 		walls = map.loadTilemap('assets/images/rtgrun/placeholder.png', 16, 16, 'walls');
 		add(walls);
-
 		grpParts0 = new FlxTypedGroup<Rtg0>();
 		add(grpParts0);
-
 		player = new RtgPlayer(20, 200);
-
 		map.loadEntities(placeEntities, 'entities');
-		
 		add(player);
 
 		walls.setTileProperties(1, FlxObject.NONE);
@@ -65,8 +63,11 @@ class RtgRunState extends FlxState
 		walls.setTileProperties(3, FlxObject.NONE);
 		walls.setTileProperties(4, FlxObject.NONE);
 		walls.setTileProperties(14, FlxObject.NONE);
+		walls.setTileProperties(64, FlxObject.NONE);
+		walls.setTileProperties(65, FlxObject.NONE);
 
 		FlxG.camera.follow(player, FlxCamera.STYLE_TOPDOWN, 1);
+		FlxG.camera.zoom = 2;
 
 		super.create();
 	}
@@ -78,13 +79,16 @@ class RtgRunState extends FlxState
 
 	override public function update():Void
 	{	
-		if (clouds.x <= 640)
+		if (cloudsRepeat == true)
 		{
-			clouds.x += 0.3;
-		}
-		else if (clouds.x >= 2560)
-		{
-			clouds.x = -800;
+			if (clouds.x <= 640)
+			{
+				clouds.x += 0.3;
+			}
+			else if (clouds.x >= 2560)
+			{
+				clouds.x = -800;
+			}
 		}
 
 		FlxG.collide(walls, player);
@@ -116,5 +120,20 @@ class RtgRunState extends FlxState
 	private function interact0():Void
 	{
 		trace('0');
+	}
+
+	private function playerHitInteract(P:Player, H:Rtg0):Void
+	{
+		if (P.alive && P.exists && H.alive && H.exists)
+		{
+			H.kill();
+			hitInteract0();
+		}
+		trace('hit interact');
+	}
+
+	private function hitInteract0():Void
+	{
+		trace('part 0');
 	}
 }

@@ -187,6 +187,7 @@ class PlayState extends FlxState
 		else if (Registry.haveHeat == false)
 		{
 			heatButton.loadGraphic('assets/images/component/buttonsprites/comp_heat_alt.png', false, 64, 64);
+			trace('HEAT FALSE');
 		}
 
 		aliceButton.onOver.callback = aliceInfo;

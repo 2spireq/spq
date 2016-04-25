@@ -1,6 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// LIST OF APOCALYPTIC EVENTS
-// REGISTRATIONS START: 3 APRIL
+// DOOMSDAY/APOCALYPSE/ETC CALENDAR:
+// REGISTRATIONS START: 3 APRIL		DONE
+// 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // TODO
@@ -14,7 +15,7 @@
 // (when the user beats the pepssi minigame)
 function setPepssiHave
 {
-	var pepssiHave = true;
+	var pepssiHave = true;		// nah
 }
 
 
@@ -22,7 +23,7 @@ function setPepssiHave
 // (check when hub is entered)
 if pepssiHave = true
 {
-	add(pepssiColor) //at exact co-ordinates of silhouette
+	add(pepssiColor)   // nah
 }
 
 // dialogue for finding alice
@@ -41,3 +42,6 @@ Caretaker:
 crafting (notebook instructions)
 sidescrolling platformer (RTG) - tropical, to team members' vacation spot to reclaim component
 cutting wires w/ changing rules (PEPSSI)
+
+R T G  P L A T F O R M E R  T H I N G
+  - add caves
