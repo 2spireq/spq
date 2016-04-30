@@ -36,8 +36,8 @@ class FactState extends FlxState
 		trace(item);
 		trace(randDispList[1]);
 
-		factBlock = new FlxSprite(83, 149);
-		factBlock.loadGraphic('assets/images/facts/facthide.png');
+		/*factBlock = new FlxSprite(83, 149);
+		factBlock.loadGraphic('assets/images/facts/facthide.png');*/
 
 		buttonBack = new FlxButton(10, 10, loadMenu);
 		buttonBack.loadGraphic('assets/images/menu/button_back.png', false, 67, 32);

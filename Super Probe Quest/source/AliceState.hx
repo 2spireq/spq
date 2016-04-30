@@ -93,6 +93,7 @@ class AliceState extends FlxState
 
 	override public function update():Void
 	{
+		//FlxG.camera.zoom = 2;
 		super.update();
 		FlxG.collide(_player, _mWalls);
 		FlxG.overlap(_player, _grpCleaner, playerCleanerInteract);

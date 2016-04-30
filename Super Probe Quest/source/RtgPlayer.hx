@@ -53,7 +53,7 @@ class RtgPlayer extends FlxSprite
 			acceleration.x += drag.x;
 		}
 
-		if (FlxG.keys.pressed.W && velocity.y == 0 && isTouching(FlxObject.UP) == false)
+		if (FlxG.keys.justPressed.W && velocity.y == 0 && isTouching(FlxObject.FLOOR))
 		{
 			y -= 1;
 			velocity.y = -200;

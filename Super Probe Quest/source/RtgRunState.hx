@@ -63,11 +63,14 @@ class RtgRunState extends FlxState
 		walls.setTileProperties(3, FlxObject.NONE);
 		walls.setTileProperties(4, FlxObject.NONE);
 		walls.setTileProperties(14, FlxObject.NONE);
+		walls.setTileProperties(16, FlxObject.NONE);
+		walls.setTileProperties(17, FlxObject.NONE);
+		walls.setTileProperties(18, FlxObject.NONE);
+		walls.setTileProperties(56, FlxObject.NONE);
 		walls.setTileProperties(64, FlxObject.NONE);
 		walls.setTileProperties(65, FlxObject.NONE);
 
 		FlxG.camera.follow(player, FlxCamera.STYLE_TOPDOWN, 1);
-		FlxG.camera.zoom = 2;
 
 		super.create();
 	}
