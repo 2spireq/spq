@@ -7,9 +7,10 @@ import flixel.ui.FlxButton;
 
 class SettingsState extends FlxState
 {
+	private var starBack:FlxSprite;
+
 	private var fullscreenButton:FlxButton;
 	private var soundButton:FlxButton;
-
 	private var backButton:FlxButton;
 
 	override public function create():Void
@@ -17,6 +18,10 @@ class SettingsState extends FlxState
 		FlxG.camera.flash(0xff000000, 0.5, null, false);
 		
 		FlxG.sound.play('assets/music/menu-main2.wav', 1, true, false);
+
+		starBack = new FlxSprite(0, 0);
+		starBack.loadGraphic('assets/images/hub/starback_2.png');
+		add(starBack);
 
 		backButton = new FlxButton(10, 10, '', loadMenu);
 		backButton.loadGraphic('assets/images/menu/button_back.png', false, 67, 32);

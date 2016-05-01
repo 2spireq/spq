@@ -80,6 +80,21 @@ class RtgRunState extends FlxState
 		super.destroy();
 	}
 
+	private function playerHitInteract(P:Player, H:Rtg0):Void
+	{
+		if (P.alive && P.exists && H.alive && H.exists)
+		{
+			H.kill();
+			hitInteract0();
+		}
+		trace('hit interact');
+	}
+
+	private function hitInteract0():Void
+	{
+		trace('part 0');
+	}
+
 	override public function update():Void
 	{	
 		if (cloudsRepeat == true)
@@ -95,7 +110,7 @@ class RtgRunState extends FlxState
 		}
 
 		FlxG.collide(walls, player);
-		//FlxG.overlap(player, grpParts0, interact0);
+		FlxG.overlap(player, grpParts0, playerHitInteract);
 
 		super.update();
 	}	
@@ -125,18 +140,4 @@ class RtgRunState extends FlxState
 		trace('0');
 	}
 
-	private function playerHitInteract(P:Player, H:Rtg0):Void
-	{
-		if (P.alive && P.exists && H.alive && H.exists)
-		{
-			H.kill();
-			hitInteract0();
-		}
-		trace('hit interact');
-	}
-
-	private function hitInteract0():Void
-	{
-		trace('part 0');
-	}
 }

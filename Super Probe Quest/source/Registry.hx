@@ -13,4 +13,7 @@ class Registry
 
 	public static var partsNo:Int;
 	public static var launchReady:Bool;
+
+	public static var rtgInWater:Bool;
+	public static var rtgOnLadder:Bool;
 }
