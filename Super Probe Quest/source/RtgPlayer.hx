@@ -34,11 +34,11 @@ class RtgPlayer extends FlxSprite
 
 	public function movement():Void
 	{
-		if (lastY != null)
+		/*if (lastY != null)
 			nowY = lastY;
 		else
 			lastY = y;
-		nowY = y;
+		nowY = y;*/
 
 		acceleration.x = 0;
 
