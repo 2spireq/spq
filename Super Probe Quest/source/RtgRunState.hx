@@ -24,9 +24,9 @@ class RtgRunState extends FlxState
 	private var player:RtgPlayer;
 
 	private var grpParts0:FlxTypedGroup<Rtg0>;
-	private var grpParts1:FlxTypedGroup<Rtg1>;
+	/*private var grpParts1:FlxTypedGroup<Rtg1>;
 	private var grpParts2:FlxTypedGroup<Rtg2>;
-	private var grpParts3:FlxTypedGroup<Rtg3>;
+	private var grpParts3:FlxTypedGroup<Rtg3>; */
 
 	private var p0:Rtg0;
 
@@ -58,14 +58,15 @@ class RtgRunState extends FlxState
 		map.loadEntities(placeEntities, 'entities');
 		add(player);
 
+		walls.setTileProperties(0, FlxObject.NONE);
 		walls.setTileProperties(1, FlxObject.NONE);
 		walls.setTileProperties(2, FlxObject.NONE);
 		walls.setTileProperties(3, FlxObject.NONE);
 		walls.setTileProperties(4, FlxObject.NONE);
 		walls.setTileProperties(14, FlxObject.NONE);
 		walls.setTileProperties(16, FlxObject.NONE);
-		walls.setTileProperties(17, FlxObject.NONE);
-		walls.setTileProperties(18, FlxObject.NONE);
+		walls.setTileProperties(17, FlxObject.NONE, airOverlap);
+		walls.setTileProperties(18, FlxObject.NONE, waterOverlap);
 		walls.setTileProperties(56, FlxObject.NONE);
 		walls.setTileProperties(64, FlxObject.NONE);
 		walls.setTileProperties(65, FlxObject.NONE);
@@ -118,6 +119,16 @@ class RtgRunState extends FlxState
 	private function loadMenu():Void
 	{
 		FlxG.switchState(new PlayState());
+	}
+
+	private function waterOverlap(Tile:FlxObject, Object:FlxObject):Void
+	{
+		Registry.rtgInWater = true;
+	}
+
+	private function airOverlap(Tile:FlxObject, Object:FlxObject):Void
+	{
+		Registry.rtgInWater = false;
 	}
 
 	private function placeEntities(entityName:String, entityData:Xml):Void

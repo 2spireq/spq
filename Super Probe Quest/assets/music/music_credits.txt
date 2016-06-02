@@ -5,7 +5,7 @@ Licensed under Creative Commons: By Attribution 3.0
 http://creativecommons.org/licenses/by/3.0/
 
 ### Track usage ###
- - Cyborg Ninja   : main menu
+ - Cyborg Ninja   : main menu       : menu_main.wav
  - Bumba Crossing : RTG minigame
  - Wagon Wheel    : PEPSSI minigame
 

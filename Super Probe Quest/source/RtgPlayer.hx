@@ -15,13 +15,17 @@ class RtgPlayer extends FlxSprite
 	public var speed:Float = 200;
 	public var angleAttack:Float = 0;
 
+	private var inWater:Bool;
+
 	public function new(X:Float = 0, Y:Float = 0)
 	{
 		super(X, Y);
-		loadGraphic('assets/images/alicemaze/player.png', true, 16, 16);
+		loadGraphic('assets/images/rtgrun/playersprite.png', true, 16, 16);
 		setFacingFlip(FlxObject.LEFT, false, false);
 		setFacingFlip(FlxObject.RIGHT, true, false);
-		animation.add('walking', [3, 4, 3, 5], 6, false);
+		animation.add('walking', [3, 4, 3, 5], 10, false);
+		animation.add('swimming', [12, 13, 14], 6, false);
+		animation.add('swimmingdown', [12], 6, false);
 		animation.add('up', [6, 7, 6, 8], 6, false);
 		animation.add('down', [3], 6, false);
 
@@ -60,14 +64,27 @@ class RtgPlayer extends FlxSprite
 			velocity.x = 0;
 		}
 
-		if (velocity.x != 0)
-			animation.play('walking');
+		if (inWater == true)
+		{
+			if (velocity.x != 0)
+				animation.play('swimming');
+			else
+				animation.play('swimmingdown');
+		}
 		else
-			animation.play('down');
+		{
+			if (velocity.x != 0)
+			{
+				animation.play('walking');
+			}
+			else
+				animation.play('down');
+		}
 	}
 
 	override public function update():Void
 	{
+		inWater = Registry.rtgInWater;
 		movement();
 		super.update();
 	}

@@ -244,7 +244,7 @@ class PlayState extends FlxState
 		add(padButton);
 
 		FlxG.camera.flash(0xff000000, 0.5, null, false);
-
+		
 		super.create();
 	}
 	
