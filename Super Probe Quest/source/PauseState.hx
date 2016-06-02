@@ -13,9 +13,9 @@ class PauseState extends FlxSubState
 
 	override public function create():Void
 	{
-		testSprite = new FlxSprite(0, 0);
+		/*testSprite = new FlxSprite(0, 0);
 		testSprite.loadGraphic('assets/images/rtgrun/playersprite.png');
-		add(testSprite);
+		add(testSprite);*/
 
 		super.create();
 	}
@@ -29,7 +29,7 @@ class PauseState extends FlxSubState
 	{	
 		if (FlxG.keys.justPressed.ESCAPE)
 			close();
-			
+
 		super.update();
 	}	
 

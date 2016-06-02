@@ -31,11 +31,10 @@ class RtgRunState extends FlxState
 	private var p0:Rtg0;
 
 	private var pauseState:PauseState;
+	private var pauseButton:FlxButton;
 
 	override public function create():Void
 	{
-		pauseState = new PauseState();
-
 		cloudsRepeat = false;
 
 		sky = new FlxSprite(0, 0);
@@ -77,6 +76,11 @@ class RtgRunState extends FlxState
 
 		FlxG.camera.follow(player, FlxCamera.STYLE_TOPDOWN, 1);
 
+		pauseState = new PauseState(0xffB5B5B5);
+		pauseButton = new FlxButton(10, 10, '', loadPause);
+		pauseButton.loadGraphic('assets/images/menu/button_pause.png', false, 32, 32);
+		add(pauseButton);
+
 		super.create();
 	}
 
@@ -117,8 +121,8 @@ class RtgRunState extends FlxState
 		FlxG.collide(walls, player);
 		FlxG.overlap(player, grpParts0, playerHitInteract);
 
-		if (FlxG.keys.justPressed.ESCAPE)
-			loadPause();
+		/*if (FlxG.keys.justPressed.ESCAPE)
+			loadPause();*/
 
 		super.update();
 	}	
@@ -130,6 +134,7 @@ class RtgRunState extends FlxState
 
 	private function loadPause():Void
 	{
+		pauseState = new PauseState(0x99808080);
 		openSubState(pauseState);
 	}
 
