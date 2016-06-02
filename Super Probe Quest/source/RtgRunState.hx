@@ -30,8 +30,12 @@ class RtgRunState extends FlxState
 
 	private var p0:Rtg0;
 
+	private var pauseState:PauseState;
+
 	override public function create():Void
 	{
+		pauseState = new PauseState();
+
 		cloudsRepeat = false;
 
 		sky = new FlxSprite(0, 0);
@@ -113,12 +117,20 @@ class RtgRunState extends FlxState
 		FlxG.collide(walls, player);
 		FlxG.overlap(player, grpParts0, playerHitInteract);
 
+		if (FlxG.keys.justPressed.ESCAPE)
+			loadPause();
+
 		super.update();
 	}	
 
 	private function loadMenu():Void
 	{
 		FlxG.switchState(new PlayState());
+	}
+
+	private function loadPause():Void
+	{
+		openSubState(pauseState);
 	}
 
 	private function waterOverlap(Tile:FlxObject, Object:FlxObject):Void
@@ -150,5 +162,4 @@ class RtgRunState extends FlxState
 	{
 		trace('0');
 	}
-
 }
