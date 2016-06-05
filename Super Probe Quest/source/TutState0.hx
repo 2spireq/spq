@@ -4,7 +4,7 @@ import flixel.FlxG;
 import flixel.FlxState;
 import flixel.FlxSprite;
 
-class IntroState extends FlxState
+class TutState0 extends FlxState
 {
 
 	private var _logo:FlxSprite;

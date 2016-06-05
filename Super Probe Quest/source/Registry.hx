@@ -16,4 +16,6 @@ class Registry
 
 	public static var rtgInWater:Bool;
 	public static var rtgOnLadder:Bool;
+
+	public static var minigamePaused:String;
 }

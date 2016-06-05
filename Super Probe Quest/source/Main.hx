@@ -13,10 +13,13 @@ class Main extends Sprite
 {
 	var gameWidth:Int = 640;
 	var gameHeight:Int = 480;
-	var initialState:Class<FlxState> = MenuState;
+
+	//var initialState:Class<FlxState> = MenuState;
+	var initialState:Class<FlxState> = IntroState;
+	var skipSplash:Bool = true;
+
 	var zoom:Float = -1;
 	var framerate:Int = 60;
-	var skipSplash:Bool = true;
 	var startFullscreen:Bool = true;
 	
 	public static function main():Void
@@ -29,21 +32,15 @@ class Main extends Sprite
 		super();
 		
 		if (stage != null) 
-		{
 			init();
-		}
-		else 
-		{
+		else
 			addEventListener(Event.ADDED_TO_STAGE, init);
-		}
 	}
 	
 	private function init(?E:Event):Void 
 	{
 		if (hasEventListener(Event.ADDED_TO_STAGE))
-		{
 			removeEventListener(Event.ADDED_TO_STAGE, init);
-		}
 		
 		setupGame();
 	}

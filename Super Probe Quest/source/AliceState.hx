@@ -8,6 +8,7 @@ import flixel.tile.FlxTilemap;
 import flixel.FlxCamera;
 import flixel.FlxObject;
 import flixel.group.FlxTypedGroup;
+import flixel.ui.FlxButton;
 
 class AliceState extends FlxState
 {
@@ -16,6 +17,9 @@ class AliceState extends FlxState
 	private var _mWalls:FlxTilemap;
 	private var _grpCleaner:FlxTypedGroup<Cleaner>;
 	private var _grpHit:FlxTypedGroup<Alice_Hit>;
+
+	private var pauseState:PauseState;
+	private var pauseButton:FlxButton;
 
 	override public function create():Void
 	{
@@ -53,10 +57,15 @@ class AliceState extends FlxState
 		add(_grpCleaner);
 		add(_grpHit);
 
-		FlxG.camera.height = 240;
-		FlxG.camera.width = 320;
-		FlxG.camera.zoom = 2;
+		FlxG.camera.height = 480;
+		FlxG.camera.width = 640;
+		//FlxG.camera.zoom = 2;
 		FlxG.camera.follow(_player, FlxCamera.STYLE_TOPDOWN, 1);
+
+		pauseState = new PauseState();
+		pauseButton = new FlxButton(10, 10, '', loadPause);
+		pauseButton.loadGraphic('assets/images/pause/button_pause.png', false, 32, 32);
+		add(pauseButton);
 
 		super.create();
 	}
@@ -70,9 +79,8 @@ class AliceState extends FlxState
 	private function playerCleanerInteract(P:Player, C:Cleaner):Void
 	{
 		if (P.alive && P.exists && C.alive && C.exists)
-    	{
-       		C.kill();
-    	}
+			C.kill();
+			
 		trace('cleaner interact');
 	}
 
@@ -102,25 +110,33 @@ class AliceState extends FlxState
 
 	private function placeEntities(entityName:String, entityData:Xml):Void
 	{
-	    var x:Int = Std.parseInt(entityData.get('x'));
-	    var y:Int = Std.parseInt(entityData.get('y'));
-	    if (entityName == 'player')
-	    {
-	        _player.x = x;
-	        _player.y = y;
-	    }
-	    else if (entityName == 'cleaner')
-	    {
-	    	_grpCleaner.add(new Cleaner(x, y));
-	    }
-	   	else if (entityName == 'alice_hit')
-	    {
-	    	_grpHit.add(new Alice_Hit(x, y));
-	    }
+		var x:Int = Std.parseInt(entityData.get('x'));
+		var y:Int = Std.parseInt(entityData.get('y'));
+		if (entityName == 'player')
+		{
+			_player.x = x;
+			_player.y = y;
+		}
+		else if (entityName == 'cleaner')
+		{
+			_grpCleaner.add(new Cleaner(x, y));
+		}
+		else if (entityName == 'alice_hit')
+		{
+			_grpHit.add(new Alice_Hit(x, y));
+		}
 	}
 
 	private function nextState():Void
 	{
 		FlxG.switchState(new AliceFoundState());
 	}
+
+	private function loadPause():Void
+	{
+		Registry.minigamePaused = 'alice';
+		pauseState = new PauseState();
+		openSubState(pauseState);
+	}
+
 }

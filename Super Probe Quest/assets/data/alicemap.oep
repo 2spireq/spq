@@ -13,10 +13,10 @@
     <Height>480</Height>
   </LevelMinimumSize>
   <LevelMaximumSize>
-    <Width>640</Width>
-    <Height>480</Height>
+    <Width>960</Width>
+    <Height>720</Height>
   </LevelMaximumSize>
-  <Filename>C:\Users\S\Desktop\Super Probe Quest\assets\data\alicemap.oep</Filename>
+  <Filename>C:\Users\S\Desktop\spq\Super Probe Quest\assets\data\alicemap.oep</Filename>
   <AngleMode>Degrees</AngleMode>
   <CameraEnabled>false</CameraEnabled>
   <CameraSize>

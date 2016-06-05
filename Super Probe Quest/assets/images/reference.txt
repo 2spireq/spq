@@ -1,2 +1,2 @@
 info (hover over button) - orator std 12
-button text (on button) - orator std 14
+button text (on button) - orator std 14 caps

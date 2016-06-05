@@ -10,10 +10,7 @@ class PadState extends FlxState
 {
 	private var back:FlxSprite;
 	private var pad:FlxSprite;
-	
 	private var cloud0:FlxSprite;
-	private var cloud1:FlxSprite;
-	private var cloud2:FlxSprite;
 
 	private var backButton:FlxButton;
 
@@ -27,26 +24,16 @@ class PadState extends FlxState
 
 		pad = new FlxSprite(0, 0);
 		/*if (Registry.launchReady == null)
-		{
-			pad.loadGraphic('assets/images/launchblock/pad-norocket.png');
-		}*/
+			pad.loadGraphic('assets/images/launchblock/pad-norocket.png');*/
 		if (Registry.launchReady == true)
-		{
 			pad.loadGraphic('assets/images/launchblock/pad-rocket.png');
-		}
 		else
-		{
 			pad.loadGraphic('assets/images/launchblock/pad-norocket.png');
-		}
 		add(pad);
 
-		cloud0 = new FlxSprite(-215, 20);
-		cloud0.loadGraphic('assets/images/launchblock/cloud0.png');
+		cloud0 = new FlxSprite(-540, 20);
+		cloud0.loadGraphic('assets/images/rtgrun/clouds.png');
 		add(cloud0);
-
-		cloud1 = new FlxSprite(-343, 95);
-		cloud1.loadGraphic('assets/images/launchblock/cloud1.png');
-		add(cloud1);
 
 		backButton = new FlxButton(10, 10, '', loadMenu);
 		backButton.loadGraphic('assets/images/menu/button_back.png', false, 67, 32);
@@ -64,22 +51,10 @@ class PadState extends FlxState
 	override public function update():Void
 	{	
 		if (cloud0.x <= 640)
-		{
 			cloud0.x += 0.6;
-		}
 		else if (cloud0.x >= 640)
-		{
-			cloud0.x = -265;
-		}
+			cloud0.x = -776;
 
-		if (cloud1.x <= 640)
-		{
-			cloud1.x += 0.4;
-		}
-		else if (cloud1.x >= 640)
-		{
-			cloud1.x = - 393;
-		}
 		super.update();
 	}	
 

@@ -55,8 +55,10 @@ class RtgRunState extends FlxState
 		map = new FlxOgmoLoader('assets/data/plats.oel');
 		walls = map.loadTilemap('assets/images/rtgrun/placeholder.png', 16, 16, 'walls');
 		add(walls);
+
 		grpParts0 = new FlxTypedGroup<Rtg0>();
 		add(grpParts0);
+
 		player = new RtgPlayer(20, 200);
 		map.loadEntities(placeEntities, 'entities');
 		add(player);
@@ -76,9 +78,9 @@ class RtgRunState extends FlxState
 
 		FlxG.camera.follow(player, FlxCamera.STYLE_TOPDOWN, 1);
 
-		pauseState = new PauseState(0xffB5B5B5);
+		pauseState = new PauseState();
 		pauseButton = new FlxButton(10, 10, '', loadPause);
-		pauseButton.loadGraphic('assets/images/menu/button_pause.png', false, 32, 32);
+		pauseButton.loadGraphic('assets/images/pause/button_pause.png', false, 32, 32);
 		add(pauseButton);
 
 		super.create();
@@ -134,7 +136,8 @@ class RtgRunState extends FlxState
 
 	private function loadPause():Void
 	{
-		pauseState = new PauseState(0x99808080);
+		Registry.minigamePaused = 'rtg';
+		pauseState = new PauseState();
 		openSubState(pauseState);
 	}
 

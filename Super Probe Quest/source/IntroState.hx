@@ -22,12 +22,12 @@ class IntroState extends FlxState
 	override public function create():Void
 	{
 		logo = new FlxSprite();
-		logo.loadGraphic('assets/images/logo.png');
+		logo.loadGraphic('assets/images/misc/logo.png');
 		logo.x = 63;
 		logo.y = 218;
 
 		pointFlicker = new FlxSprite();
-		pointFlicker.loadGraphic('assets/images/logoflicker.png');
+		pointFlicker.loadGraphic('assets/images/misc/logoflicker.png');
 		pointFlicker.x = 360;
 		pointFlicker.y = 225;
 
@@ -40,10 +40,10 @@ class IntroState extends FlxState
 
 		FlxG.sound.play('assets/sounds/introtone.wav');
 
-		FlxG.camera.fade(0xff000000, 2.5, loadMenu, false);
+		FlxG.camera.fade(0xff000000, 1.5, loadMenu, false);
 		FlxG.camera.shake(0.008, 0.2);
-		FlxFlicker.flicker(logoWave, 0.4, 0.04, true, false, null, null);
-		FlxFlicker.flicker(pointFlicker, 2.5, 0.01, true, false, null, null);
+		FlxFlicker.flicker(logoWave, 0.6, 0.06, true, false, null, null);
+		FlxFlicker.flicker(pointFlicker, 1.5, 0.02, true, false, null, null);
 
 		FlxG.mouse.visible = false;
 

@@ -29,8 +29,14 @@ class RtgPlayer extends FlxSprite
 		animation.add('up', [6, 7, 6, 8], 6, false);
 		animation.add('down', [3], 6, false);
 
-		drag.x = 1200;
+		// drag - smaller number, more drag (slower)
+		//      - larger number, less drag (faster)
+		drag.x = 1000;
+
+		// acceleration - smaller number, less resistance (higher/further)
+		//              - larger number, more resistance (lower/less)
 		acceleration.y = 420;
+
 		maxVelocity.set(120, 200);
 		setSize(14, 14);
 		//offset.set(4, 2);

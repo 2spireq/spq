@@ -293,7 +293,7 @@ class PlayState extends FlxState
 	private function loadRtg():Void
 	{
 		trace('loadRtg');
-		FlxG.switchState(new RtgRunState());
+		FlxG.switchState(new RtgIntroState());
 	}
 
 	private function loadRex():Void
