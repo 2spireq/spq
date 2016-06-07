@@ -43,9 +43,10 @@ class RtgRunState extends FlxState
 
 		clouds = new FlxSprite(-800, 0);
 		clouds.loadGraphic('assets/images/rtgrun/clouds.png');
-		if (cloudsRepeat == false)
-			clouds.scrollFactor.x = -0.3;
+		//if (cloudsRepeat == false)
+		//	clouds.scrollFactor.x = -0.3;
 		add(clouds);
+		clouds.scrollFactor.x = 0;
 
 		background = new FlxSprite(0, 0);
 		background.loadGraphic('assets/images/rtgrun/background.png');
@@ -112,13 +113,9 @@ class RtgRunState extends FlxState
 		if (cloudsRepeat == true)
 		{
 			if (clouds.x <= 640)
-			{
 				clouds.x += 0.3;
-			}
 			else if (clouds.x >= 2560)
-			{
 				clouds.x = -800;
-			}
 		}
 
 		FlxG.collide(walls, player);

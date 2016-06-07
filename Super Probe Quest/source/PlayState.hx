@@ -39,11 +39,14 @@ class PlayState extends FlxState
 	private var compHero:FlxSprite;
 
 	private var padButton:FlxButton;
+	private var menuButton:FlxButton;
 
 	private var starBack:FlxSprite;
 
+	private var hubPauseState:HubPauseState;
+
 	private var startX:Int = 10;
-	private var startY:Int = 30;
+	private var startY:Int = 60;
 
 	override public function create():Void
 	{
@@ -243,6 +246,11 @@ class PlayState extends FlxState
 		padButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(padButton);
 
+		menuButton = new FlxButton(10, 10, '', loadPause);
+		menuButton.loadGraphic('assets/images/pause/button_pause.png', 32, 32);
+		menuButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
+		add(menuButton);
+
 		FlxG.camera.flash(0xff000000, 0.5, null, false);
 		
 		super.create();
@@ -402,5 +410,11 @@ class PlayState extends FlxState
 	{
 		trace('loadPad');
 		FlxG.switchState(new PadState());
+	}
+
+	private function loadPause():Void
+	{
+		hubPauseState = new HubPauseState();
+		openSubState(hubPauseState);
 	}
 }
