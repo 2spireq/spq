@@ -70,9 +70,10 @@ class RtgRunState extends FlxState
 		walls.setTileProperties(4, FlxObject.NONE);
 		walls.setTileProperties(14, FlxObject.NONE);
 		walls.setTileProperties(16, FlxObject.NONE);
-		walls.setTileProperties(17, FlxObject.NONE, airOverlap);
-		walls.setTileProperties(18, FlxObject.NONE, waterOverlap);
-		walls.setTileProperties(56, FlxObject.NONE);
+		walls.setTileProperties(17, FlxObject.NONE, waterOverlap);
+		walls.setTileProperties(18, FlxObject.NONE);
+		walls.setTileProperties(26, FlxObject.NONE, airOverlap);
+		walls.setTileProperties(56, FlxObject.NONE, waterOverlap);
 		walls.setTileProperties(64, FlxObject.NONE);
 		walls.setTileProperties(65, FlxObject.NONE);
 

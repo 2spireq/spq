@@ -6,17 +6,11 @@
 
 // TODO
 	- system for color components on buttons (SEE BELOW);		done
-	- automate item adding?;									done
+	- automate item adding;										done
 	- add a-comp-maze collision									done
 
 // check to see if the color version of the component should be rendered (i.e. check to see if the component has been beaten)
 // e.g.
-
-// (when the user beats the pepssi minigame)
-function setPepssiHave
-{
-	var pepssiHave = true;		// nah
-}
 
 
 // SCRAPPED
@@ -36,8 +30,6 @@ Caretaker:
 	- trigger function
 
 // finding a part easily - explosion scatters
-
-
 
 crafting (notebook instructions)
 sidescrolling platformer (RTG) - tropical, to team members' vacation spot to reclaim component

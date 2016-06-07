@@ -19,7 +19,10 @@ class RtgPlayer extends FlxSprite
 
 	public function new(X:Float = 0, Y:Float = 0)
 	{
+		inWater = false;
+
 		super(X, Y);
+
 		loadGraphic('assets/images/rtgrun/playersprite.png', true, 16, 16);
 		setFacingFlip(FlxObject.LEFT, false, false);
 		setFacingFlip(FlxObject.RIGHT, true, false);
@@ -76,15 +79,20 @@ class RtgPlayer extends FlxSprite
 				animation.play('swimming');
 			else
 				animation.play('swimmingdown');
+
+			drag.x = 600;
+			drag.y = 600;
+			acceleration.y = 300;
 		}
 		else
 		{
 			if (velocity.x != 0)
-			{
 				animation.play('walking');
-			}
 			else
 				animation.play('down');
+
+			drag.x = 1000;
+			acceleration.y = 420;
 		}
 	}
 
