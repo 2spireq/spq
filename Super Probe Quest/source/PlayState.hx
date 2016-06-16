@@ -12,12 +12,6 @@ import flixel.util.FlxSave;
 
 class PlayState extends FlxState
 {
-	/*private var comp_alice:FlxSprite;
-	private var comp_lorri:FlxSprite;
-	private var comp_pepssi:FlxSprite;
-	private var comp_ralph:FlxSprite;
-	private var comp_swap:FlxSprite;*/
-
 	private var aliceButton:FlxButton;
 	private var lorriButton:FlxButton;
 	private var pepssiButton:FlxButton;
@@ -258,7 +252,6 @@ class PlayState extends FlxState
 	
 	override public function destroy():Void
 	{
-
 		super.destroy();
 	}
 

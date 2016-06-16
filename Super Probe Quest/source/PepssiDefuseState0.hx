@@ -13,15 +13,15 @@ class PepssiDefuseState0 extends FlxState
 	private var boxSprite:FlxSprite;
 	private var backgroundWave:FlxGlitchSprite;
 
-	private var b0:FlxButton;
-	private var b1:FlxButton;
-	private var b2:FlxButton;
-	private var b3:FlxButton;
+	private var buttonPeach:FlxButton;
+	private var buttonBlue:FlxButton;
+	private var buttonPink:FlxButton;
+	private var buttonLime:FlxButton;
 
-	private var defused0:Bool = false;
-	private var defused1:Bool = false;
-	private var defused2:Bool = false;
-	private var defused3:Bool = false;
+	private var defusedPeach:Bool = false;
+	private var defusedBlue:Bool = false;
+	private var defusedPink:Bool = false;
+	private var defusedLime:Bool = false;
 
 	override public function create():Void
 	{
@@ -38,17 +38,29 @@ class PepssiDefuseState0 extends FlxState
 		boxSprite.loadGraphic('assets/images/pepssiwire/box.png');
 		add(boxSprite);
 
-		b0 = new FlxButton(147, 96);
-		b0.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
-		if (defused0 == false)
-			b0.loadGraphic('assets/images/pepssiwire/bpeach.png', false, 32, 32);
-		add(b0);
+		buttonPeach = new FlxButton(147, 96, '', defPeach);
+		buttonPeach.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
+		if (defusedPeach == false)
+			buttonPeach.loadGraphic('assets/images/pepssiwire/bpeach.png', false, 32, 32);
+		add(buttonPeach);
 
-		b1 = new FlxButton(187, 96);
-		b1.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
-		if (defused1 == false)
-			b1.loadGraphic('assets/images/pepssiwire/bblue.png', false, 32, 32);
-		add(b1);
+		buttonBlue = new FlxButton(187, 96, defBlue);
+		buttonBlue.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
+		if (defusedBlue == false)
+			buttonBlue.loadGraphic('assets/images/pepssiwire/bblue.png', false, 32, 32);
+		add(buttonBlue);
+
+		buttonPink = new FlxButton(187, 96, defPink);
+		buttonPink.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
+		if (defusedPink == false)
+			buttonPink.loadGraphic('assets/images/pepssiwire/bpink.png', false, 32, 32);
+		add(buttonPink);
+
+		buttonLime = new FlxButton(187, 96, defLime);
+		buttonLime.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
+		if (defusedLime == false)
+			buttonLime.loadGraphic('assets/images/pepssiwire/bLime.png', false, 32, 32);
+		add(buttonLime);
 
 		super.create();
 	}
@@ -60,6 +72,31 @@ class PepssiDefuseState0 extends FlxState
 
 	override public function update():Void
 	{
+		
 		super.update();
 	}	
+
+	private function defPeach():Void
+	{
+		if (defusedPeach == false)
+			defusedPeach = true;
+	}
+
+	private function defBlue():Void
+	{
+		if (defusedBlue == false)
+			defusedBlue = true;
+	}
+
+	private function defPink():Void
+	{
+		if (defusedPink == false)
+			defusedPink = true;
+	}
+
+	private function defLime():Void
+	{
+		if (defusedLime == false)
+			defusedLime = true;
+	}
 }

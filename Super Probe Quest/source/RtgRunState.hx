@@ -35,6 +35,9 @@ class RtgRunState extends FlxState
 
 	override public function create():Void
 	{
+		Registry.rtgInWater = false;
+		Registry.rtgOnLadder = false;
+
 		cloudsRepeat = false;
 
 		sky = new FlxSprite(0, 0);
@@ -73,7 +76,12 @@ class RtgRunState extends FlxState
 		walls.setTileProperties(16, FlxObject.NONE);
 		walls.setTileProperties(17, FlxObject.NONE, waterOverlap);
 		walls.setTileProperties(18, FlxObject.NONE);
-		walls.setTileProperties(26, FlxObject.NONE, airOverlap);
+		walls.setTileProperties(26, FlxObject.NONE, airOverlap); // temp
+		walls.setTileProperties(40, FlxObject.NONE, ladderOverlap);
+		walls.setTileProperties(41, FlxObject.NONE, ladderOverlap);
+		walls.setTileProperties(42, FlxObject.NONE, airOverlap);
+		walls.setTileProperties(52, FlxObject.NONE);
+		walls.setTileProperties(53, FlxObject.NONE);
 		walls.setTileProperties(56, FlxObject.NONE, waterOverlap);
 		walls.setTileProperties(64, FlxObject.NONE);
 		walls.setTileProperties(65, FlxObject.NONE);
@@ -147,6 +155,12 @@ class RtgRunState extends FlxState
 	private function airOverlap(Tile:FlxObject, Object:FlxObject):Void
 	{
 		Registry.rtgInWater = false;
+		Registry.rtgOnLadder = false;
+	}
+
+	private function ladderOverlap(Tile:FlxObject, Object:FlxObject):Void
+	{
+		Registry.rtgOnLadder = true;
 	}
 
 	private function placeEntities(entityName:String, entityData:Xml):Void

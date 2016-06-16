@@ -5,7 +5,7 @@ import flixel.FlxState;
 import flixel.FlxSprite;
 import flixel.ui.FlxButton;
 
-class AliceDialogState2 extends FlxState
+class AliceDialogState5 extends FlxState
 {
 	private var oldman:FlxSprite;
 	private var background:FlxSprite;
@@ -21,7 +21,7 @@ class AliceDialogState2 extends FlxState
 		background.loadGraphic('assets/images/alicemaze/dialogue/alice_dialogue_back.png');
 
 		dialog0 = new FlxSprite(0, 262);
-		dialog0.loadGraphic('assets/images/alicemaze/dialogue/speak_1.png');
+		dialog0.loadGraphic('assets/images/alicemaze/dialogue/speak_4.png');
 
 		tag = new FlxSprite(0, 224);
 		tag.loadGraphic('assets/images/alicemaze/dialogue/tag.png');
@@ -51,6 +51,6 @@ class AliceDialogState2 extends FlxState
 
 	private function loadNext():Void
 	{
-		FlxG.switchState(new AliceDialogState3());
+		FlxG.switchState(new AliceDialogState6());
 	}
 }

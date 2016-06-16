@@ -16,10 +16,12 @@ class RtgPlayer extends FlxSprite
 	public var angleAttack:Float = 0;
 
 	private var inWater:Bool;
+	private var onLadder:Bool;
 
 	public function new(X:Float = 0, Y:Float = 0)
 	{
 		inWater = false;
+		onLadder = false;
 
 		super(X, Y);
 
@@ -54,6 +56,22 @@ class RtgPlayer extends FlxSprite
 		nowY = y;*/
 
 		acceleration.x = 0;
+
+		/*if (onLadder == true)
+		{
+			if (FlxG.keys.justPressed.S && velocity.y == 0)
+			{
+				y += 1;
+				velocity.y = 50;
+				velocity.x = 0;
+			}
+			else if (FlxG.keys.justPressed.W && velocity.y == 0)
+			{
+				y -= 1;
+				velocity.y = -50;
+				velocity.x = 0;
+			}
+		}*/
 
 		if (FlxG.keys.pressed.A)
 		{
@@ -94,11 +112,13 @@ class RtgPlayer extends FlxSprite
 			drag.x = 1000;
 			acceleration.y = 420;
 		}
+
 	}
 
 	override public function update():Void
 	{
 		inWater = Registry.rtgInWater;
+		onLadder = Registry.rtgOnLadder;
 		movement();
 		super.update();
 	}

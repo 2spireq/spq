@@ -5,7 +5,7 @@ import flixel.FlxState;
 import flixel.FlxSprite;
 import flixel.ui.FlxButton;
 
-class AliceDialogState2 extends FlxState
+class AliceDialogState4 extends FlxState
 {
 	private var oldman:FlxSprite;
 	private var background:FlxSprite;
@@ -15,13 +15,13 @@ class AliceDialogState2 extends FlxState
 	override public function create():Void
 	{
 		oldman = new FlxSprite(384, 6);
-		oldman.loadGraphic('assets/images/alicemaze/dialogue/OldManSmiling.png');
+		oldman.loadGraphic('assets/images/alicemaze/dialogue/OldManSmilingOpenmouth.png');
 
 		background = new FlxSprite(0, 0);
 		background.loadGraphic('assets/images/alicemaze/dialogue/alice_dialogue_back.png');
 
 		dialog0 = new FlxSprite(0, 262);
-		dialog0.loadGraphic('assets/images/alicemaze/dialogue/speak_1.png');
+		dialog0.loadGraphic('assets/images/alicemaze/dialogue/speak_3.png');
 
 		tag = new FlxSprite(0, 224);
 		tag.loadGraphic('assets/images/alicemaze/dialogue/tag.png');
@@ -51,6 +51,6 @@ class AliceDialogState2 extends FlxState
 
 	private function loadNext():Void
 	{
-		FlxG.switchState(new AliceDialogState3());
+		FlxG.switchState(new AliceDialogState5());
 	}
 }
