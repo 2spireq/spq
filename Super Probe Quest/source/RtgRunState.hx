@@ -44,7 +44,7 @@ class RtgRunState extends FlxState
 		sky.loadGraphic('assets/images/rtgrun/sky.png');
 		add(sky);
 
-		clouds = new FlxSprite(-800, 0);
+		clouds = new FlxSprite(0, 0);
 		clouds.loadGraphic('assets/images/rtgrun/clouds.png');
 		//if (cloudsRepeat == false)
 		//	clouds.scrollFactor.x = -0.3;

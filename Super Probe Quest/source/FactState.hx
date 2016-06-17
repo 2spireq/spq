@@ -26,7 +26,7 @@ class FactState extends FlxState
 	{
 		FlxG.camera.flash(0xff000000, 0.5, null, false);
 
-		randDispList = [1 => 'f0', 2 => 'f1', 3 => 'f2', 4 => 'f3'];
+		randDispList = [1 => 'f0', 2 => 'f1', 3 => 'f2', 4 => 'f3', 5 => 'f4'];
 		
 		loadHolder = 0;
 
@@ -92,6 +92,12 @@ class FactState extends FlxState
 			factHolder.loadGraphic('assets/images/facts/fact3.png');
 			add(factHolder);
 			trace('3');
+		}
+		else if (no == 4)
+		{
+			factHolder.loadGraphic('assets/images/facts/fact4.png');
+			add(factHolder);
+			trace ('4');
 		}
 	}
 

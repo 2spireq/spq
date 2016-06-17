@@ -22,6 +22,10 @@ class PadState extends FlxState
 		back.loadGraphic('assets/images/launchblock/skyback.png');
 		add(back);
 
+		cloud0 = new FlxSprite(-540, 20);
+		cloud0.loadGraphic('assets/images/rtgrun/clouds.png');
+		add(cloud0);
+
 		pad = new FlxSprite(0, 0);
 		/*if (Registry.launchReady == null)
 			pad.loadGraphic('assets/images/launchblock/pad-norocket.png');*/
@@ -30,10 +34,6 @@ class PadState extends FlxState
 		else
 			pad.loadGraphic('assets/images/launchblock/pad-norocket.png');
 		add(pad);
-
-		cloud0 = new FlxSprite(-540, 20);
-		cloud0.loadGraphic('assets/images/rtgrun/clouds.png');
-		add(cloud0);
 
 		backButton = new FlxButton(10, 10, '', loadMenu);
 		backButton.loadGraphic('assets/images/menu/button_back.png', false, 67, 32);
