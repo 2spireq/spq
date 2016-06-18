@@ -5,31 +5,21 @@ import flixel.FlxState;
 import flixel.FlxSprite;
 import flixel.ui.FlxButton;
 
-class AliceFoundState extends FlxState
+class RtgFoundState extends FlxState
 {
-	private var aliceFound:FlxSprite;
+	private var rtgFail:FlxSprite;
 	private var okButton:FlxButton;
-	private var aliceBackdrop:FlxSprite;
 
 	override public function create():Void
 	{
 		FlxG.camera.flash(0xff000000, 1, null, false);
-
-		if (Registry.haveAlice != true)
-			Registry.partsNo++;
-
-		Registry.haveAlice = true;
-
-		aliceFound = new FlxSprite(0, 0);
-		aliceFound.loadGraphic('assets/images/found/found_alice.png');
-		add(aliceFound);
-
-		aliceBackdrop = new FlxSprite(200, 424);
-		aliceBackdrop.loadGraphic('assets/images/found/alice_button_backdrop.png');
-		add(aliceBackdrop);
+		
+		rtgFail = new FlxSprite(0, 0);
+		rtgFail.loadGraphic('assets/images/found/fail_rtg.png');
+		add(rtgFail);
 
 		okButton = new FlxButton(196, 420, '', loadPlay);
-		okButton.loadGraphic('assets/images/found/found_alice_button.png', false, 247, 53);
+		okButton.loadGraphic('assets/images/found/found_rtg_button.png', false, 247, 53);
 		okButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(okButton);
 

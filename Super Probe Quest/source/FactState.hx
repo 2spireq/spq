@@ -110,7 +110,7 @@ class FactState extends FlxState
 	{
 		loadFact(loadHolder);
 
-		if (loadHolder == 3)
+		if (loadHolder == 4)
 			loadHolder = 0;
 		else
 			loadHolder++;

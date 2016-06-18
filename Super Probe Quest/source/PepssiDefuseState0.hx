@@ -59,7 +59,7 @@ class PepssiDefuseState0 extends FlxState
 		buttonLime = new FlxButton(187, 96, defLime);
 		buttonLime.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		if (defusedLime == false)
-			buttonLime.loadGraphic('assets/images/pepssiwire/bLime.png', false, 32, 32);
+			buttonLime.loadGraphic('assets/images/pepssiwire/blime.png', false, 32, 32);
 		add(buttonLime);
 
 		super.create();

@@ -10,35 +10,49 @@ import flixel.tile.FlxTilemap;
 import flixel.FlxCamera;
 import flixel.FlxObject;
 import flixel.group.FlxTypedGroup;
+import flixel.util.FlxTimer;
+import flixel.util.FlxColor;
+import Std.int;
 
 class RtgRunState extends FlxState
 {
 	private var sky:FlxSprite;
 	private var background:FlxSprite;
 	private var clouds:FlxSprite;
-
-	private var cloudsRepeat:Bool;
+	private var pauseState:PauseState;
+	private var pauseButton:FlxButton;
+	private var timer:FlxTimer;
+	private var timeText:FlxText;
+	private var timerLeft:String;
+	private var timerLeftInt:Int;
+	private var pointsText:FlxText;
+	private var rtgPartsFound:Int = 0;
 
 	private var map:FlxOgmoLoader;
 	private var walls:FlxTilemap;
 	private var player:RtgPlayer;
-
-	private var grpParts0:FlxTypedGroup<Rtg0>;
-	/*private var grpParts1:FlxTypedGroup<Rtg1>;
-	private var grpParts2:FlxTypedGroup<Rtg2>;
-	private var grpParts3:FlxTypedGroup<Rtg3>; */
-
 	private var p0:Rtg0;
-
-	private var pauseState:PauseState;
-	private var pauseButton:FlxButton;
+	private var grpParts0:FlxTypedGroup<Rtg0>;
 
 	override public function create():Void
 	{
 		Registry.rtgInWater = false;
 		Registry.rtgOnLadder = false;
 
-		cloudsRepeat = false;
+		FlxG.camera.flash(0xff000000, 1, null, false);
+
+		timer = new FlxTimer().start(120, timeEnd, 1);
+		timerLeftInt = Std.int(timer.timeLeft);
+		timerLeft = 'TIME: ' + timerLeftInt;
+		timeText = new FlxText(100, 15, 100);
+		timeText.text = timerLeft;
+		timeText.setFormat(8, FlxColor.WHITE);
+		timeText.scrollFactor.x = 0;
+
+		pointsText = new FlxText(170, 15, 100);
+		pointsText.text = 'PARTS: ' + rtgPartsFound + ' /4';
+		pointsText.setFormat(8, FlxColor.WHITE);
+		pointsText.scrollFactor.x = 0;
 
 		sky = new FlxSprite(0, 0);
 		sky.loadGraphic('assets/images/rtgrun/sky.png');
@@ -46,8 +60,6 @@ class RtgRunState extends FlxState
 
 		clouds = new FlxSprite(0, 0);
 		clouds.loadGraphic('assets/images/rtgrun/clouds.png');
-		//if (cloudsRepeat == false)
-		//	clouds.scrollFactor.x = -0.3;
 		add(clouds);
 		clouds.scrollFactor.x = 0;
 
@@ -76,22 +88,37 @@ class RtgRunState extends FlxState
 		walls.setTileProperties(16, FlxObject.NONE);
 		walls.setTileProperties(17, FlxObject.NONE, waterOverlap);
 		walls.setTileProperties(18, FlxObject.NONE);
-		walls.setTileProperties(26, FlxObject.NONE, airOverlap); // temp
+		walls.setTileProperties(26, FlxObject.NONE, airOverlap);
 		walls.setTileProperties(40, FlxObject.NONE, ladderOverlap);
 		walls.setTileProperties(41, FlxObject.NONE, ladderOverlap);
 		walls.setTileProperties(42, FlxObject.NONE, airOverlap);
 		walls.setTileProperties(52, FlxObject.NONE);
-		walls.setTileProperties(53, FlxObject.NONE);
+		walls.setTileProperties(53, FlxObject.NONE); // green clothesline
 		walls.setTileProperties(56, FlxObject.NONE, waterOverlap);
 		walls.setTileProperties(64, FlxObject.NONE);
 		walls.setTileProperties(65, FlxObject.NONE);
+		walls.setTileProperties(69, FlxObject.NONE, airOverlap);
+		walls.setTileProperties(70, FlxObject.NONE, airOverlap);
+		walls.setTileProperties(88, FlxObject.NONE);
+		walls.setTileProperties(89, FlxObject.NONE);
+		walls.setTileProperties(90, FlxObject.NONE);
+		walls.setTileProperties(91, FlxObject.NONE);
+		walls.setTileProperties(92, FlxObject.NONE);
+		walls.setTileProperties(104, FlxObject.NONE);
+		walls.setTileProperties(105, FlxObject.NONE, helicopterInteract);
+		walls.setTileProperties(106, FlxObject.NONE, helicopterInteract);
+		walls.setTileProperties(107, FlxObject.NONE);
+		walls.setTileProperties(108, FlxObject.NONE);
 
-		FlxG.camera.follow(player, FlxCamera.STYLE_TOPDOWN, 1);
+		FlxG.camera.follow(player, FlxCamera.STYLE_PLATFORMER, 1);
 
 		pauseState = new PauseState();
 		pauseButton = new FlxButton(10, 10, '', loadPause);
 		pauseButton.loadGraphic('assets/images/pause/button_pause.png', false, 32, 32);
 		add(pauseButton);
+
+		add(timeText);
+		add(pointsText);
 
 		super.create();
 	}
@@ -113,11 +140,17 @@ class RtgRunState extends FlxState
 
 	private function hitInteract0():Void
 	{
-		trace('part 0');
+		rtgPartsFound++;
 	}
 
 	override public function update():Void
 	{	
+		timerLeftInt = Std.int(timer.timeLeft);
+		timerLeft = 'TIME: ' + timerLeftInt;
+		timeText.text = timerLeft;
+
+		pointsText.text = 'PARTS: ' + rtgPartsFound + ' /4';
+
 		if (cloudsRepeat == true)
 		{
 			if (clouds.x <= 640)
@@ -158,6 +191,14 @@ class RtgRunState extends FlxState
 		Registry.rtgOnLadder = false;
 	}
 
+	private function helicopterInteract(Tile:FlxObject, Object:FlxObject):Void
+	{
+		trace('helicopter interact');
+
+		if (rtgPartsFound == 4)
+			FlxG.camera.fade(0xff000000, 1, nextState, false);
+	}
+
 	private function ladderOverlap(Tile:FlxObject, Object:FlxObject):Void
 	{
 		Registry.rtgOnLadder = true;
@@ -178,8 +219,18 @@ class RtgRunState extends FlxState
 	    }
 	}
 
-	private function interact0():Void
+	private function timeEnd(Timer:FlxTimer):Void
 	{
-		trace('0');
+		trace('rtg time end');
+	}
+
+	private function nextState():Void
+	{
+		FlxG.switchState(new RtgFoundState());
+	}
+
+	private function failState():Void
+	{
+		//FlxG.switchState(new RtgFailState());
 	}
 }

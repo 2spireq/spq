@@ -12,6 +12,8 @@ class RtgIntroState extends FlxState
 
 	override public function create():Void
 	{
+		FlxG.camera.flash(0xff000000, 1, null, false);
+
 		email = new FlxSprite(0, 0);
 		email.loadGraphic('assets/images/rtgrun/rtgemail.png');
 		add(email);

@@ -12,7 +12,7 @@ class Rtg0 extends FlxSprite
 	public function new(X:Float=0, Y:Float=0) 
 	{
 	    super(X, Y);
-	    loadGraphic('assets/images/rtgrun/p4.png', false, 16, 11);
+	    loadGraphic('assets/images/rtgrun/p1.png', false, 8, 8);
 	}
 
 	override public function update():Void
