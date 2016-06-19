@@ -73,46 +73,46 @@ class RtgPlayer extends FlxSprite
 			}
 		}*/
 
-		if (FlxG.keys.pressed.A)
-		{
-			flipX = false;
-			acceleration.x -= drag.x;
-		}
-		else if (FlxG.keys.pressed.D)
-		{
-			flipX = true;
-			acceleration.x += drag.x;
-		}
+		if (Registry.rtgFailed != true)
+			if (FlxG.keys.pressed.A)
+			{
+				flipX = false;
+				acceleration.x -= drag.x;
+			}
+			else if (FlxG.keys.pressed.D)
+			{
+				flipX = true;
+				acceleration.x += drag.x;
+			}
 
-		if (FlxG.keys.justPressed.W && velocity.y == 0 && isTouching(FlxObject.FLOOR))
-		{
-			y -= 1;
-			velocity.y = -200;
-			velocity.x = 0;
-		}
+			if (FlxG.keys.justPressed.W && velocity.y == 0 && isTouching(FlxObject.FLOOR))
+			{
+				y -= 1;
+				velocity.y = -200;
+				velocity.x = 0;
+			}
 
-		if (inWater == true)
-		{
-			if (velocity.x != 0)
-				animation.play('swimming');
+			if (inWater == true)
+			{
+				if (velocity.x != 0)
+					animation.play('swimming');
+				else
+					animation.play('swimmingdown');
+
+				drag.x = 600;
+				drag.y = 600;
+				acceleration.y = 500;
+			}
 			else
-				animation.play('swimmingdown');
+			{
+				if (velocity.x != 0)
+					animation.play('walking');
+				else
+					animation.play('down');
 
-			drag.x = 600;
-			drag.y = 600;
-			acceleration.y = 500;
-		}
-		else
-		{
-			if (velocity.x != 0)
-				animation.play('walking');
-			else
-				animation.play('down');
-
-			drag.x = 1000;
-			acceleration.y = 420;
-		}
-
+				drag.x = 1000;
+				acceleration.y = 420;
+			}
 	}
 
 	override public function update():Void

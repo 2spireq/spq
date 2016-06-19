@@ -12,6 +12,9 @@ import flixel.FlxObject;
 import flixel.group.FlxTypedGroup;
 import flixel.util.FlxTimer;
 import flixel.util.FlxColor;
+import flixel.util.FlxSpriteUtil;
+import flixel.effects.FlxFlicker;
+import flixel.tweens.FlxTween;
 import Std.int;
 
 class RtgRunState extends FlxState
@@ -19,8 +22,11 @@ class RtgRunState extends FlxState
 	private var sky:FlxSprite;
 	private var background:FlxSprite;
 	private var clouds:FlxSprite;
+	private var sun:FlxSprite;
+	private var failText:FlxSprite;
 	private var pauseState:PauseState;
 	private var pauseButton:FlxButton;
+	private var failContinueButton:FlxButton;
 	private var timer:FlxTimer;
 	private var timeText:FlxText;
 	private var timerLeft:String;
@@ -38,10 +44,11 @@ class RtgRunState extends FlxState
 	{
 		Registry.rtgInWater = false;
 		Registry.rtgOnLadder = false;
+		Registry.rtgFailed = false;
 
 		FlxG.camera.flash(0xff000000, 1, null, false);
 
-		timer = new FlxTimer().start(120, timeEnd, 1);
+		timer = new FlxTimer().start(100, timeEnd, 1);
 		timerLeftInt = Std.int(timer.timeLeft);
 		timerLeft = 'TIME: ' + timerLeftInt;
 		timeText = new FlxText(100, 15, 100);
@@ -62,6 +69,11 @@ class RtgRunState extends FlxState
 		clouds.loadGraphic('assets/images/rtgrun/clouds.png');
 		add(clouds);
 		clouds.scrollFactor.x = 0;
+
+		sun = new FlxSprite(500, 20);
+		sun.loadGraphic('assets/images/rtgrun/sun.png');
+		add(sun);
+		sun.scrollFactor.x = 0;
 
 		background = new FlxSprite(0, 0);
 		background.loadGraphic('assets/images/rtgrun/background.png');
@@ -151,14 +163,6 @@ class RtgRunState extends FlxState
 
 		pointsText.text = 'PARTS: ' + rtgPartsFound + ' /4';
 
-		if (cloudsRepeat == true)
-		{
-			if (clouds.x <= 640)
-				clouds.x += 0.3;
-			else if (clouds.x >= 2560)
-				clouds.x = -800;
-		}
-
 		FlxG.collide(walls, player);
 		FlxG.overlap(player, grpParts0, playerHitInteract);
 
@@ -193,8 +197,6 @@ class RtgRunState extends FlxState
 
 	private function helicopterInteract(Tile:FlxObject, Object:FlxObject):Void
 	{
-		trace('helicopter interact');
-
 		if (rtgPartsFound == 4)
 			FlxG.camera.fade(0xff000000, 1, nextState, false);
 	}
@@ -205,23 +207,36 @@ class RtgRunState extends FlxState
 	}
 
 	private function placeEntities(entityName:String, entityData:Xml):Void
- 	{
-	    var x:Int = Std.parseInt(entityData.get('x'));
-	    var y:Int = Std.parseInt(entityData.get('y'));
-	    if (entityName == 'player')
-	    {
-	        player.x = x;
-	        player.y = y;
-	    }
-	    else if (entityName == 'p0')
-	    {
-	    	grpParts0.add(new Rtg0(x, y));
-	    }
+	{
+		var x:Int = Std.parseInt(entityData.get('x'));
+		var y:Int = Std.parseInt(entityData.get('y'));
+		if (entityName == 'player')
+		{
+			player.x = x;
+			player.y = y;
+		}
+		else if (entityName == 'p0')
+			grpParts0.add(new Rtg0(x, y));
 	}
 
 	private function timeEnd(Timer:FlxTimer):Void
 	{
 		trace('rtg time end');
+
+		failText = new FlxSprite(0, 193);
+		failText.loadGraphic('assets/images/rtgrun/rtg_fail_text.png');
+		failText.scrollFactor.x = 0;
+		failText.scrollFactor.y = 0;
+		FlxFlicker.flicker(failText, 0.3, 0.03, true, false, null, null);
+		FlxSpriteUtil.fadeIn(failText, 1, true, null);
+		add(failText);
+
+		failContinueButton = new FlxButton(196, 420, '', failedNextState);
+		failContinueButton.loadGraphic('assets/images/rtgrun/fail_continue_button.png', false, 247, 53);
+		failContinueButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
+		add(failContinueButton);
+
+		Registry.rtgFailed = true;
 	}
 
 	private function nextState():Void
@@ -229,8 +244,9 @@ class RtgRunState extends FlxState
 		FlxG.switchState(new RtgFoundState());
 	}
 
-	private function failState():Void
+	private function failedNextState():Void
 	{
-		//FlxG.switchState(new RtgFailState());
+		FlxG.camera.fade(0xff000000, 2, false, false);
+		FlxG.switchState(new PlayState());
 	}
 }

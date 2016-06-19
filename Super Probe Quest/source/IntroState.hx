@@ -16,11 +16,13 @@ class IntroState extends FlxState
 	private var pointFlicker:FlxSprite;
 
 	private var logoWave:FlxWaveSprite;
-
 	private var introTone:FlxSound;
 
 	override public function create():Void
 	{
+		trace('SUPER PROBE QUEST');
+		trace('Console output for debugging only - no attention required');
+
 		logo = new FlxSprite();
 		logo.loadGraphic('assets/images/misc/logo.png');
 		logo.x = 63;
