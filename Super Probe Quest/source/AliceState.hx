@@ -29,7 +29,7 @@ class AliceState extends FlxState
 		_mWalls = _map.loadTilemap('assets/images/alicemaze/b-map.png', 16, 16, 'walls');
 		_mWalls.setTileProperties(1, FlxObject.ANY);
 		_mWalls.setTileProperties(2, FlxObject.NONE);
-		_mWalls.setTileProperties(3, FlxObject.ANY);
+		/*_mWalls.setTileProperties(3, FlxObject.ANY);
 		_mWalls.setTileProperties(4, FlxObject.ANY);
 		_mWalls.setTileProperties(5, FlxObject.ANY);
 		_mWalls.setTileProperties(6, FlxObject.ANY);
@@ -46,7 +46,10 @@ class AliceState extends FlxState
 		_mWalls.setTileProperties(17, FlxObject.NONE);
 		_mWalls.setTileProperties(18, FlxObject.ANY);
 		_mWalls.setTileProperties(19, FlxObject.ANY);
-		_mWalls.setTileProperties(20, FlxObject.ANY);
+		_mWalls.setTileProperties(20, FlxObject.ANY);*/
+		_mWalls.setTileProperties(44, FlxObject.NONE);
+		_mWalls.setTileProperties(45, FlxObject.NONE);
+
 		add(_mWalls);
 
 		_grpCleaner = new FlxTypedGroup<Cleaner>();

@@ -140,21 +140,6 @@ class RtgRunState extends FlxState
 		super.destroy();
 	}
 
-	private function playerHitInteract(P:Player, H:Rtg0):Void
-	{
-		if (P.alive && P.exists && H.alive && H.exists)
-		{
-			H.kill();
-			hitInteract0();
-		}
-		trace('hit interact');
-	}
-
-	private function hitInteract0():Void
-	{
-		rtgPartsFound++;
-	}
-
 	override public function update():Void
 	{	
 		timerLeftInt = Std.int(timer.timeLeft);
@@ -171,6 +156,21 @@ class RtgRunState extends FlxState
 
 		super.update();
 	}	
+
+	private function playerHitInteract(P:Player, H:Rtg0):Void
+	{
+		if (P.alive && P.exists && H.alive && H.exists)
+		{
+			H.kill();
+			rtgPartsFound++;
+		}
+		trace('rtg part +');
+	}
+
+	private function hitInteract0():Void
+	{
+		rtgPartsFound++;
+	}
 
 	private function loadMenu():Void
 	{

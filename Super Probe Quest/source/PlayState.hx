@@ -264,7 +264,7 @@ class PlayState extends FlxState
 	private function loadAlice():Void
 	{
 		trace('loadAlice');
-		FlxG.switchState(new AliceDialogState());
+		FlxG.switchState(new AliceTitleState());
 	}
 
 	private function loadLorri():Void

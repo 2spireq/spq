@@ -40,5 +40,4 @@ class RtgIntroState extends FlxState
 	{
 		FlxG.switchState(new RtgRunState());
 	}
-
 }
