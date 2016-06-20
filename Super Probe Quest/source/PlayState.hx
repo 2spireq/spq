@@ -48,14 +48,14 @@ class PlayState extends FlxState
 		starBack.loadGraphic('assets/images/hub/starback_2.png');
 		add(starBack);
 
-		aliceButton = new FlxButton(startX, startY, '', loadAlice);
-		lorriButton = new FlxButton(startX + 66, startY, '', loadLorri);
-		pepssiButton = new FlxButton(startX + 132, startY, '', loadPepssi);
-		ralphButton = new FlxButton(startX + 198, startY, '', loadRalph);
-		swapButton = new FlxButton(startX, startY + 66, '', loadSwap);
-		rtgButton = new FlxButton(startX + 66, startY + 66, '', loadRtg);
-		rexButton = new FlxButton(startX + 132, startY + 66, '', loadRex);
-		heatButton = new FlxButton(startX + 198, startY + 66, '', loadHeat);
+		aliceButton = new FlxButton(startX, startY, '', fadeAlice);
+		lorriButton = new FlxButton(startX + 66, startY, '', fadeLorri);
+		pepssiButton = new FlxButton(startX + 132, startY, '', fadePepssi);
+		ralphButton = new FlxButton(startX + 198, startY, '', fadeRalph);
+		swapButton = new FlxButton(startX, startY + 66, '', fadeSwap);
+		rtgButton = new FlxButton(startX + 66, startY + 66, '', fadeRtg);
+		rexButton = new FlxButton(startX + 132, startY + 66, '', fadeRex);
+		heatButton = new FlxButton(startX + 198, startY + 66, '', fadeHeat);
 
 		trace(Registry.partsNo);
 
@@ -261,6 +261,66 @@ class PlayState extends FlxState
 		super.update();
 	}	
 
+	private function fade(minigame:String):Void
+	{
+		if (minigame == 'alice')
+			FlxG.camera.fade(0xffffffff, 1, loadAlice, false);
+		else if (minigame == 'lorri')
+			FlxG.camera.fade(0xff000000, 1, loadLorri, false);
+		else if (minigame == 'pepssi')
+			FlxG.camera.fade(0xff000000, 1, loadPepssi, false);
+		else if (minigame == 'ralph')
+			FlxG.camera.fade(0xff000000, 1, loadRalph, false);
+		else if (minigame == 'swap')
+			FlxG.camera.fade(0xff000000, 1, loadSwap, false);
+		else if (minigame == 'rtg')
+			FlxG.camera.fade(0xff000000, 1, loadRtg, false);
+		else if (minigame == 'rex')
+			FlxG.camera.fade(0xff000000, 1, loadRex, false);
+		else if (minigame == 'heat')
+			FlxG.camera.fade(0xff000000, 1, loadHeat, false);
+	}
+
+	private function fadeAlice():Void
+	{
+		FlxG.camera.fade(0xffffffff, 1, loadAlice, false);
+	}
+
+	private function fadeLorri():Void
+	{
+		FlxG.camera.fade(0xffffffff, 1, loadLorri, false);
+	}
+
+	private function fadePepssi():Void
+	{
+		FlxG.camera.fade(0xffffffff, 1, loadPepssi, false);
+	}
+
+	private function fadeRalph():Void
+	{
+		FlxG.camera.fade(0xffffffff, 1, loadRalph, false);
+	}
+
+	private function fadeSwap():Void
+	{
+		FlxG.camera.fade(0xffffffff, 1, loadSwap, false);
+	}
+
+	private function fadeRtg():Void
+	{
+		FlxG.camera.fade(0xffffffff, 1, loadRtg, false);
+	}
+
+	private function fadeRex():Void
+	{
+		FlxG.camera.fade(0xffffffff, 1, loadRex, false);
+	}
+
+	private function fadeHeat():Void
+	{
+		FlxG.camera.fade(0xffffffff, 1, loadHeat, false);
+	}
+
 	private function loadAlice():Void
 	{
 		trace('loadAlice');
@@ -306,7 +366,7 @@ class PlayState extends FlxState
 	private function loadHeat():Void
 	{
 		trace('loadHeat');
-		//FlxG.switchState(new PlayState());
+		FlxG.switchState(new HeatHackState());
 	}
 
 	private function infoRemove():Void

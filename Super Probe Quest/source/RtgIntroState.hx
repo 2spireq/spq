@@ -12,13 +12,13 @@ class RtgIntroState extends FlxState
 
 	override public function create():Void
 	{
-		FlxG.camera.flash(0xff000000, 1, null, false);
+		FlxG.camera.flash(0xffffffff, 1, null, false);
 
 		email = new FlxSprite(0, 0);
 		email.loadGraphic('assets/images/rtgrun/rtgemail.png');
 		add(email);
 
-		buttonNext = new FlxButton(287, 430, '', loadNext);
+		buttonNext = new FlxButton(287, 430, '', fade);
 		buttonNext.loadGraphic('assets/images/menu/button_f.png', false, 67, 32);
 		buttonNext.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(buttonNext);
@@ -35,6 +35,11 @@ class RtgIntroState extends FlxState
 	{
 		super.update();
 	}	
+
+	private function fade():Void
+	{
+		FlxG.camera.fade(0xff000000, 1, loadNext, false);
+	}
 
 	private function loadNext():Void
 	{

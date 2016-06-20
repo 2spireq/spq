@@ -12,10 +12,12 @@ class AliceTitleState extends FlxState
 
 	override public function create():Void
 	{
+		FlxG.camera.flash(0xffffffff, 1, null, false);
+
 		background = new FlxSprite(0, 0);
 		background.loadGraphic('assets/images/alicemaze/dialogue/alice_dialogue_back.png');
 
-		dialog0 = new FlxButton(223, 451, '', loadNext);
+		dialog0 = new FlxButton(223, 452, '', loadNext);
 		dialog0.loadGraphic('assets/images/alicemaze/dialogue/title_next.png', false, 194, 29);
 
 		add(background);

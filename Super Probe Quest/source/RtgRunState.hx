@@ -51,12 +51,12 @@ class RtgRunState extends FlxState
 		timer = new FlxTimer().start(100, timeEnd, 1);
 		timerLeftInt = Std.int(timer.timeLeft);
 		timerLeft = 'TIME: ' + timerLeftInt;
-		timeText = new FlxText(100, 15, 100);
+		timeText = new FlxText(100, 20, 100);
 		timeText.text = timerLeft;
 		timeText.setFormat(8, FlxColor.WHITE);
 		timeText.scrollFactor.x = 0;
 
-		pointsText = new FlxText(170, 15, 100);
+		pointsText = new FlxText(100, 35, 100);
 		pointsText.text = 'PARTS: ' + rtgPartsFound + ' /4';
 		pointsText.setFormat(8, FlxColor.WHITE);
 		pointsText.scrollFactor.x = 0;
