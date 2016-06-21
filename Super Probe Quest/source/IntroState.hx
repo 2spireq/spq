@@ -22,6 +22,7 @@ class IntroState extends FlxState
 	{
 		trace('SUPER PROBE QUEST');
 		trace('Console output for debugging only - no attention required');
+		trace(FlxG.VERSION);
 
 		logo = new FlxSprite();
 		logo.loadGraphic('assets/images/misc/logo.png');

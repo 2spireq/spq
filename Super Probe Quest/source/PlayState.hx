@@ -366,7 +366,7 @@ class PlayState extends FlxState
 	private function loadHeat():Void
 	{
 		trace('loadHeat');
-		FlxG.switchState(new HeatHackState());
+		FlxG.switchState(new HeatIntroState());
 	}
 
 	private function infoRemove():Void
