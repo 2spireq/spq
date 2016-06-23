@@ -8,7 +8,7 @@ import flixel.addons.text.FlxTypeText;
 import flixel.addons.ui.FlxInputText;
 import Std;
 
-class HeatHackState extends FlxState
+class HeatHackState3 extends FlxState
 {
 	private var pauseState:PauseState;
 	private var pauseButton:FlxButton;
@@ -26,7 +26,7 @@ class HeatHackState extends FlxState
 		background.loadGraphic('assets/images/heathack/heat_back.png');
 		add(background);
 
-		question = new FlxTypeText(165, 153, 310, 'Question 1. Choose the scientist who first discovered Pluto.\n1. Clyde Tombaugh\n2. Carl Sagan\n3. Galileo\n4. Edwin Hubble\n', 8, true);
+		question = new FlxTypeText(165, 153, 310, 'Question 3. In classical mythology, Pluto is the god of which of the following?\n1. Sunshine and happiness\n2. The underworld\n3. The solar system\n4. The sky', 8, true);
 		question.delay = 0.1;
 		question.eraseDelay = 0.1;
 		question.showCursor = false;
@@ -92,7 +92,7 @@ class HeatHackState extends FlxState
 	{
 		if (action == FlxInputText.ENTER_ACTION)
 		{
-			if (input.text == '1')
+			if (input.text == '2')
 			{
 				add(correct);
 				correct.start(0.02, false, false, null);
@@ -116,7 +116,7 @@ class HeatHackState extends FlxState
 
 	private function nextCorrectState():Void
 	{
-		FlxG.switchState(new HeatHackState2());
+		FlxG.switchState(new HeatHackState4());
 	}
 
 	private function nextIncorrectState():Void

@@ -8,7 +8,7 @@ import flixel.addons.text.FlxTypeText;
 import flixel.addons.ui.FlxInputText;
 import Std;
 
-class HeatHackState extends FlxState
+class HeatHackState2 extends FlxState
 {
 	private var pauseState:PauseState;
 	private var pauseButton:FlxButton;
@@ -26,7 +26,7 @@ class HeatHackState extends FlxState
 		background.loadGraphic('assets/images/heathack/heat_back.png');
 		add(background);
 
-		question = new FlxTypeText(165, 153, 310, 'Question 1. Choose the scientist who first discovered Pluto.\n1. Clyde Tombaugh\n2. Carl Sagan\n3. Galileo\n4. Edwin Hubble\n', 8, true);
+		question = new FlxTypeText(165, 153, 310, 'Question 2. How many moons does Pluto have?\n1. None\n2. 1\n3. 3\n4. 5\n5. Unknown', 8, true);
 		question.delay = 0.1;
 		question.eraseDelay = 0.1;
 		question.showCursor = false;
@@ -36,20 +36,20 @@ class HeatHackState extends FlxState
 		add(question);
 		question.start(0.02, false, false, null);
 
-		input = new FlxInputText(165, 220, 310, 8, 0x8811EE11, 0x00000000, true);
+		input = new FlxInputText(165, 235, 310, 8, 0x8811EE11, 0x00000000, true);
 		input.maxLength = 2;
 		input.hasFocus = true;
 		input.callback = inputEntered;
 		add(input);
 
-		correct = new FlxTypeText(165, 235, 310, 'Correct. Now proceeding to next security question\nPress space to continue', 8, true);
+		correct = new FlxTypeText(165, 250, 310, 'Correct. Now proceeding to next security question\nPress space to continue', 8, true);
 		correct.delay = 0.1;
 		correct.eraseDelay = 0.1;
 		correct.showCursor = false;
 		correct.setTypingVariation(0.5, true);
 		correct.color = 0x8811EE11;
 
-		incorrect = new FlxTypeText(165, 235, 310, 'Incorrect\nAccess denied\nPress space to continue', 8, true);
+		incorrect = new FlxTypeText(165, 250, 310, 'Incorrect\nAccess denied\nPress space to continue', 8, true);
 		incorrect.delay = 0.1;
 		incorrect.eraseDelay = 0.1;
 		incorrect.showCursor = false;
@@ -92,7 +92,7 @@ class HeatHackState extends FlxState
 	{
 		if (action == FlxInputText.ENTER_ACTION)
 		{
-			if (input.text == '1')
+			if (input.text == '4')
 			{
 				add(correct);
 				correct.start(0.02, false, false, null);
@@ -116,7 +116,7 @@ class HeatHackState extends FlxState
 
 	private function nextCorrectState():Void
 	{
-		FlxG.switchState(new HeatHackState2());
+		FlxG.switchState(new HeatHackState3());
 	}
 
 	private function nextIncorrectState():Void

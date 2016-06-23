@@ -42,9 +42,9 @@ class HeatHackIntroState extends FlxState
 
 		input = new FlxInputText(165, 185, 310, 8, 0x8811EE11, 0x00000000, true);
 		input.passwordMode = true;
-		input.maxLength = 16;
+		input.maxLength = 32;
 		input.hasFocus = true;
-		//input.callback = inputEntered;
+		input.callback = inputEntered;
 		add(input);
 
 		super.create();
@@ -57,22 +57,19 @@ class HeatHackIntroState extends FlxState
 
 	override public function update():Void
 	{
-		if (FlxG.keys.justPressed.ENTER)
-			if (enterPressed == false)
-			{
-				trace('e');
-				add(incorrect);
-				incorrect.start(0.02, false, false, null);
-				enterPressed = true;
-			}
 		if (FlxG.keys.justPressed.SPACE && enterPressed == true)
 			FlxG.switchState(new HeatHackState());
 
 		super.update();
 	}	
 
-	/*private function inputEntered():Void
+	private function inputEntered(text:String, action:String):Void
 	{
-		trace('input entered');
-	}*/
+		if (action == FlxInputText.ENTER_ACTION)
+		{
+			add(incorrect);
+			incorrect.start(0.02, false, false, null);
+			enterPressed = true;
+		}
+	}
 }
