@@ -40,7 +40,7 @@ class PlayState extends FlxState
 	private var hubPauseState:HubPauseState;
 
 	private var startX:Int = 10;
-	private var startY:Int = 60;
+	private var startY:Int = 80;
 
 	override public function create():Void
 	{
@@ -235,7 +235,7 @@ class PlayState extends FlxState
 		blockout.loadGraphic('assets/images/hub/blockout.png');
 		add(blockout);
 
-		padButton = new FlxButton(400, 300, '', loadPad);
+		padButton = new FlxButton(507, 446, '', loadPad);
 		padButton.loadGraphic('assets/images/menu/button_pad.png', 131, 32);
 		padButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(padButton);
