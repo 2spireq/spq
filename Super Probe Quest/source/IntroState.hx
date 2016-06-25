@@ -68,6 +68,4 @@ class IntroState extends FlxState
 		FlxG.switchState(new MenuState());
 		FlxG.camera.flash(FlxColor.BLACK, 3);
 	}
-
-
 }

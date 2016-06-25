@@ -4,9 +4,6 @@ import flixel.FlxG;
 import flixel.FlxState;
 import flixel.FlxSprite;
 import flixel.ui.FlxButton;
-import flixel.addons.text.FlxTypeText;
-import flixel.addons.ui.FlxInputText;
-import Std;
 
 class HeatHackVaultState extends FlxState
 {
