@@ -89,7 +89,7 @@ class MenuState extends FlxState
 		quitX = 121;
 		quitY = 400;
 
-		splashQuitButton = new FlxButton(quitX + 44, quitY, '', quit);
+		splashQuitButton = new FlxButton(quitX + 88, quitY, '', quit);
 		splashQuitButton.loadGraphic('assets/images/menu/button_quit.png', false, 32, 32);
 		splashQuitButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 
@@ -118,7 +118,7 @@ class MenuState extends FlxState
 		rHydra = new FlxSprite(baseX - 160, baseY - 160);
 		rHydra.loadGraphic('assets/images/menu/moons/HydraOrbit.png');
 
-		rPlutoAngle = 0;
+		rPlutoAngle = 270;
 		rPluto.angle = rPlutoAngle;
 		rCharon.angle = rPlutoAngle;
 		rStyx.angle = rPlutoAngle;
@@ -152,11 +152,11 @@ class MenuState extends FlxState
 	override public function update():Void
 	{
 		rPluto.angle += 0.1;
-		rCharon.angle += 0.9;
-		rStyx.angle += 1.4;
-		rNix.angle += 1;
-		rKerberos.angle += 1.6;
-		rHydra.angle += 2.1;
+		rCharon.angle += 1.7;
+		rStyx.angle += 1.5;
+		rNix.angle += 1.1;
+		rKerberos.angle += 0.8;
+		rHydra.angle += 0.5;
 
 		debugOnCheck();
 

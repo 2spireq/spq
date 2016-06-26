@@ -22,7 +22,7 @@ class PadState extends FlxState
 		back.loadGraphic('assets/images/launchblock/skyback.png');
 		add(back);
 
-		cloud0 = new FlxSprite(-540, 20);
+		cloud0 = new FlxSprite(-540, 257);
 		cloud0.loadGraphic('assets/images/rtgrun/clouds.png');
 		add(cloud0);
 
@@ -51,7 +51,7 @@ class PadState extends FlxState
 	override public function update():Void
 	{	
 		if (cloud0.x <= 640)
-			cloud0.x += 0.6;
+			cloud0.x += 0.3;
 		else if (cloud0.x >= 640)
 			cloud0.x = -776;
 

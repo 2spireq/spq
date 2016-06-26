@@ -40,7 +40,7 @@ class PlayState extends FlxState
 	private var hubPauseState:HubPauseState;
 
 	private var startX:Int = 10;
-	private var startY:Int = 80;
+	private var startY:Int = 10;
 
 	override public function create():Void
 	{
@@ -235,12 +235,12 @@ class PlayState extends FlxState
 		blockout.loadGraphic('assets/images/hub/blockout.png');
 		add(blockout);
 
-		padButton = new FlxButton(507, 446, '', loadPad);
+		padButton = new FlxButton(505, 444, '', loadPad);
 		padButton.loadGraphic('assets/images/menu/button_pad.png', 131, 32);
 		padButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(padButton);
 
-		menuButton = new FlxButton(10, 10, '', loadPause);
+		menuButton = new FlxButton(469, 444, '', loadPause);
 		menuButton.loadGraphic('assets/images/pause/button_pause.png', 32, 32);
 		menuButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(menuButton);
@@ -348,7 +348,7 @@ class PlayState extends FlxState
 	private function loadSwap():Void
 	{
 		trace('loadSwap');
-		//FlxG.switchState(new PlayState());
+		FlxG.switchState(new SwapCraftState());
 	}
 
 	private function loadRtg():Void
