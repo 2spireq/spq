@@ -101,7 +101,7 @@ class RtgPlayer extends FlxSprite
 
 				drag.x = 600;
 				drag.y = 600;
-				acceleration.y = 500;
+				acceleration.y = 600;
 			}
 			else
 			{

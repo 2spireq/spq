@@ -13,12 +13,18 @@ import flixel.group.FlxTypedGroup;
 import flixel.util.FlxTimer;
 import flixel.util.FlxColor;
 
-class RtgRunState extends FlxState
+class RalphZeroState extends FlxState
 {
+	private var pauseState:PauseState;
+	private var pauseButton:FlxButton;
 
 	override public function create():Void
 	{
-
+		pauseState = new PauseState();
+		pauseButton = new FlxButton(10, 10, '', loadPause);
+		pauseButton.loadGraphic('assets/images/pause/button_pause.png', false, 32, 32);
+		add(pauseButton);
+		
 		super.create();
 	}
 
@@ -31,4 +37,12 @@ class RtgRunState extends FlxState
 	{	
 		super.update();
 	}	
+
+	private function loadPause():Void
+	{
+		Registry.minigamePaused = 'ralph';
+		pauseState = new PauseState();
+		openSubState(pauseState);
+	}
+
 }

@@ -94,6 +94,8 @@ class PauseState extends FlxSubState
 			FlxG.switchState(new HeatHackState());
 		else if (Registry.minigamePaused == 'swap')
 			FlxG.switchState(new SwapCraftState());
+		else if (Registry.minigamePaused == 'ralph')
+			FlxG.switchState(new RalphZeroState());
 	}
 
 	private function loadMenu():Void
