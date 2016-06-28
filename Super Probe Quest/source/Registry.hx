@@ -21,4 +21,7 @@ class Registry
 	public static var rtgFailed:Bool;
 
 	public static var minigamePaused:String;
+
+	public static var swcd0x:Int;
+	public static var swcd0y:Int;
 }

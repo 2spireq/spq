@@ -38,7 +38,7 @@ class SwapIntroState2 extends FlxState
 
 	private function fade():Void
 	{
-		FlxG.camera.fade(0xff000000, 1, loadNext, false);
+		FlxG.camera.fade(0xff000000, 0.4, loadNext, false);
 	}
 
 	private function loadNext():Void

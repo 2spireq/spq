@@ -7,6 +7,7 @@ import flixel.FlxSprite;
 import flixel.text.FlxText;
 import flixel.ui.FlxButton;
 import flixel.util.FlxSpriteUtil;
+import flixel.util.FlxTimer;
 
 class PauseState extends FlxSubState
 {
@@ -28,7 +29,10 @@ class PauseState extends FlxSubState
 		cameraHeight = FlxG.camera.height;
 
 		pauseBack = new FlxSprite(cameraWidth - 640, cameraHeight - 480);
-		pauseBack.loadGraphic('assets/images/pause/pause_back.png');
+		if (Registry.minigamePaused != 'swap')
+			pauseBack.loadGraphic('assets/images/pause/pause_back.png');
+		else
+			pauseBack.loadGraphic('assets/images/pause/pause_back_swap.png');
 		pauseBack.scrollFactor.x = 0;
 		pauseBack.scrollFactor.y = 0;
 		add(pauseBack);
@@ -60,6 +64,11 @@ class PauseState extends FlxSubState
 		restartButton.loadGraphic('assets/images/pause/button_restart.png', false, 121, 32);
 		restartButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(restartButton);
+
+		if (Registry.minigamePaused == 'rtg')
+			RtgRunState.timer.active = false;
+		else if (Registry.minigamePaused == 'swap')
+			SwapCraftState.timer.active = false;
 
 		super.create();
 	}

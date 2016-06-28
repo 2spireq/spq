@@ -27,7 +27,7 @@ class RtgRunState extends FlxState
 	private var pauseState:PauseState;
 	private var pauseButton:FlxButton;
 	private var failContinueButton:FlxButton;
-	private var timer:FlxTimer;
+	public static var timer:FlxTimer;
 	private var timeText:FlxText;
 	private var timerLeft:String;
 	private var timerLeftInt:Int;
@@ -48,8 +48,8 @@ class RtgRunState extends FlxState
 
 		FlxG.camera.flash(0xff000000, 1, null, false);
 
-		//timer = new FlxTimer().start(100, timeEnd, 1);
-		timer = new FlxTimer().start(10, timeEnd, 1);
+		timer = new FlxTimer().start(100, timeEnd, 1);
+		//timer = new FlxTimer().start(10, timeEnd, 1);
 
 		timerLeftInt = Std.int(timer.timeLeft);
 		timerLeft = 'TIME: ' + timerLeftInt;
@@ -155,6 +155,8 @@ class RtgRunState extends FlxState
 
 		/*if (FlxG.keys.justPressed.ESCAPE)
 			loadPause();*/
+
+		timer.active = true;
 
 		super.update();
 	}	
