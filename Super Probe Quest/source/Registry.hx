@@ -2,6 +2,8 @@ package;
 
 class Registry
 {
+	public static var menuMusic:String = 'assets/music/menu_main.wav';
+
 	public static var haveAlice:Bool;
 	public static var haveLorri:Bool;
 	public static var havePepssi:Bool;

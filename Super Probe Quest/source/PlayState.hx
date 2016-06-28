@@ -348,7 +348,7 @@ class PlayState extends FlxState
 	private function loadSwap():Void
 	{
 		trace('loadSwap');
-		FlxG.switchState(new SwapCraftState());
+		FlxG.switchState(new SwapIntroState());
 	}
 
 	private function loadRtg():Void

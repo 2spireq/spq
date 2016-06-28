@@ -66,7 +66,8 @@ class MenuState extends FlxState
 
 		FlxG.mouse.visible = true;
 
-		FlxG.sound.play('assets/music/menu_main.wav', 1, true, false);
+		FlxG.sound.play('assets/music/menu_main.ogg', 1, true, false);
+		//FlxG.sound.play(Reg.menuMusic);
 
 		splashStarBack = new FlxSprite(0, 0);
 		splashStarBack.loadGraphic('assets/images/menu/starback.png');

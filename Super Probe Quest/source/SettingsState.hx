@@ -18,7 +18,7 @@ class SettingsState extends FlxState
 	{
 		FlxG.camera.flash(0xff000000, 0.5, null, false);
 		
-		FlxG.sound.play('assets/music/menu-main2.wav', 1, true, false);
+		//FlxG.sound.play('assets/music/rtg_main.mp3', 1, true, false);
 
 		starBack = new FlxSprite(0, 0);
 		starBack.loadGraphic('assets/images/hub/starback_2.png');
