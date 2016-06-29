@@ -355,6 +355,6 @@ class SwapCraftState extends FlxState
 	{
 		trace('swap next');
 
-		FlxG.switchState(new PlayState());
+		FlxG.switchState(new SwapCraftState2());
 	}
 }
