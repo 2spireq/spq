@@ -24,7 +24,7 @@ class SettingsState extends FlxState
 		starBack.loadGraphic('assets/images/hub/starback_2.png');
 		add(starBack);
 
-		header = new FlxSprite(252, 10);
+		header = new FlxSprite(252, 20);
 		header.loadGraphic('assets/images/settings/title_settings.png');
 		add(header);
 
@@ -33,7 +33,7 @@ class SettingsState extends FlxState
 		backButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(backButton);
 
-		fullscreenButton = new FlxButton(10, 100, '', toggleFullscreen);
+		fullscreenButton = new FlxButton(238, 100, '', toggleFullscreen);
 		fullscreenButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		if (FlxG.fullscreen == false)
 			fullscreenButton.loadGraphic('assets/images/settings/button_fullscreen_alt.png', false, 163, 32);
@@ -41,7 +41,7 @@ class SettingsState extends FlxState
 			fullscreenButton.loadGraphic('assets/images/settings/button_fullscreen.png', false, 163, 32);
 		add(fullscreenButton);
 
-		soundButton = new FlxButton(10, 150, '', toggleSound);
+		soundButton = new FlxButton(238, 150, '', toggleSound);
 		soundButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		if (FlxG.sound.muted == false)
 			soundButton.loadGraphic('assets/images/settings/button_sound.png', false, 163, 32);

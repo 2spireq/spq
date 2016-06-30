@@ -29,10 +29,10 @@ class PauseState extends FlxSubState
 		cameraHeight = FlxG.camera.height;
 
 		pauseBack = new FlxSprite(cameraWidth - 640, cameraHeight - 480);
-		if (Registry.minigamePaused != 'swap')
-			pauseBack.loadGraphic('assets/images/pause/pause_back.png');
-		else
+		if (Registry.minigamePaused == 'swap' || Registry.minigamePaused == 'swap2' || Registry.minigamePaused == 'swap3')
 			pauseBack.loadGraphic('assets/images/pause/pause_back_swap.png');
+		else
+			pauseBack.loadGraphic('assets/images/pause/pause_back.png');
 		pauseBack.scrollFactor.x = 0;
 		pauseBack.scrollFactor.y = 0;
 		add(pauseBack);
@@ -69,7 +69,10 @@ class PauseState extends FlxSubState
 			RtgRunState.timer.active = false;
 		else if (Registry.minigamePaused == 'swap')
 			SwapCraftState.timer.active = false;
+		else if (Registry.minigamePaused == 'swap2')
 			SwapCraftState2.timer.active = false;
+		else if (Registry.minigamePaused == 'swap3')
+			SwapCraftState3.timer.active = false;
 
 		super.create();
 	}
@@ -102,7 +105,7 @@ class PauseState extends FlxSubState
 			FlxG.switchState(new AliceState());
 		else if (Registry.minigamePaused == 'heat')
 			FlxG.switchState(new HeatHackState());
-		else if (Registry.minigamePaused == 'swap')
+		else if (Registry.minigamePaused == 'swap' || Registry.minigamePaused == 'swap2' || Registry.minigamePaused == 'swap3')
 			FlxG.switchState(new SwapCraftState());
 		else if (Registry.minigamePaused == 'ralph')
 			FlxG.switchState(new RalphZeroState());

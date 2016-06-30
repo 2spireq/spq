@@ -10,7 +10,7 @@ import flixel.util.FlxColor;
 import flixel.util.FlxSpriteUtil;
 import flixel.effects.FlxFlicker;
 
-class SwapCraftState extends FlxState
+class SwapCraftState3 extends FlxState
 {
 	private var chosen:Bool;
 	private var wrong:Bool;
@@ -22,7 +22,6 @@ class SwapCraftState extends FlxState
 	private var photo:FlxSprite;
 	private var clock:FlxSprite;
 	private var clockBack:FlxSprite;
-	private var overlay:FlxSprite;
 
 	private var forward_0:FlxButton;
 	private var forward_1:FlxButton;
@@ -88,10 +87,6 @@ class SwapCraftState extends FlxState
 		back.loadGraphic('assets/images/swapcraft/swap_back.png');
 		add(back);
 
-		overlay = new FlxSprite(0, 0);
-		overlay.loadGraphic('assets/images/swapcraft/swap_tutorial_overlay.png');
-		add(overlay);
-
 		tray = new FlxSprite(trayX, trayY);
 		tray.loadGraphic('assets/images/swapcraft/tray.png');
 		add(tray);
@@ -128,19 +123,19 @@ class SwapCraftState extends FlxState
 		correctContinueButton.loadGraphic('assets/images/misc/button_continue.png', false, 134, 39);
 
 		forward_0 = new FlxButton(trayX, trayY, '', f0);
-		forward_0.loadGraphic('assets/images/swapcraft/parts/forward_0.png', false, 64, 64);
+		forward_0.loadGraphic('assets/images/swapcraft/parts/3forward_0.png', false, 64, 64);
 		add(forward_0);
 
 		forward_1 = new FlxButton(trayX + 64, trayY, '', f1);
-		forward_1.loadGraphic('assets/images/swapcraft/parts/forward_1.png', false, 64, 64);
+		forward_1.loadGraphic('assets/images/swapcraft/parts/3forward_1.png', false, 64, 64);
 		add(forward_1);
 
 		forward_2 = new FlxButton(trayX + 128, trayY, '', f2);
-		forward_2.loadGraphic('assets/images/swapcraft/parts/forward_2.png', false, 64, 64);
+		forward_2.loadGraphic('assets/images/swapcraft/parts/3forward_2.png', false, 64, 64);
 		add(forward_2);
 
 		forward_3 = new FlxButton(trayX + 192, trayY, '', f3);
-		forward_3.loadGraphic('assets/images/swapcraft/parts/forward_3.png', false, 64, 64);
+		forward_3.loadGraphic('assets/images/swapcraft/parts/3forward_3.png', false, 64, 64);
 		add(forward_3);
 
 		pauseState = new PauseState();
@@ -202,10 +197,11 @@ class SwapCraftState extends FlxState
 	{
 		if (chosen != true)
 		{
+			previewImg2.alpha = 1;
 			chosen = true;
 			wrong = true;
+			trace('f2');
 			incorrectEnd();
-			trace('f0');
 		}
 	}
 
@@ -224,11 +220,10 @@ class SwapCraftState extends FlxState
 	{
 		if (chosen != true)
 		{
-			previewImg2.alpha = 1;
 			chosen = true;
 			right = true;
-			trace('f2');
 			correctChosen();
+			trace('f0');
 		}
 	}
 
@@ -251,7 +246,7 @@ class SwapCraftState extends FlxState
 	private function preview0():Void
 	{
 		previewImg0 = new FlxSprite(previewX0, previewY0);
-		previewImg0.loadGraphic('assets/images/swapcraft/partsoriginals/forward_0_original.png');
+		previewImg0.loadGraphic('assets/images/swapcraft/partsoriginals/3forward_0_original.png');
 		previewImg0.alpha = 0.65;
 		add(previewImg0);
 	}
@@ -259,7 +254,7 @@ class SwapCraftState extends FlxState
 	private function preview1():Void
 	{
 		previewImg1 = new FlxSprite(previewX0, previewY0);
-		previewImg1.loadGraphic('assets/images/swapcraft/partsoriginals/forward_1_original.png');
+		previewImg1.loadGraphic('assets/images/swapcraft/partsoriginals/3forward_1_original.png');
 		previewImg1.alpha = 0.65;
 		add(previewImg1);
 	}
@@ -267,7 +262,7 @@ class SwapCraftState extends FlxState
 	private function preview2():Void
 	{
 		previewImg2 = new FlxSprite(previewX0, previewY0);
-		previewImg2.loadGraphic('assets/images/swapcraft/partsoriginals/forward_2_original.png');
+		previewImg2.loadGraphic('assets/images/swapcraft/partsoriginals/3forward_2_original.png');
 		previewImg2.alpha = 0.65;
 		add(previewImg2);
 	}
@@ -275,7 +270,7 @@ class SwapCraftState extends FlxState
 	private function preview3():Void
 	{
 		previewImg3 = new FlxSprite(previewX0, previewY0);
-		previewImg3.loadGraphic('assets/images/swapcraft/partsoriginals/forward_3_original.png');
+		previewImg3.loadGraphic('assets/images/swapcraft/partsoriginals/3forward_3_original.png');
 		previewImg3.alpha = 0.65;
 		add(previewImg3);
 	}
@@ -340,7 +335,7 @@ class SwapCraftState extends FlxState
 
 	private function loadPause():Void
 	{
-		Registry.minigamePaused = 'swap';
+		Registry.minigamePaused = 'swap3';
 		pauseState = new PauseState();
 		openSubState(pauseState);
 	}
@@ -357,6 +352,6 @@ class SwapCraftState extends FlxState
 	{
 		trace('swap next');
 
-		FlxG.switchState(new SwapCraftState2());
+		FlxG.switchState(new PlayState());
 	}
 }

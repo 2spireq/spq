@@ -40,7 +40,7 @@ class PlayState extends FlxState
 	private var hubPauseState:HubPauseState;
 
 	private var startX:Int = 10;
-	private var startY:Int = 10;
+	private var startY:Int = 38;
 
 	override public function create():Void
 	{
@@ -260,26 +260,6 @@ class PlayState extends FlxState
 		//trace(FlxG.mouse.getWorldPosition());
 		super.update();
 	}	
-
-	private function fade(minigame:String):Void
-	{
-		if (minigame == 'alice')
-			FlxG.camera.fade(0xffffffff, 1, loadAlice, false);
-		else if (minigame == 'lorri')
-			FlxG.camera.fade(0xff000000, 1, loadLorri, false);
-		else if (minigame == 'pepssi')
-			FlxG.camera.fade(0xff000000, 1, loadPepssi, false);
-		else if (minigame == 'ralph')
-			FlxG.camera.fade(0xff000000, 1, loadRalph, false);
-		else if (minigame == 'swap')
-			FlxG.camera.fade(0xff000000, 1, loadSwap, false);
-		else if (minigame == 'rtg')
-			FlxG.camera.fade(0xff000000, 1, loadRtg, false);
-		else if (minigame == 'rex')
-			FlxG.camera.fade(0xff000000, 1, loadRex, false);
-		else if (minigame == 'heat')
-			FlxG.camera.fade(0xff000000, 1, loadHeat, false);
-	}
 
 	private function fadeAlice():Void
 	{

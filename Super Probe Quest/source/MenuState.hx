@@ -98,8 +98,8 @@ class MenuState extends FlxState
 		splashSettingsButton.loadGraphic('assets/images/menu/button_setting.png', false, 32, 32);
 		splashSettingsButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 
-		baseX = 480;
-		baseY = 354;
+		baseX = 440;
+		baseY = 350;
 
 		rPluto = new FlxSprite(baseX, baseY);
 		rPluto.loadGraphic('assets/images/menu/moons/Pluto.png');
