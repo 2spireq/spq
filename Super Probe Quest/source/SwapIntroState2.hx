@@ -12,7 +12,7 @@ class SwapIntroState2 extends FlxState
 
 	override public function create():Void
 	{
-		FlxG.camera.flash(0xff000000, 1, null, false);
+		FlxG.camera.flash(0xff000000, 0.4, null, false);
 
 		instructions = new FlxSprite(0, 0);
 		instructions.loadGraphic('assets/images/swapcraft/swapintroinfo.png');

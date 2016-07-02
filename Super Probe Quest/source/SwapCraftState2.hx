@@ -110,7 +110,7 @@ class SwapCraftState2 extends FlxState
 		clock.loadGraphic('assets/images/swapcraft/clock.png');
 		add(clock);
 
-		previous = new FlxSprite(previewX0 - previousX, previewY0);
+		previous = new FlxSprite(200, 250);
 		previous.loadGraphic('assets/images/swapcraft/partsoriginals/forward_2_original.png');
 		add(previous);
 

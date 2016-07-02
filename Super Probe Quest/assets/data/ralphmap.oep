@@ -9,11 +9,11 @@
     <Height>480</Height>
   </LevelDefaultSize>
   <LevelMinimumSize>
-    <Width>640</Width>
+    <Width>2560</Width>
     <Height>480</Height>
   </LevelMinimumSize>
   <LevelMaximumSize>
-    <Width>640</Width>
+    <Width>2560</Width>
     <Height>480</Height>
   </LevelMaximumSize>
   <Filename>C:\Users\S\Desktop\spq\Super Probe Quest\assets\data\ralphmap.oep</Filename>

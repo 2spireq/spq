@@ -15,6 +15,7 @@ import flixel.util.FlxColor;
 import flixel.util.FlxSpriteUtil;
 import flixel.effects.FlxFlicker;
 import flixel.tweens.FlxTween;
+import flixel.system.FlxSound;
 import Std.int;
 
 class RtgRunState extends FlxState
@@ -32,7 +33,9 @@ class RtgRunState extends FlxState
 	private var timerLeft:String;
 	private var timerLeftInt:Int;
 	private var pointsText:FlxText;
+	private var helicopterText:FlxText;
 	private var rtgPartsFound:Int = 0;
+	private var partGet:FlxSound;
 
 	private var map:FlxOgmoLoader;
 	private var walls:FlxTilemap;
@@ -51,6 +54,8 @@ class RtgRunState extends FlxState
 		timer = new FlxTimer().start(100, timeEnd, 1);
 		//timer = new FlxTimer().start(10, timeEnd, 1);
 
+		partGet = FlxG.sound.load('assets/sounds/rtgpickup.wav');
+
 		timerLeftInt = Std.int(timer.timeLeft);
 		timerLeft = 'TIME: ' + timerLeftInt;
 		timeText = new FlxText(60, 14, 100);
@@ -62,6 +67,11 @@ class RtgRunState extends FlxState
 		pointsText.text = 'PARTS: ' + rtgPartsFound + ' /4';
 		pointsText.setFormat(8, FlxColor.WHITE);
 		pointsText.scrollFactor.x = 0;
+
+		helicopterText = new FlxText(120, 14, 100);
+		helicopterText.text = 'GET TO HELICOPTER!';
+		helicopterText.setFormat(8, FlxColor.YELLOW);
+		helicopterText.scrollFactor.x = 0;
 
 		sky = new FlxSprite(0, 0);
 		sky.loadGraphic('assets/images/rtgrun/sky.png');
@@ -153,9 +163,6 @@ class RtgRunState extends FlxState
 		FlxG.collide(walls, player);
 		FlxG.overlap(player, grpParts0, playerHitInteract);
 
-		/*if (FlxG.keys.justPressed.ESCAPE)
-			loadPause();*/
-
 		timer.active = true;
 
 		super.update();
@@ -167,13 +174,13 @@ class RtgRunState extends FlxState
 		{
 			H.kill();
 			rtgPartsFound++;
+			partGet.play();
+
+			if (rtgPartsFound == 4)
+				add(helicopterText);
+
 		}
 		trace('rtg part +');
-	}
-
-	private function hitInteract0():Void
-	{
-		rtgPartsFound++;
 	}
 
 	private function loadMenu():Void

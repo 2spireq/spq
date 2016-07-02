@@ -29,7 +29,7 @@ class PauseState extends FlxSubState
 		cameraHeight = FlxG.camera.height;
 
 		pauseBack = new FlxSprite(cameraWidth - 640, cameraHeight - 480);
-		if (Registry.minigamePaused == 'swap' || Registry.minigamePaused == 'swap2' || Registry.minigamePaused == 'swap3')
+		if (Registry.minigamePaused == 'swap' || Registry.minigamePaused == 'swap2' || Registry.minigamePaused == 'swap3' || Registry.minigamePaused == 'swap4' || Registry.minigamePaused == 'swap5')
 			pauseBack.loadGraphic('assets/images/pause/pause_back_swap.png');
 		else
 			pauseBack.loadGraphic('assets/images/pause/pause_back.png');
@@ -73,6 +73,10 @@ class PauseState extends FlxSubState
 			SwapCraftState2.timer.active = false;
 		else if (Registry.minigamePaused == 'swap3')
 			SwapCraftState3.timer.active = false;
+		else if (Registry.minigamePaused == 'swap4')
+			SwapCraftState4.timer.active = false;
+		else if (Registry.minigamePaused == 'swap5')
+			SwapCraftState4.timer.active = false;
 
 		super.create();
 	}
@@ -105,7 +109,7 @@ class PauseState extends FlxSubState
 			FlxG.switchState(new AliceState());
 		else if (Registry.minigamePaused == 'heat')
 			FlxG.switchState(new HeatHackState());
-		else if (Registry.minigamePaused == 'swap' || Registry.minigamePaused == 'swap2' || Registry.minigamePaused == 'swap3')
+		else if (Registry.minigamePaused == 'swap' || Registry.minigamePaused == 'swap2' || Registry.minigamePaused == 'swap3' || Registry.minigamePaused == 'swap4' || Registry.minigamePaused == 'swap5')
 			FlxG.switchState(new SwapCraftState());
 		else if (Registry.minigamePaused == 'ralph')
 			FlxG.switchState(new RalphZeroState());
