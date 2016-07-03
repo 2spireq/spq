@@ -59,10 +59,6 @@ class SwapCraftState2 extends FlxState
 	private var previewX0:Int;
 	private var previewY0:Int;
 
-	private var previousX:Int;
-
-	private var previous:FlxSprite;
-
 	override public function create():Void
 	{
 		FlxG.camera.flash(0xff000000, 1, null, false);
@@ -76,9 +72,7 @@ class SwapCraftState2 extends FlxState
 		trayX = 0;
 		trayY = 416;
 
-		previousX = 40;
-
-		previewX0 = 300 + previousX;
+		previewX0 = 300;
 		previewY0 = 250;
 		
 		timer = new FlxTimer().start(9, timeEnd, 1);
@@ -109,10 +103,6 @@ class SwapCraftState2 extends FlxState
 		clock = new FlxSprite(clockX, clockY);
 		clock.loadGraphic('assets/images/swapcraft/clock.png');
 		add(clock);
-
-		previous = new FlxSprite(200, 250);
-		previous.loadGraphic('assets/images/swapcraft/partsoriginals/forward_2_original.png');
-		add(previous);
 
 		timeOut = new FlxSprite(155, 223);
 		timeOut.loadGraphic('assets/images/swapcraft/swaptimeout.png');

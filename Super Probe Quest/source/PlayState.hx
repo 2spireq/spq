@@ -59,6 +59,9 @@ class PlayState extends FlxState
 
 		trace(Registry.partsNo);
 
+		if (Registry.partsNo == 0)
+			Registry.launchReady = true;
+
 		if (Registry.haveAlice == true)
 		{
 			aliceButton.loadGraphic('assets/images/component/buttonsprites/comp_alice_d.png', false, 64, 64);
@@ -322,7 +325,7 @@ class PlayState extends FlxState
 	private function loadRalph():Void
 	{
 		trace('loadRalph');
-		//FlxG.switchState(new PlayState());
+		FlxG.switchState(new RalphZeroState());
 	}
 
 	private function loadSwap():Void
