@@ -71,5 +71,4 @@ class RalphZeroState extends FlxState
 		//else if (entityName == 'p0')
 		//	grpParts0.add(new Rtg0(x, y));
 	}
-
 }
