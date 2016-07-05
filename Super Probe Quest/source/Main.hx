@@ -14,7 +14,7 @@ class Main extends Sprite
 	var gameWidth:Int = 640;
 	var gameHeight:Int = 480;
 
-	//var initialState:Class<FlxState> = SwapCraftState;
+	//var initialState:Class<FlxState> = RalphZeroState;
 	var initialState:Class<FlxState> = IntroState;
 	var skipSplash:Bool = true;
 

@@ -17,8 +17,6 @@ class RalphPlayer extends FlxSprite
 
 	public function new(X:Float = 0, Y:Float = 0)
 	{
-
-
 		super(X, Y);
 
 		loadGraphic('assets/images/rtgrun/playersprite.png', true, 16, 16);
@@ -97,7 +95,6 @@ class RalphPlayer extends FlxSprite
 
 	override public function update():Void
 	{
-
 		movement();
 		super.update();
 	}

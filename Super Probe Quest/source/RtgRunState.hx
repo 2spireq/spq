@@ -178,7 +178,6 @@ class RtgRunState extends FlxState
 
 			if (rtgPartsFound == 4)
 				add(helicopterText);
-
 		}
 		trace('rtg part +');
 	}
