@@ -65,7 +65,7 @@ class RalphPlayer extends FlxSprite
 			}
 		}*/
 
-		if (Registry.rtgFailed != true)
+		if (Registry.ralphFailed != true)
 			if (FlxG.keys.pressed.A)
 			{
 				flipX = false;

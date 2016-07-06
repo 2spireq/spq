@@ -42,11 +42,13 @@ class RalphZeroState extends FlxState
 
 	override public function create():Void
 	{
+		Registry.ralphFailed = false;
+
 		FlxG.camera.flash(0xff000000, 1, null, false);
 
 		partGet = FlxG.sound.load('assets/sounds/rtgpickup.wav');
 
-		helicopterText = new FlxText(120, 14, 100);
+		helicopterText = new FlxText(140, 14, 100);
 		helicopterText.text = 'GET TO HELICOPTER!';
 		helicopterText.setFormat(8, FlxColor.YELLOW);
 		helicopterText.scrollFactor.x = 0;
@@ -96,8 +98,8 @@ class RalphZeroState extends FlxState
 		walls.setTileProperties(107, FlxObject.NONE);
 		walls.setTileProperties(108, FlxObject.NONE);
 		walls.setTileProperties(120, FlxObject.NONE);
-		walls.setTileProperties(121, FlxObject.NONE);
-		walls.setTileProperties(122, FlxObject.NONE);
+		walls.setTileProperties(121, FlxObject.NONE, helicopterInteract);
+		walls.setTileProperties(122, FlxObject.NONE, helicopterInteract);
 		walls.setTileProperties(123, FlxObject.NONE);
 		walls.setTileProperties(124, FlxObject.NONE);
 
@@ -190,12 +192,18 @@ class RalphZeroState extends FlxState
 		failContinueButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(failContinueButton);
 
-		Registry.rtgFailed = true;
+		Registry.ralphFailed = true;
+	}
+
+	private function helicopterInteract(Tile:FlxObject, Object:FlxObject):Void
+	{
+		if (ralphPartsFound == 7)
+			FlxG.camera.fade(0xff000000, 1, nextState, false);
 	}
 
 	private function nextState():Void
 	{
-		FlxG.switchState(new RtgFoundState());
+		FlxG.switchState(new RalphFoundState());
 	}
 
 	private function failedNextState():Void

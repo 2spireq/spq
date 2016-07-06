@@ -61,13 +61,11 @@ class MenuState extends FlxState
 		trace('started');
 
 		FlxG.mouse.useSystemCursor = true;
+		FlxG.mouse.visible = true;
 
 		FlxG.camera.flash(0xff000000, 0.5, null, false);
 
-		FlxG.mouse.visible = true;
-
 		FlxG.sound.play('assets/music/menu_main.ogg', 1, true, false);
-		//FlxG.sound.play(Reg.menuMusic);
 
 		splashStarBack = new FlxSprite(0, 0);
 		splashStarBack.loadGraphic('assets/images/menu/starback.png');
@@ -128,18 +126,19 @@ class MenuState extends FlxState
 		rHydra.angle = rPlutoAngle;
 
 		add(splashStarBack);
+
 		add(rHydra);
 		add(rKerberos);
 		add(rNix);
 		add(rStyx);
 		add(rCharon);
 		add(rPluto);
+
 		add(splashHero);
 		add(splashPlayButton);
 		add(splashAboutButton);
 		add(splashFactButton);
 		add(splashQuitButton);
-
 		add(splashSettingsButton);
 
 		super.create();
@@ -181,7 +180,7 @@ class MenuState extends FlxState
 
 	private function quit():Void
 	{
-			Sys.exit(0);
+		Sys.exit(0);
 	}
 
 	private function toggleFull():Void
@@ -198,9 +197,7 @@ class MenuState extends FlxState
 	private function toggleDebug():Void
 	{
 		if (isDebugOn == false)
-		{
 			isDebugOn = true;
-		}
 		else if (isDebugOn == true)
 		{
 			if (debugCoordX.alive && debugCoordX.exists && debugCoordY.alive && debugCoordY.exists)

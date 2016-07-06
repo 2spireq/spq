@@ -5,6 +5,7 @@ import flixel.FlxSprite;
 import flixel.FlxObject;
 import flixel.util.FlxAngle;
 import flixel.tile.FlxTilemap;
+import flixel.system.FlxSound;
 import flixel.addons.editors.ogmo.FlxOgmoLoader;
 
 class RtgPlayer extends FlxSprite
@@ -17,6 +18,8 @@ class RtgPlayer extends FlxSprite
 
 	private var inWater:Bool;
 	private var onLadder:Bool;
+
+	private var jump:FlxSound;
 
 	public function new(X:Float = 0, Y:Float = 0)
 	{
@@ -45,6 +48,8 @@ class RtgPlayer extends FlxSprite
 		maxVelocity.set(120, 200);
 		setSize(14, 14);
 		//offset.set(4, 2);
+
+		jump = FlxG.sound.load('assets/sounds/jump.wav');
 	}
 
 	public function movement():Void
@@ -90,6 +95,7 @@ class RtgPlayer extends FlxSprite
 				y -= 1;
 				velocity.y = -200;
 				velocity.x = 0;
+				jump.play(true);
 			}
 
 			if (inWater == true)

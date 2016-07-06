@@ -77,6 +77,8 @@ class PauseState extends FlxSubState
 			SwapCraftState4.timer.active = false;
 		else if (Registry.minigamePaused == 'swap5')
 			SwapCraftState4.timer.active = false;
+		else if (Registry.minigamePaused == 'ralph')
+			RalphZeroState.timer.active = false;
 
 		super.create();
 	}

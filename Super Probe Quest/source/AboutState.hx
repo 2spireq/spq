@@ -12,7 +12,6 @@ class AboutState extends FlxState
 {
 	private var logo:FlxSprite;
 	private var aboutText:FlxSprite;
-	private var stemLogo:FlxSprite;
 
 	private var logoWave:FlxWaveSprite;
 
@@ -31,10 +30,6 @@ class AboutState extends FlxState
 		add(logoWave);
 
 		FlxFlicker.flicker(logoWave, -1, 0.06, true, false, null, null);
-
-		stemLogo = new FlxSprite(63, 300);
-		stemLogo.loadGraphic('assets/images/about/stemlogo.png');
-		add(stemLogo);
 
 		backButton = new FlxButton(10, 10, '', loadMenu);
 		backButton.loadGraphic('assets/images/menu/button_back.png', false, 67, 32);

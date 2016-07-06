@@ -20,6 +20,8 @@ class Registry
 	public static var rtgOnLadder:Bool;
 	public static var rtgFailed:Bool;
 
+	public static var ralphFailed:Bool;
+
 	public static var minigamePaused:String;
 
 	public static var swcd0x:Int;

@@ -5,14 +5,30 @@ import flixel.FlxState;
 import flixel.FlxSprite;
 import flixel.text.FlxText;
 import flixel.ui.FlxButton;
+import flixel.effects.particles.FlxEmitter;
+import flixel.effects.particles.FlxParticle;
+//import flixel.tweens.FlxTween;
 
 class PadState extends FlxState
 {
 	private var back:FlxSprite;
 	private var pad:FlxSprite;
+	private var rocket:FlxSprite;
 	private var cloud0:FlxSprite;
+	private var panel:FlxSprite;
+	private var buttonLaunch:FlxButton;
 
 	private var backButton:FlxButton;
+
+	private var emitter:FlxEmitter;
+	private var emitter2:FlxEmitter;
+	private var emitter3:FlxEmitter;
+	private var particle:FlxParticle;
+
+	private var panelX:Int = 30;
+	private var panelY:Int = 300;
+
+	private var launched:Bool = false;
 
 	override public function create():Void
 	{
@@ -35,10 +51,66 @@ class PadState extends FlxState
 			pad.loadGraphic('assets/images/launchblock/pad-norocket.png');
 		add(pad);
 
+		rocket = new FlxSprite(0, 0);
+		rocket.loadGraphic('assets/images/launchblock/rocket.png');
+
 		backButton = new FlxButton(10, 10, '', loadMenu);
 		backButton.loadGraphic('assets/images/menu/button_back.png', false, 67, 32);
 		backButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(backButton);
+
+		emitter = new FlxEmitter(320, 421);
+		emitter.gravity = 1000;
+		for (i in 0 ... 200)
+		{
+			particle = new FlxParticle();
+			if (i % 2 == 0)
+				particle.loadGraphic('assets/images/launchblock/particle.png');
+			else if (i % 2 == 1)
+				particle.loadGraphic('assets/images/launchblock/particle2.png');
+			particle.exists = false;
+			emitter.add(particle);
+		}
+		add(emitter2);
+
+		emitter2 = new FlxEmitter(315, 431);
+		emitter2.gravity = 1000;
+		for (i in 0 ... 200)
+		{
+			particle = new FlxParticle();
+			if (i % 2 == 0)
+				particle.loadGraphic('assets/images/launchblock/particle.png');
+			else if (i % 2 == 1)
+				particle.loadGraphic('assets/images/launchblock/particle2.png');
+			particle.exists = false;
+			emitter2.add(particle);
+		}
+		add(emitter2);
+
+		emitter3 = new FlxEmitter(325, 436);
+		emitter3.gravity = 1000;
+		for (i in 0 ... 200)
+		{
+			particle = new FlxParticle();
+			if (i % 2 == 0)
+				particle.loadGraphic('assets/images/launchblock/particle.png');
+			else if (i % 2 == 1)
+				particle.loadGraphic('assets/images/launchblock/particle2.png');
+			particle.exists = false;
+			emitter3.add(particle);
+		}
+		add(emitter3);
+
+		if (Registry.launchReady == true)
+		{
+			panel = new FlxSprite(panelX, panelY);
+			panel.loadGraphic('assets/images/launchblock/controlpanel.png');
+			add(panel);
+
+			buttonLaunch = new FlxButton(panelX + 12, panelY + 39, '', launch);
+			buttonLaunch.loadGraphic('assets/images/launchblock/button_launch.png', false, 143, 65);
+			add(buttonLaunch);
+		}
 
 		super.create();
 	}
@@ -55,6 +127,24 @@ class PadState extends FlxState
 		else if (cloud0.x >= 640)
 			cloud0.x = -776;
 
+		if (launched == true)
+		{
+
+			if (panel.y != 481)
+				panel.y += 2;
+			if (buttonLaunch.y != 520)
+				buttonLaunch.y += 2;
+
+			pad.loadGraphic('assets/images/launchblock/pad-norocket.png');
+
+			add(rocket);
+
+			rocket.y -= 1;
+			emitter.y -= 1;
+			emitter2.y -= 1;
+			emitter3.y -= 1;
+		}
+
 		super.update();
 	}	
 
@@ -63,4 +153,11 @@ class PadState extends FlxState
 		FlxG.switchState(new PlayState());
 	}
 
+	private function launch():Void
+	{
+		launched = true;
+		emitter.start(false, 2, 0.01);
+		emitter2.start(false, 2, 0.01);
+		emitter3.start(false, 2, 0.01);
+	}
 }

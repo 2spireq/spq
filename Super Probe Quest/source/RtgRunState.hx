@@ -36,6 +36,7 @@ class RtgRunState extends FlxState
 	private var helicopterText:FlxText;
 	private var rtgPartsFound:Int = 0;
 	private var partGet:FlxSound;
+	private var splash:FlxSound;
 
 	private var map:FlxOgmoLoader;
 	private var walls:FlxTilemap;
@@ -55,6 +56,8 @@ class RtgRunState extends FlxState
 		//timer = new FlxTimer().start(10, timeEnd, 1);
 
 		partGet = FlxG.sound.load('assets/sounds/rtgpickup.wav');
+
+		splash = FlxG.sound.load('assets/sounds/splash.wav');
 
 		timerLeftInt = Std.int(timer.timeLeft);
 		timerLeft = 'TIME: ' + timerLeftInt;
@@ -197,6 +200,7 @@ class RtgRunState extends FlxState
 	private function waterOverlap(Tile:FlxObject, Object:FlxObject):Void
 	{
 		Registry.rtgInWater = true;
+		splash.play(true);
 	}
 
 	private function airOverlap(Tile:FlxObject, Object:FlxObject):Void
