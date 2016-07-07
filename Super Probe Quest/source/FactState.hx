@@ -12,6 +12,7 @@ class FactState extends FlxState
 
 	private var factHolder:FlxSprite;
 	private var factBlock:FlxSprite;
+	private var title:FlxSprite;
 
 	private var buttonBack:FlxButton;
 	private var buttonR:FlxButton;
@@ -19,7 +20,6 @@ class FactState extends FlxState
 	private var dispList = new List<Int>();
 	private var randChoose:Int;
 	private var item:String;
-
 	private var loadHolder:Int;
 
 	override public function create():Void
@@ -42,13 +42,16 @@ class FactState extends FlxState
 		buttonBack = new FlxButton(10, 10, loadMenu);
 		buttonBack.loadGraphic('assets/images/menu/button_back.png', false, 67, 32);
 		buttonBack.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
+		add(buttonBack);
 
 		buttonR = new FlxButton(304, 360, randFact);
 		buttonR.loadGraphic('assets/images/menu/button_rand.png', false, 32, 32);
 		buttonR.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
-
-		add(buttonBack);
 		add(buttonR);
+
+		title = new FlxSprite(252, 20);
+		title.loadGraphic('assets/images/facts/title_facts.png');
+		add(title);
 
 		super.create();
 	}

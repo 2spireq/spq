@@ -12,8 +12,8 @@ class AboutState extends FlxState
 {
 	private var logo:FlxSprite;
 	private var aboutText:FlxSprite;
-
 	private var logoWave:FlxWaveSprite;
+	private var title:FlxSprite;
 
 	private var backButton:FlxButton;
 
@@ -30,6 +30,10 @@ class AboutState extends FlxState
 		add(logoWave);
 
 		FlxFlicker.flicker(logoWave, -1, 0.06, true, false, null, null);
+
+		title = new FlxSprite(278, 20);
+		title.loadGraphic('assets/images/about/title_about.png');
+		add(title);
 
 		backButton = new FlxButton(10, 10, '', loadMenu);
 		backButton.loadGraphic('assets/images/menu/button_back.png', false, 67, 32);

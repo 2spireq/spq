@@ -39,15 +39,21 @@ class PlayState extends FlxState
 
 	private var hubPauseState:HubPauseState;
 
-	private var startX:Int = 10;
+	private var startX:Int = 38;
 	private var startY:Int = 38;
+
+	private var infoX:Int = 290;
+	private var infoY:Int = 20;
 
 	override public function create():Void
 	{
+		FlxG.sound.play('assets/music/hub_main.ogg', 1, true, false);
+
 		starBack = new FlxSprite(0, 0);
 		starBack.loadGraphic('assets/images/hub/starback_2.png');
 		add(starBack);
 
+		/*
 		aliceButton = new FlxButton(startX, startY, '', fadeAlice);
 		lorriButton = new FlxButton(startX + 66, startY, '', fadeLorri);
 		pepssiButton = new FlxButton(startX + 132, startY, '', fadePepssi);
@@ -56,6 +62,16 @@ class PlayState extends FlxState
 		rtgButton = new FlxButton(startX + 66, startY + 66, '', fadeRtg);
 		rexButton = new FlxButton(startX + 132, startY + 66, '', fadeRex);
 		heatButton = new FlxButton(startX + 198, startY + 66, '', fadeHeat);
+		*/
+
+		aliceButton = new FlxButton(startX, startY, '', fadeAlice);
+		ralphButton = new FlxButton(startX + 70, startY, '', fadeRalph);
+		swapButton = new FlxButton(startX + 140, startY, '', fadeSwap);
+		//ralphButton = new FlxButton(startX + 210, startY, '', fadeRalph);
+		//swapButton = new FlxButton(startX, startY + 70, '', fadeSwap);
+		rtgButton = new FlxButton(startX, startY + 70, '', fadeRtg);
+		rexButton = new FlxButton(startX + 70, startY + 70, '', fadeRex);
+		heatButton = new FlxButton(startX + 140, startY + 70, '', fadeHeat);
 
 		trace(Registry.partsNo);
 
@@ -67,59 +83,39 @@ class PlayState extends FlxState
 			aliceButton.loadGraphic('assets/images/component/buttonsprites/comp_alice_d.png', false, 64, 64);
 			trace('ALICE TRUE');
 		}
-		/*else if (Registry.haveAlice == null)
-		{
-			aliceButton.loadGraphic('assets/images/component/buttonsprites/comp_alice_alt.png', false, 64, 64);
-			trace('ALICE NULL');
-		}*/
 		else if (Registry.haveAlice == false)
 		{
 			aliceButton.loadGraphic('assets/images/component/buttonsprites/comp_alice_alt.png', false, 64, 64);
 			trace('ALICE FALSE');
 		}
 
-		if (Registry.haveLorri == true)
+		/*if (Registry.haveLorri == true)
 		{
 			lorriButton.loadGraphic('assets/images/component/buttonsprites/comp_lorri_d.png', false, 64, 64);
 			trace('LORRI TRUE');
 		}
-		/*else if (Registry.haveLorri == null)
-		{
-			lorriButton.loadGraphic('assets/images/component/buttonsprites/comp_lorri_alt.png', false, 64, 64);
-			trace('LORRI NULL');
-		}*/
 		else if (Registry.haveLorri == false)
 		{
 			lorriButton.loadGraphic('assets/images/component/buttonsprites/comp_lorri_alt.png', false, 64, 64);
 			trace('LORRI FALSE');
-		}
+		}*/
 
-		if (Registry.havePepssi == true)
+		/*if (Registry.havePepssi == true)
 		{
 			pepssiButton.loadGraphic('assets/images/component/buttonsprites/comp_pepssi_d.png', false, 64, 64);
 			trace('PEPSSI TRUE');
 		}
-		/*else if (Registry.havePepssi == null)
-		{
-			pepssiButton.loadGraphic('assets/images/component/buttonsprites/comp_pepssi_alt.png', false, 64, 64);
-			trace('PEPSSI NULL');
-		}*/
 		else if (Registry.havePepssi == false)
 		{
 			pepssiButton.loadGraphic('assets/images/component/buttonsprites/comp_pepssi_alt.png', false, 64, 64);
 			trace('PEPSSI FALSE');
-		}
+		}*/
 
 		if (Registry.haveRalph == true)
 		{
 			ralphButton.loadGraphic('assets/images/component/buttonsprites/comp_ralph_d.png', false, 64, 64);
 			trace('RALPH TRUE');
 		}
-		/*else if (Registry.haveRalph == null)
-		{
-			ralphButton.loadGraphic('assets/images/component/buttonsprites/comp_ralph_alt.png', false, 64, 64);
-			trace('RALPH NULL');
-		}*/
 		else if (Registry.haveRalph == false)
 		{
 			ralphButton.loadGraphic('assets/images/component/buttonsprites/comp_ralph_alt.png', false, 64, 64);
@@ -131,11 +127,6 @@ class PlayState extends FlxState
 			swapButton.loadGraphic('assets/images/component/buttonsprites/comp_swap_d.png', false, 64, 64);
 			trace('SWAP TRUE');
 		}
-		/*else if (Registry.haveSwap == null)
-		{
-			swapButton.loadGraphic('assets/images/component/buttonsprites/comp_swap_alt.png', false, 64, 64);
-			trace('SWAP NULL');
-		}*/
 		else if (Registry.haveSwap == false)
 		{
 			swapButton.loadGraphic('assets/images/component/buttonsprites/comp_swap_alt.png', false, 64, 64);
@@ -147,11 +138,6 @@ class PlayState extends FlxState
 			rtgButton.loadGraphic('assets/images/component/buttonsprites/comp_rtg_d.png', false, 64, 64);
 			trace('RTG TRUE');
 		}
-		/*else if (Registry.haveRtg == null)
-		{
-			rtgButton.loadGraphic('assets/images/component/buttonsprites/comp_rtg_alt.png', false, 64, 64);
-			trace('RTG NULL');
-		}*/
 		else if (Registry.haveRtg == false)
 		{
 			rtgButton.loadGraphic('assets/images/component/buttonsprites/comp_rtg_alt.png', false, 64, 64);
@@ -163,11 +149,6 @@ class PlayState extends FlxState
 			rexButton.loadGraphic('assets/images/component/buttonsprites/comp_rex_d.png', false, 64, 64);
 			trace('REX TRUE');
 		}
-		/*else if (Registry.haveRex == null)
-		{
-			rexButton.loadGraphic('assets/images/component/buttonsprites/comp_rex_alt.png', false, 64, 64);
-			trace('REX NULL');
-		}*/
 		else if (Registry.haveRex == false)
 		{
 			rexButton.loadGraphic('assets/images/component/buttonsprites/comp_rex_alt.png', false, 64, 64);
@@ -179,11 +160,6 @@ class PlayState extends FlxState
 			heatButton.loadGraphic('assets/images/component/buttonsprites/comp_heat_d.png', false, 64, 64);
 			trace('HEAT TRUE');
 		}
-		/*else if (Registry.haveHeat == null)
-		{
-			heatButton.loadGraphic('assets/images/component/buttonsprites/comp_heat_alt.png', false, 64, 64);
-			trace('HEAT NULL');
-		}*/
 		else if (Registry.haveHeat == false)
 		{
 			heatButton.loadGraphic('assets/images/component/buttonsprites/comp_heat_alt.png', false, 64, 64);
@@ -195,15 +171,15 @@ class PlayState extends FlxState
 		aliceButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(aliceButton);
 
-		lorriButton.onOver.callback = lorriInfo;
+		/*lorriButton.onOver.callback = lorriInfo;
 		lorriButton.onOut.callback = infoRemove;
 		lorriButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
-		add(lorriButton);
+		add(lorriButton);*/
 
-		pepssiButton.onOver.callback = pepssiInfo;
+		/*pepssiButton.onOver.callback = pepssiInfo;
 		pepssiButton.onOut.callback = infoRemove;
 		pepssiButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
-		add(pepssiButton);
+		add(pepssiButton);*/
 
 		ralphButton.onOver.callback = ralphInfo;
 		ralphButton.onOut.callback = infoRemove;
@@ -269,15 +245,15 @@ class PlayState extends FlxState
 		FlxG.camera.fade(0xffffffff, 1, loadAlice, false);
 	}
 
-	private function fadeLorri():Void
+	/*private function fadeLorri():Void
 	{
 		FlxG.camera.fade(0xffffffff, 1, loadLorri, false);
-	}
+	}*/
 
-	private function fadePepssi():Void
+	/*private function fadePepssi():Void
 	{
 		FlxG.camera.fade(0xffffffff, 1, loadPepssi, false);
-	}
+	}*/
 
 	private function fadeRalph():Void
 	{
@@ -310,17 +286,17 @@ class PlayState extends FlxState
 		FlxG.switchState(new AliceTitleState());
 	}
 
-	private function loadLorri():Void
+	/*private function loadLorri():Void
 	{
 		trace('loadLorri');
 		//FlxG.switchState(new PlayState());
-	}
+	}*/
 
-	private function loadPepssi():Void
+	/*private function loadPepssi():Void
 	{
 		trace('loadPepssi');
 		FlxG.switchState(new PepssiDialogState0());
-	}
+	}*/
 
 	private function loadRalph():Void
 	{
@@ -366,37 +342,37 @@ class PlayState extends FlxState
 	{
 		//trace('aliceInfo');
 
-		aliceInfoText = new FlxSprite(290, 20);
+		aliceInfoText = new FlxSprite(infoX, infoY);
 		aliceInfoText.loadGraphic('assets/images/hub/alice_info.png');
 
 		add(aliceInfoText);
 	}
 
-	private function lorriInfo():Void
+	/*private function lorriInfo():Void
 	{
 		//trace('lorriInfo');
 
-		lorriInfoText = new FlxSprite(290, 20);
+		lorriInfoText = new FlxSprite(infoX, infoY);
 		lorriInfoText.loadGraphic('assets/images/hub/lorri_info.png');
 
 		add(lorriInfoText);
-	}
+	}*/
 
-	private function pepssiInfo():Void
+	/*private function pepssiInfo():Void
 	{
 		//trace('pepssiInfo');
 
-		pepssiInfoText = new FlxSprite(290, 20);
+		pepssiInfoText = new FlxSprite(infoX, infoY);
 		pepssiInfoText.loadGraphic('assets/images/hub/pepssi_info.png');
 
 		add(pepssiInfoText);
-	}
+	}*/
 
 	private function ralphInfo():Void
 	{
 		//trace('ralphInfo');
 
-		ralphInfoText = new FlxSprite(290, 20);
+		ralphInfoText = new FlxSprite(infoX, infoY);
 		ralphInfoText.loadGraphic('assets/images/hub/ralph_info.png');
 
 		add(ralphInfoText);
@@ -406,7 +382,7 @@ class PlayState extends FlxState
 	{
 		//trace('swapInfo');
 
-		swapInfoText = new FlxSprite(290, 20);
+		swapInfoText = new FlxSprite(infoX, infoY);
 		swapInfoText.loadGraphic('assets/images/hub/swap_info.png');
 
 		add(swapInfoText);
@@ -416,7 +392,7 @@ class PlayState extends FlxState
 	{
 		//trace('rtgInfo');
 
-		rtgInfoText = new FlxSprite(290, 20);
+		rtgInfoText = new FlxSprite(infoX, infoY);
 		rtgInfoText.loadGraphic('assets/images/hub/rtg_info.png');
 
 		add(rtgInfoText);
@@ -426,7 +402,7 @@ class PlayState extends FlxState
 	{
 		//trace('rexInfo');
 
-		rexInfoText = new FlxSprite(290, 20);
+		rexInfoText = new FlxSprite(infoX, infoY);
 		rexInfoText.loadGraphic('assets/images/hub/rex_info.png');
 
 		add(rexInfoText);
@@ -436,7 +412,7 @@ class PlayState extends FlxState
 	{
 		//trace('heatInfo');
 
-		heatInfoText = new FlxSprite(290, 20);
+		heatInfoText = new FlxSprite(infoX, infoY);
 		heatInfoText.loadGraphic('assets/images/hub/heat_info.png');
 
 		add(heatInfoText);

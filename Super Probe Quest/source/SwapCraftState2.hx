@@ -197,7 +197,6 @@ class SwapCraftState2 extends FlxState
 	{
 		if (chosen != true)
 		{
-			previewImg2.alpha = 1;
 			chosen = true;
 			right = true;
 			trace('f2');

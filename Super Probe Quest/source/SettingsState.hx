@@ -14,6 +14,8 @@ class SettingsState extends FlxState
 	private var soundButton:FlxButton;
 	private var backButton:FlxButton;
 
+	private var isFullscreen:Bool;
+
 	override public function create():Void
 	{
 		FlxG.camera.flash(0xff000000, 0.5, null, false);
@@ -75,7 +77,6 @@ class SettingsState extends FlxState
 			fullscreenButton.loadGraphic('assets/images/settings/button_fullscreen_alt.png', false, 163, 32);
 		else if (FlxG.fullscreen == true)
 			fullscreenButton.loadGraphic('assets/images/settings/button_fullscreen.png', false, 163, 32);
-
 	}
 
 	private function toggleSound():Void

@@ -7,6 +7,8 @@ import flixel.text.FlxText;
 import flixel.ui.FlxButton;
 import flixel.effects.particles.FlxEmitter;
 import flixel.effects.particles.FlxParticle;
+import flixel.system.FlxSound;
+import flixel.util.FlxTimer;
 //import flixel.tweens.FlxTween;
 
 class PadState extends FlxState
@@ -17,8 +19,9 @@ class PadState extends FlxState
 	private var cloud0:FlxSprite;
 	private var panel:FlxSprite;
 	private var buttonLaunch:FlxButton;
-
+	private var launchSound:FlxSound;
 	private var backButton:FlxButton;
+	private var timer:FlxTimer;
 
 	private var emitter:FlxEmitter;
 	private var emitter2:FlxEmitter;
@@ -27,13 +30,14 @@ class PadState extends FlxState
 
 	private var panelX:Int = 30;
 	private var panelY:Int = 300;
-
 	private var launched:Bool = false;
 
 	override public function create():Void
 	{
 		FlxG.camera.flash(0xff000000, 0.5, null, false);
 	
+		launchSound = FlxG.sound.load('assets/sounds/launch.wav');
+
 		back = new FlxSprite(0, 0);
 		back.loadGraphic('assets/images/launchblock/skyback.png');
 		add(back);
@@ -59,6 +63,8 @@ class PadState extends FlxState
 		backButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(backButton);
 
+		timer = new FlxTimer();
+
 		emitter = new FlxEmitter(320, 421);
 		emitter.gravity = 1000;
 		for (i in 0 ... 200)
@@ -73,7 +79,7 @@ class PadState extends FlxState
 		}
 		add(emitter2);
 
-		emitter2 = new FlxEmitter(315, 431);
+		emitter2 = new FlxEmitter(320, 431);
 		emitter2.gravity = 1000;
 		for (i in 0 ... 200)
 		{
@@ -87,7 +93,7 @@ class PadState extends FlxState
 		}
 		add(emitter2);
 
-		emitter3 = new FlxEmitter(325, 436);
+		emitter3 = new FlxEmitter(320, 451);
 		emitter3.gravity = 1000;
 		for (i in 0 ... 200)
 		{
@@ -129,7 +135,6 @@ class PadState extends FlxState
 
 		if (launched == true)
 		{
-
 			if (panel.y != 481)
 				panel.y += 2;
 			if (buttonLaunch.y != 520)
@@ -159,5 +164,17 @@ class PadState extends FlxState
 		emitter.start(false, 2, 0.01);
 		emitter2.start(false, 2, 0.01);
 		emitter3.start(false, 2, 0.01);
+		launchSound.play();
+		timer.start(3, timeEnd, 1);
+	}
+
+	private function timeEnd(Timer:FlxTimer):Void
+	{
+		FlxG.camera.fade(0xff000000, 3, nextState, false);
+	}
+
+	private function nextState():Void
+	{
+		FlxG.switchState(new MenuState());
 	}
 }
