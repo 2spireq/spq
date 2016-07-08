@@ -175,6 +175,6 @@ class PadState extends FlxState
 
 	private function nextState():Void
 	{
-		FlxG.switchState(new MenuState());
+		FlxG.switchState(new EndState());
 	}
 }
