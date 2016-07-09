@@ -77,27 +77,27 @@ class MenuState extends FlxState
 		splashPlayButton.loadGraphic('assets/images/menu/button_begin.png', false, 121, 32);
 		splashPlayButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 
-		splashAboutButton = new FlxButton(121, 300, '', loadAbout);
-		splashAboutButton.loadGraphic('assets/images/menu/button_about.png', false, 121, 32);
-		splashAboutButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
-
-		splashFactButton = new FlxButton(121, 350, '', loadFacts);
-		splashFactButton.loadGraphic('assets/images/menu/button_facts.png', false, 121, 32);
-		splashFactButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
+		splashSettingsButton = new FlxButton(121, 300, '', loadSettings);
+		splashSettingsButton.loadGraphic('assets/images/menu/button_settings.png', false, 121, 32);
+		splashSettingsButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 
 		quitX = 121;
-		quitY = 400;
+		quitY = 350;
 
 		splashQuitButton = new FlxButton(quitX + 88, quitY, '', quit);
 		splashQuitButton.loadGraphic('assets/images/menu/button_quit.png', false, 32, 32);
 		splashQuitButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 
-		splashSettingsButton = new FlxButton(121, 400, '', loadSettings);
-		splashSettingsButton.loadGraphic('assets/images/menu/button_setting.png', false, 32, 32);
-		splashSettingsButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
+		splashFactButton = new FlxButton(quitX + 44, quitY, '', loadFacts);
+		splashFactButton.loadGraphic('assets/images/menu/button_trivia.png', false, 32, 32);
+		splashFactButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
+
+		splashAboutButton = new FlxButton(quitX, quitY, '', loadAbout);
+		splashAboutButton.loadGraphic('assets/images/menu/button_about.png', false, 32, 32);
+		splashAboutButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 
 		baseX = 440;
-		baseY = 350;
+		baseY = 360;
 
 		rPluto = new FlxSprite(baseX, baseY);
 		rPluto.loadGraphic('assets/images/menu/moons/Pluto.png');
@@ -126,6 +126,12 @@ class MenuState extends FlxState
 		rHydra.angle = rPlutoAngle;
 
 		add(splashStarBack);
+		add(splashHero);
+		add(splashPlayButton);
+		add(splashAboutButton);
+		add(splashFactButton);
+		add(splashQuitButton);
+		add(splashSettingsButton);
 
 		add(rHydra);
 		add(rKerberos);
@@ -133,13 +139,6 @@ class MenuState extends FlxState
 		add(rStyx);
 		add(rCharon);
 		add(rPluto);
-
-		add(splashHero);
-		add(splashPlayButton);
-		add(splashAboutButton);
-		add(splashFactButton);
-		add(splashQuitButton);
-		add(splashSettingsButton);
 
 		super.create();
 	}
