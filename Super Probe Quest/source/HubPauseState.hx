@@ -17,6 +17,7 @@ class HubPauseState extends FlxSubState
 	private var exitButton:FlxButton;
 	private var exitButtonOk:FlxButton;
 	private var exitButtonCancel:FlxButton;
+	private var fullscreenButton:FlxButton;
 
 	override public function create():Void
 	{
@@ -44,6 +45,10 @@ class HubPauseState extends FlxSubState
 		exitButtonCancel = new FlxButton(340, 300, '', close);
 		exitButtonCancel.loadGraphic('assets/images/menu/d_warn_cancel.png', false, 126, 32);
 		exitButtonCancel.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
+
+		fullscreenButton = new FlxButton(260, 200, fullscreen);
+		fullscreenButton.loadGraphic('assets/images/pause/button_fullscreen.png', false, 121, 32);
+		add(fullscreenButton);
 
 		super.create();
 	}
@@ -73,4 +78,8 @@ class HubPauseState extends FlxSubState
 		FlxG.switchState(new MenuState());
 	}
 
+	private function fullscreen():Void
+	{
+		FlxG.fullscreen = !FlxG.fullscreen;
+	}
 }

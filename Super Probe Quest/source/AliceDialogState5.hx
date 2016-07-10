@@ -42,9 +42,7 @@ class AliceDialogState5 extends FlxState
 	override public function update():Void
 	{
 		if (FlxG.mouse.justReleased)
-		{
 			loadNext();
-		}
 
 		super.update();
 	}	

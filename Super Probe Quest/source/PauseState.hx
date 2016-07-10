@@ -19,6 +19,7 @@ class PauseState extends FlxSubState
 	private var exitButtonOk:FlxButton;
 	private var exitButtonCancel:FlxButton;
 	private var restartButton:FlxButton;
+	private var fullscreenButton:FlxButton;
 
 	private var cameraWidth:Int;
 	private var cameraHeight:Int;
@@ -52,11 +53,11 @@ class PauseState extends FlxSubState
 		exitButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(exitButton);
 
-		exitButtonOk = new FlxButton(174, 300, '', loadMenu);
+		exitButtonOk = new FlxButton(174, 300, loadMenu);
 		exitButtonOk.loadGraphic('assets/images/menu/d_warn_ok.png', false, 126, 32);
 		exitButtonOk.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 
-		exitButtonCancel = new FlxButton(340, 300, '', close);
+		exitButtonCancel = new FlxButton(340, 300, close);
 		exitButtonCancel.loadGraphic('assets/images/menu/d_warn_cancel.png', false, 126, 32);
 		exitButtonCancel.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 
@@ -64,6 +65,10 @@ class PauseState extends FlxSubState
 		restartButton.loadGraphic('assets/images/pause/button_restart.png', false, 121, 32);
 		restartButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(restartButton);
+
+		fullscreenButton = new FlxButton(260, 250, fullscreen);
+		fullscreenButton.loadGraphic('assets/images/pause/button_fullscreen.png', false, 121, 32);
+		add(fullscreenButton);
 
 		if (Registry.minigamePaused == 'rtg')
 			RtgRunState.timer.active = false;
@@ -117,9 +122,13 @@ class PauseState extends FlxSubState
 			FlxG.switchState(new RalphZeroState());
 	}
 
+	private function fullscreen():Void
+	{
+		FlxG.fullscreen = !FlxG.fullscreen;
+	}
+
 	private function loadMenu():Void
 	{
 		FlxG.switchState(new PlayState());
 	}
-
 }

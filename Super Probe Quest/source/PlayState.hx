@@ -39,10 +39,10 @@ class PlayState extends FlxState
 
 	private var hubPauseState:HubPauseState;
 
-	private var startX:Int = 38;
-	private var startY:Int = 38;
+	private var startX:Int = 40;
+	private var startY:Int = 100;
 
-	private var infoX:Int = 290;
+	private var infoX:Int = 40;
 	private var infoY:Int = 20;
 
 	override public function create():Void
@@ -65,13 +65,13 @@ class PlayState extends FlxState
 		*/
 
 		aliceButton = new FlxButton(startX, startY, '', fadeAlice);
-		ralphButton = new FlxButton(startX + 70, startY, '', fadeRalph);
-		swapButton = new FlxButton(startX + 140, startY, '', fadeSwap);
+		ralphButton = new FlxButton(startX + 145, startY, '', fadeRalph);
+		swapButton = new FlxButton(startX + 290, startY, '', fadeSwap);
 		//ralphButton = new FlxButton(startX + 210, startY, '', fadeRalph);
 		//swapButton = new FlxButton(startX, startY + 70, '', fadeSwap);
-		rtgButton = new FlxButton(startX, startY + 70, '', fadeRtg);
-		rexButton = new FlxButton(startX + 70, startY + 70, '', fadeRex);
-		heatButton = new FlxButton(startX + 140, startY + 70, '', fadeHeat);
+		rtgButton = new FlxButton(startX, startY + 80, '', fadeRtg);
+		rexButton = new FlxButton(startX + 145, startY + 80, '', fadeRex);
+		heatButton = new FlxButton(startX + 290, startY + 80, '', fadeHeat);
 
 		trace(Registry.partsNo);
 
@@ -210,7 +210,7 @@ class PlayState extends FlxState
 		compHero.loadGraphic('assets/images/hub/components_hero.png');
 		add(compHero);
 
-		blockout = new FlxSprite(284, 16);
+		blockout = new FlxSprite(infoX, 18);
 		blockout.loadGraphic('assets/images/hub/blockout.png');
 		add(blockout);
 
@@ -332,7 +332,7 @@ class PlayState extends FlxState
 	{
 		//trace('infoRemove');
 
-		blockout = new FlxSprite(284, 16);
+		blockout = new FlxSprite(infoX, 18);
 		blockout.loadGraphic('assets/images/hub/blockout.png');
 
 		add(blockout);
