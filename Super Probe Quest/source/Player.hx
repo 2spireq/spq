@@ -9,9 +9,13 @@ import flixel.addons.editors.ogmo.FlxOgmoLoader;
 
 class Player extends FlxSprite
 {
-
 	public var speed:Float = 200;
 	public var angleAttack:Float = 0;
+
+	private var _up:Bool = false;
+	private var _down:Bool = false;
+	private var _left:Bool = false;
+	private var _right:Bool = false;
 
     public function new(X:Float = 0, Y:Float = 0)
     {
@@ -23,18 +27,13 @@ class Player extends FlxSprite
 		animation.add("u", [6, 7, 6, 8], 6, false);
 		animation.add("d", [0, 1, 0, 2], 6, false);
 
-        drag.x = drag.y = 1600;
+        drag.x = drag.y = 1000;
         setSize(8, 14);
 		offset.set(4, 2);
     }
 
     public function movement():Void
     {
-    	var _up:Bool = false;
-		var _down:Bool = false;
-		var _left:Bool = false;
-		var _right:Bool = false;
-
 		_up = FlxG.keys.pressed.W;
 		_down = FlxG.keys.pressed.S;
 		_left = FlxG.keys.pressed.A;
@@ -47,7 +46,7 @@ class Player extends FlxSprite
 
     	if (_up || _down || _left || _right)
     	{
-    		var angleAttack:Float = 0;
+    		angleAttack = 0;
 			if (_up)
 			{
 			    angleAttack = -90;

@@ -48,8 +48,8 @@ class MenuState extends FlxState
 	override public function create():Void
 	{
 		Registry.haveAlice = false;
-		Registry.haveLorri = false;
-		Registry.havePepssi = false;
+		//Registry.haveLorri = false;
+		//Registry.havePepssi = false;
 		Registry.haveRalph = false;
 		Registry.haveSwap = false;
 		Registry.haveRtg = false;

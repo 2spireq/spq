@@ -65,13 +65,13 @@ class PlayState extends FlxState
 		*/
 
 		aliceButton = new FlxButton(startX, startY, '', fadeAlice);
-		ralphButton = new FlxButton(startX + 145, startY, '', fadeRalph);
-		swapButton = new FlxButton(startX + 290, startY, '', fadeSwap);
+		ralphButton = new FlxButton(startX + 84, startY, '', fadeRalph);
+		swapButton = new FlxButton(startX + 168, startY, '', fadeSwap);
 		//ralphButton = new FlxButton(startX + 210, startY, '', fadeRalph);
 		//swapButton = new FlxButton(startX, startY + 70, '', fadeSwap);
-		rtgButton = new FlxButton(startX, startY + 80, '', fadeRtg);
-		rexButton = new FlxButton(startX + 145, startY + 80, '', fadeRex);
-		heatButton = new FlxButton(startX + 290, startY + 80, '', fadeHeat);
+		rtgButton = new FlxButton(startX, startY + 84, '', fadeRtg);
+		rexButton = new FlxButton(startX + 84, startY + 84, '', fadeRex);
+		heatButton = new FlxButton(startX + 168, startY + 84, '', fadeHeat);
 
 		trace(Registry.partsNo);
 
