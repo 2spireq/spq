@@ -31,7 +31,7 @@
 	<classpath name="source" />
 	<assets path="assets" embed="true" />
 
-	<!--icon path="assets/images/misc/icon.svg" /-->
+	<!--icon path="assets/images/component/nh_large.png" if="desktop" />
 	
 	<!--------------------------------LIBRARIES------------------------------------->
 

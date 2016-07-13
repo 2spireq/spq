@@ -13,8 +13,8 @@ import flixel.util.FlxSave;
 class PlayState extends FlxState
 {
 	private var aliceButton:FlxButton;
-	private var lorriButton:FlxButton;
-	private var pepssiButton:FlxButton;
+	//private var lorriButton:FlxButton;
+	//private var pepssiButton:FlxButton;
 	private var ralphButton:FlxButton;
 	private var swapButton:FlxButton;
 	private var rtgButton:FlxButton;
@@ -22,8 +22,8 @@ class PlayState extends FlxState
 	private var heatButton:FlxButton;
 
 	private var aliceInfoText:FlxSprite;
-	private var lorriInfoText:FlxSprite;
-	private var pepssiInfoText:FlxSprite;
+	//private var lorriInfoText:FlxSprite;
+	//private var pepssiInfoText:FlxSprite;
 	private var ralphInfoText:FlxSprite;
 	private var swapInfoText:FlxSprite;
 	private var rtgInfoText:FlxSprite;
@@ -67,8 +67,6 @@ class PlayState extends FlxState
 		aliceButton = new FlxButton(startX, startY, '', fadeAlice);
 		ralphButton = new FlxButton(startX + 84, startY, '', fadeRalph);
 		swapButton = new FlxButton(startX + 168, startY, '', fadeSwap);
-		//ralphButton = new FlxButton(startX + 210, startY, '', fadeRalph);
-		//swapButton = new FlxButton(startX, startY + 70, '', fadeSwap);
 		rtgButton = new FlxButton(startX, startY + 84, '', fadeRtg);
 		rexButton = new FlxButton(startX + 84, startY + 84, '', fadeRex);
 		heatButton = new FlxButton(startX + 168, startY + 84, '', fadeHeat);

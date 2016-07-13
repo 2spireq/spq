@@ -52,6 +52,8 @@ class RtgRunState extends FlxState
 
 		FlxG.camera.flash(0xff000000, 1, null, false);
 
+		FlxG.sound.play('assets/music/rtg_main.ogg', 1, true, false);
+
 		timer = new FlxTimer().start(100, timeEnd, 1);
 		//timer = new FlxTimer().start(10, timeEnd, 1);
 

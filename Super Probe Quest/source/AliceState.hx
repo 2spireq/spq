@@ -12,11 +12,11 @@ import flixel.ui.FlxButton;
 
 class AliceState extends FlxState
 {
-	private var _player:Player;
-	private var _map:FlxOgmoLoader;
-	private var _mWalls:FlxTilemap;
-	private var _grpCleaner:FlxTypedGroup<Cleaner>;
-	private var _grpHit:FlxTypedGroup<Alice_Hit>;
+	private var player:Player;
+	private var map:FlxOgmoLoader;
+	private var walls:FlxTilemap;
+	private var grpHit:FlxTypedGroup<Alice_Hit>;
+	private var overlay:FlxSprite;
 
 	private var pauseState:PauseState;
 	private var pauseButton:FlxButton;
@@ -25,47 +25,27 @@ class AliceState extends FlxState
 	{
 		FlxG.camera.flash(0xff000000, 1, null, false);
 		
-		_map = new FlxOgmoLoader('assets/data/maze.oel');
-		_mWalls = _map.loadTilemap('assets/images/alicemaze/b-map.png', 16, 16, 'walls');
-		_mWalls.setTileProperties(1, FlxObject.ANY);
-		_mWalls.setTileProperties(2, FlxObject.NONE);
-		/*_mWalls.setTileProperties(3, FlxObject.ANY);
-		_mWalls.setTileProperties(4, FlxObject.ANY);
-		_mWalls.setTileProperties(5, FlxObject.ANY);
-		_mWalls.setTileProperties(6, FlxObject.ANY);
-		_mWalls.setTileProperties(7, FlxObject.ANY);
-		_mWalls.setTileProperties(8, FlxObject.ANY);
-		_mWalls.setTileProperties(9, FlxObject.ANY);
-		_mWalls.setTileProperties(10, FlxObject.ANY);
-		_mWalls.setTileProperties(11, FlxObject.ANY);
-		_mWalls.setTileProperties(12, FlxObject.ANY);
-		_mWalls.setTileProperties(13, FlxObject.ANY);
-		_mWalls.setTileProperties(14, FlxObject.ANY);
-		_mWalls.setTileProperties(15, FlxObject.ANY);
-		_mWalls.setTileProperties(16, FlxObject.ANY);
-		_mWalls.setTileProperties(17, FlxObject.NONE);
-		_mWalls.setTileProperties(18, FlxObject.ANY);
-		_mWalls.setTileProperties(19, FlxObject.ANY);
-		_mWalls.setTileProperties(20, FlxObject.ANY);*/
-		_mWalls.setTileProperties(44, FlxObject.NONE);
-		_mWalls.setTileProperties(45, FlxObject.NONE);
+		map = new FlxOgmoLoader('assets/data/maze.oel');
+		walls = map.loadTilemap('assets/images/alicemaze/b-map.png', 16, 16, 'walls');
+		walls.setTileProperties(1, FlxObject.ANY);
+		walls.setTileProperties(2, FlxObject.NONE);
+		walls.setTileProperties(44, FlxObject.NONE);
+		walls.setTileProperties(45, FlxObject.NONE);
+		add(walls);
 
-		add(_mWalls);
-
-		_grpCleaner = new FlxTypedGroup<Cleaner>();
-		_grpHit = new FlxTypedGroup<Alice_Hit>();
+		grpHit = new FlxTypedGroup<Alice_Hit>();
  
-		_player = new Player();
+		player = new Player();
 	
-		_map.loadEntities(placeEntities, 'entities');
-		add(_player);
-		add(_grpCleaner);
-		add(_grpHit);
+		map.loadEntities(placeEntities, 'entities');
+		add(player);
+		add(grpHit);
 
-		FlxG.camera.height = 480;
-		FlxG.camera.width = 640;
-		//FlxG.camera.zoom = 2;
-		FlxG.camera.follow(_player, FlxCamera.STYLE_TOPDOWN, 1);
+		FlxG.camera.follow(player, FlxCamera.STYLE_TOPDOWN, 1);
+
+		overlay = new FlxSprite(player.x - 636, player.y - 476);
+		overlay.loadGraphic('assets/images/alicemaze/overlay.png');
+		add(overlay);
 
 		pauseState = new PauseState();
 		pauseButton = new FlxButton(10, 10, '', loadPause);
@@ -106,11 +86,13 @@ class AliceState extends FlxState
 
 	override public function update():Void
 	{
-		//FlxG.camera.zoom = 2;
 		super.update();
-		FlxG.collide(_player, _mWalls);
-		FlxG.overlap(_player, _grpCleaner, playerCleanerInteract);
-		FlxG.overlap(_player, _grpHit, playerHitInteract);
+
+		FlxG.collide(player, walls);
+		FlxG.overlap(player, grpHit, playerHitInteract);
+
+		overlay.x = player.x - 636;
+		overlay.y = player.y - 476;
 	}	
 
 	private function placeEntities(entityName:String, entityData:Xml):Void
@@ -119,17 +101,11 @@ class AliceState extends FlxState
 		var y:Int = Std.parseInt(entityData.get('y'));
 		if (entityName == 'player')
 		{
-			_player.x = x;
-			_player.y = y;
-		}
-		else if (entityName == 'cleaner')
-		{
-			_grpCleaner.add(new Cleaner(x, y));
+			player.x = x;
+			player.y = y;
 		}
 		else if (entityName == 'alice_hit')
-		{
-			_grpHit.add(new Alice_Hit(x, y));
-		}
+			grpHit.add(new Alice_Hit(x, y));
 	}
 
 	private function nextState():Void
@@ -143,5 +119,4 @@ class AliceState extends FlxState
 		pauseState = new PauseState();
 		openSubState(pauseState);
 	}
-
 }
