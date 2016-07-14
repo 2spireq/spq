@@ -30,20 +30,20 @@ class PlayState extends FlxState
 	private var rexInfoText:FlxSprite;
 	private var heatInfoText:FlxSprite;
 	private var blockout:FlxSprite;
-	private var compHero:FlxSprite;
 
 	private var padButton:FlxButton;
 	private var menuButton:FlxButton;
 
 	private var starBack:FlxSprite;
+	private var overlay:FlxSprite;
 
 	private var hubPauseState:HubPauseState;
 
-	private var startX:Int = 40;
+	private var startX:Int = 204;
 	private var startY:Int = 100;
 
-	private var infoX:Int = 40;
-	private var infoY:Int = 20;
+	private var infoX:Int = 143;
+	private var infoY:Int = 320;
 
 	override public function create():Void
 	{
@@ -52,6 +52,10 @@ class PlayState extends FlxState
 		starBack = new FlxSprite(0, 0);
 		starBack.loadGraphic('assets/images/hub/starback_2.png');
 		add(starBack);
+
+		overlay = new FlxSprite(0, 0);
+		overlay.loadGraphic('assets/images/hub/hub_overlay.png');
+		add(overlay);
 
 		/*
 		aliceButton = new FlxButton(startX, startY, '', fadeAlice);
@@ -73,7 +77,7 @@ class PlayState extends FlxState
 
 		trace(Registry.partsNo);
 
-		if (Registry.partsNo == 0)
+		if (Registry.partsNo == 6)
 			Registry.launchReady = true;
 
 		if (Registry.haveAlice == true)
@@ -204,20 +208,16 @@ class PlayState extends FlxState
 		heatButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(heatButton);
 
-		compHero = new FlxSprite(startX, startY - 28);
-		compHero.loadGraphic('assets/images/hub/components_hero.png');
-		add(compHero);
-
-		blockout = new FlxSprite(infoX, 18);
+		blockout = new FlxSprite(infoX, infoY - 2);
 		blockout.loadGraphic('assets/images/hub/blockout.png');
 		add(blockout);
 
-		padButton = new FlxButton(505, 444, '', loadPad);
+		padButton = new FlxButton(54, 10, '', fadePad);
 		padButton.loadGraphic('assets/images/menu/button_pad.png', 131, 32);
 		padButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(padButton);
 
-		menuButton = new FlxButton(469, 444, '', loadPause);
+		menuButton = new FlxButton(10, 10, '', loadPause);
 		menuButton.loadGraphic('assets/images/pause/button_pause.png', 32, 32);
 		menuButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(menuButton);
@@ -278,6 +278,11 @@ class PlayState extends FlxState
 		FlxG.camera.fade(0xffffffff, 1, loadHeat, false);
 	}
 
+	private function fadePad():Void
+	{
+		FlxG.camera.fade(0xffffffff, 1, loadPad, false);
+	}
+
 	private function loadAlice():Void
 	{
 		trace('loadAlice');
@@ -330,7 +335,7 @@ class PlayState extends FlxState
 	{
 		//trace('infoRemove');
 
-		blockout = new FlxSprite(infoX, 18);
+		blockout = new FlxSprite(infoX, infoY - 2);
 		blockout.loadGraphic('assets/images/hub/blockout.png');
 
 		add(blockout);

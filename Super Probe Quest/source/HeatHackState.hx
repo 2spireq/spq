@@ -26,7 +26,7 @@ class HeatHackState extends FlxState
 		background.loadGraphic('assets/images/heathack/heat_back.png');
 		add(background);
 
-		question = new FlxTypeText(165, 153, 310, 'Question 1. Choose the scientist who first discovered Pluto.\n1. Clyde Tombaugh\n2. Carl Sagan\n3. Galileo\n4. Edwin Hubble\n', 8, true);
+		question = new FlxTypeText(165, 153, 310, 'Question 1. Choose the scientist who first discovered Pluto.\n1. Clyde Tombaugh\n2. Stephen Hawking\n3. Galileo\n4. Neil Horizons\n', 8, true);
 		question.delay = 0.1;
 		question.eraseDelay = 0.1;
 		question.showCursor = false;

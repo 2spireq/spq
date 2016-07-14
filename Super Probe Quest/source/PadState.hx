@@ -34,7 +34,7 @@ class PadState extends FlxState
 
 	override public function create():Void
 	{
-		FlxG.camera.flash(0xff000000, 0.5, null, false);
+		FlxG.camera.flash(0xffffffff, 1, null, false);
 	
 		launchSound = FlxG.sound.load('assets/sounds/launch.wav');
 
