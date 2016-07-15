@@ -5,6 +5,7 @@ import flixel.FlxSprite;
 import flixel.FlxObject;
 import flixel.util.FlxAngle;
 import flixel.tile.FlxTilemap;
+import flixel.system.FlxSound;
 import flixel.addons.editors.ogmo.FlxOgmoLoader;
 
 class RalphPlayer extends FlxSprite
@@ -14,6 +15,8 @@ class RalphPlayer extends FlxSprite
 
 	public var speed:Float = 200;
 	public var angleAttack:Float = 0;
+
+	private var jump:FlxSound;
 
 	public function new(X:Float = 0, Y:Float = 0)
 	{
@@ -37,6 +40,8 @@ class RalphPlayer extends FlxSprite
 		maxVelocity.set(120, 200);
 		setSize(14, 14);
 		//offset.set(4, 2);
+
+		jump = FlxG.sound.load('assets/sounds/jump.wav');
 	}
 
 	public function movement():Void
@@ -82,6 +87,7 @@ class RalphPlayer extends FlxSprite
 				y -= 1;
 				velocity.y = -200;
 				velocity.x = 0;
+				jump.play(true);
 			}
 
 			if (velocity.x != 0)

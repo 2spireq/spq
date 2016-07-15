@@ -6,6 +6,8 @@ import flixel.FlxObject;
 import flixel.util.FlxAngle;
 import flixel.tile.FlxTilemap;
 import flixel.addons.editors.ogmo.FlxOgmoLoader;
+import flixel.tweens.FlxTween;
+import flixel.tweens.FlxEase;
 
 class Ralph0 extends FlxSprite
 {
@@ -18,5 +20,11 @@ class Ralph0 extends FlxSprite
 	override public function update():Void
 	{
 		super.update();
+	}
+
+	override public function kill():Void
+	{
+	    alive = false;
+	    FlxTween.tween(this, { alpha: 0, y: y - 16 }, .33, { ease: FlxEase.circOut});
 	}
 }

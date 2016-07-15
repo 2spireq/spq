@@ -26,7 +26,7 @@ class HeatHackState2 extends FlxState
 		background.loadGraphic('assets/images/heathack/heat_back.png');
 		add(background);
 
-		question = new FlxTypeText(165, 153, 310, 'Question 2. How many moons does Pluto have?\n1. None\n2. 1\n3. 3\n4. 5\n5. Unknown', 8, true);
+		question = new FlxTypeText(165, 153, 310, 'Question 2. How many moons does Pluto have?\n1. None\n2. 1\n3. 5\n4. 37', 8, true);
 		question.delay = 0.1;
 		question.eraseDelay = 0.1;
 		question.showCursor = false;
@@ -36,7 +36,7 @@ class HeatHackState2 extends FlxState
 		add(question);
 		question.start(0.02, false, false, null);
 
-		input = new FlxInputText(165, 235, 310, 8, 0x8811EE11, 0x00000000, true);
+		input = new FlxInputText(165, 220, 310, 8, 0x8811EE11, 0x00000000, true);
 		input.maxLength = 2;
 		input.hasFocus = true;
 		input.callback = inputEntered;
@@ -92,7 +92,7 @@ class HeatHackState2 extends FlxState
 	{
 		if (action == FlxInputText.ENTER_ACTION)
 		{
-			if (input.text == '4')
+			if (input.text == '3')
 			{
 				add(correct);
 				correct.start(0.02, false, false, null);

@@ -7,7 +7,7 @@ import flixel.ui.FlxButton;
 
 class RalphFoundState extends FlxState
 {
-	private var rtgFound:FlxSprite;
+	private var ralphFound:FlxSprite;
 	private var okButton:FlxButton;
 
 	override public function create():Void
@@ -19,12 +19,12 @@ class RalphFoundState extends FlxState
 
 		Registry.haveRalph = true;
 
-		rtgFound = new FlxSprite(0, 0);
-		rtgFound.loadGraphic('assets/images/found/found_rtg.png');
-		add(rtgFound);
+		ralphFound = new FlxSprite(0, 0);
+		ralphFound.loadGraphic('assets/images/found/found_ralph.png');
+		add(ralphFound);
 
 		okButton = new FlxButton(196, 420, '', loadPlay);
-		okButton.loadGraphic('assets/images/found/found_rtg_button.png', false, 247, 53);
+		okButton.loadGraphic('assets/images/found/found_ralph_button.png', false, 247, 53);
 		okButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(okButton);
 

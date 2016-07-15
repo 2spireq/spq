@@ -234,7 +234,6 @@ class PlayState extends FlxState
 
 	override public function update():Void
 	{
-		//trace(FlxG.mouse.getWorldPosition());
 		super.update();
 	}	
 
@@ -304,7 +303,7 @@ class PlayState extends FlxState
 	private function loadRalph():Void
 	{
 		trace('loadRalph');
-		FlxG.switchState(new RalphZeroState());
+		FlxG.switchState(new RalphIntroState());
 	}
 
 	private function loadSwap():Void
@@ -424,7 +423,11 @@ class PlayState extends FlxState
 	private function loadPad():Void
 	{
 		trace('loadPad');
-		FlxG.switchState(new PadState());
+
+		if (Registry.launchReady != true)
+			FlxG.switchState(new PadState());
+		else
+			FlxG.switchState(new LaunchIntroState());
 	}
 
 	private function loadPause():Void

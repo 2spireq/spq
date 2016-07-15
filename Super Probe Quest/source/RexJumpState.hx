@@ -17,7 +17,7 @@ import flixel.util.FlxSpriteUtil;
 import flixel.effects.FlxFlicker;
 import Std.int;
 
-class RalphZeroState extends FlxState
+class RexJumpState extends FlxState
 {
 	private var pauseState:PauseState;
 	private var pauseButton:FlxButton;
