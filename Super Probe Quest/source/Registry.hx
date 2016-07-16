@@ -16,9 +16,10 @@ class Registry
 
 	public static var rtgInWater:Bool;
 	public static var rtgOnLadder:Bool;
-	public static var rtgFailed:Bool;
 
+	public static var rtgFailed:Bool;
 	public static var ralphFailed:Bool;
+	public static var rexFailed:Bool;
 
 	public static var minigamePaused:String;
 

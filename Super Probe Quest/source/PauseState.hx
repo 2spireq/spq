@@ -120,6 +120,8 @@ class PauseState extends FlxSubState
 			FlxG.switchState(new SwapCraftState());
 		else if (Registry.minigamePaused == 'ralph')
 			FlxG.switchState(new RalphZeroState());
+		else if (Registry.minigamePaused == 'rex')
+			FlxG.switchState(new RexJumpState());
 	}
 
 	private function fullscreen():Void

@@ -38,7 +38,7 @@ class RexJumpState extends FlxState
 	private var timerLeftInt:Int;
 	private var pointsText:FlxText;
 	private var helicopterText:FlxText;
-	private var ralphPartsFound:Int = 0;
+	private var rexPartsFound:Int = 0;
 
 	override public function create():Void
 	{
@@ -63,47 +63,24 @@ class RexJumpState extends FlxState
 		timeText.scrollFactor.x = 0;
 
 		pointsText = new FlxText(60, 24, 100);
-		pointsText.text = 'PARTS: ' + ralphPartsFound + ' /7';
+		pointsText.text = 'PARTS: ' + rexPartsFound + ' /7';
 		pointsText.setFormat(8, FlxColor.BLACK);
 		pointsText.scrollFactor.x = 0;
 
 		background = new FlxSprite(0, 0);
-		background.loadGraphic('assets/images/ralphzero/background.png');
+		background.loadGraphic('assets/images/rexjump/background.png');
 		add(background);
 
-		map = new FlxOgmoLoader('assets/data/fac.oel');
-		walls = map.loadTilemap('assets/images/ralphzero/ralphtiles.png', 16, 16, 'tiles');
+		map = new FlxOgmoLoader('assets/data/tower.oel');
+		walls = map.loadTilemap('assets/images/rexjump/rextiles.png', 16, 16, 'tiles');
 		add(walls);
 
 		grpParts0 = new FlxTypedGroup<Ralph0>();
 		add(grpParts0);
 
 		walls.setTileProperties(0, FlxObject.NONE);
-		walls.setTileProperties(1, FlxObject.NONE);
-		walls.setTileProperties(2, FlxObject.NONE);
-		walls.setTileProperties(3, FlxObject.NONE);
-		walls.setTileProperties(4, FlxObject.NONE);
-		walls.setTileProperties(5, FlxObject.NONE);
-		walls.setTileProperties(6, FlxObject.NONE);
-		walls.setTileProperties(7, FlxObject.NONE);
-		walls.setTileProperties(8, FlxObject.NONE);
-		walls.setTileProperties(9, FlxObject.NONE);
-		walls.setTileProperties(36, FlxObject.NONE);
-		walls.setTileProperties(39, FlxObject.NONE);
-		walls.setTileProperties(40, FlxObject.NONE);
-		walls.setTileProperties(41, FlxObject.NONE);
-		walls.setTileProperties(104, FlxObject.NONE);
-		walls.setTileProperties(105, FlxObject.NONE);
-		walls.setTileProperties(106, FlxObject.NONE);
-		walls.setTileProperties(107, FlxObject.NONE);
-		walls.setTileProperties(108, FlxObject.NONE);
-		walls.setTileProperties(120, FlxObject.NONE);
-		walls.setTileProperties(121, FlxObject.NONE, helicopterInteract);
-		walls.setTileProperties(122, FlxObject.NONE, helicopterInteract);
-		walls.setTileProperties(123, FlxObject.NONE);
-		walls.setTileProperties(124, FlxObject.NONE);
 
-		player = new RalphPlayer(40, 410);
+		player = new RalphPlayer(100, 410);
 		map.loadEntities(placeEntities, 'entities');
 		add(player);
 
@@ -134,7 +111,7 @@ class RexJumpState extends FlxState
 		timerLeft = 'TIME: ' + timerLeftInt;
 		timeText.text = timerLeft;
 
-		pointsText.text = 'PARTS: ' + ralphPartsFound + ' /7';
+		pointsText.text = 'PARTS: ' + rexPartsFound + ' /7';
 
 		timer.active = true;
 
@@ -146,17 +123,17 @@ class RexJumpState extends FlxState
 		if (P.alive && P.exists && H.alive && H.exists)
 		{
 			H.kill();
-			ralphPartsFound++;
+			rexPartsFound++;
 			partGet.play();
 
-			if (ralphPartsFound == 7)
+			if (rexPartsFound == 7)
 				add(helicopterText);
 		}
 	}
 
 	private function loadPause():Void
 	{
-		Registry.minigamePaused = 'ralph';
+		Registry.minigamePaused = 'rex';
 		pauseState = new PauseState();
 		openSubState(pauseState);
 	}
@@ -196,7 +173,7 @@ class RexJumpState extends FlxState
 
 	private function helicopterInteract(Tile:FlxObject, Object:FlxObject):Void
 	{
-		if (ralphPartsFound == 7)
+		if (rexPartsFound == 7)
 			FlxG.camera.fade(0xff000000, 1, nextState, false);
 	}
 

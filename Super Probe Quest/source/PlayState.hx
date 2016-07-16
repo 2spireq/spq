@@ -321,7 +321,7 @@ class PlayState extends FlxState
 	private function loadRex():Void
 	{
 		trace('loadRex');
-		//FlxG.switchState(new PlayState());
+		FlxG.switchState(new RexJumpState());
 	}
 
 	private function loadHeat():Void
