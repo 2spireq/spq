@@ -25,6 +25,6 @@ class Ralph0 extends FlxSprite
 	override public function kill():Void
 	{
 	    alive = false;
-	    FlxTween.tween(this, { alpha: 0, y: y - 16 }, .33, { ease: FlxEase.circOut});
+	    FlxTween.tween(this, {alpha: 0, y: y - 16}, .33, {ease: FlxEase.circOut});
 	}
 }

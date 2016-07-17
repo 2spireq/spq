@@ -27,8 +27,8 @@ class RexJumpState extends FlxState
 	private var player:RalphPlayer;
 	private var background:FlxSprite;
 	private var partGet:FlxSound;
-	private var p0:Ralph0;
-	private var grpParts0:FlxTypedGroup<Ralph0>;
+	private var p0:Rex0;
+	private var grpParts0:FlxTypedGroup<Rex0>;
 	private var failContinueButton:FlxButton;
 	private var failText:FlxSprite;
 
@@ -52,20 +52,23 @@ class RexJumpState extends FlxState
 		helicopterText.text = 'GET TO HELICOPTER!';
 		helicopterText.setFormat(8, FlxColor.YELLOW);
 		helicopterText.scrollFactor.x = 0;
+		helicopterText.scrollFactor.y = 0;
 
 		timer = new FlxTimer().start(140, timeEnd, 1);
 
 		timerLeftInt = Std.int(timer.timeLeft);
 		timerLeft = 'TIME: ' + timerLeftInt;
-		timeText = new FlxText(60, 14, 100);
+		timeText = new FlxText(10, 40, 100);
 		timeText.text = timerLeft;
-		timeText.setFormat(8, FlxColor.BLACK);
+		timeText.setFormat(8, FlxColor.WHITE);
 		timeText.scrollFactor.x = 0;
+		timeText.scrollFactor.y = 0;
 
-		pointsText = new FlxText(60, 24, 100);
+		pointsText = new FlxText(10, 70, 100);
 		pointsText.text = 'PARTS: ' + rexPartsFound + ' /7';
-		pointsText.setFormat(8, FlxColor.BLACK);
+		pointsText.setFormat(8, FlxColor.WHITE);
 		pointsText.scrollFactor.x = 0;
+		pointsText.scrollFactor.y = 0;
 
 		background = new FlxSprite(0, 0);
 		background.loadGraphic('assets/images/rexjump/background.png');
@@ -75,12 +78,12 @@ class RexJumpState extends FlxState
 		walls = map.loadTilemap('assets/images/rexjump/rextiles.png', 16, 16, 'tiles');
 		add(walls);
 
-		grpParts0 = new FlxTypedGroup<Ralph0>();
+		grpParts0 = new FlxTypedGroup<Rex0>();
 		add(grpParts0);
 
 		walls.setTileProperties(0, FlxObject.NONE);
 
-		player = new RalphPlayer(100, 410);
+		player = new RalphPlayer(100, 910);
 		map.loadEntities(placeEntities, 'entities');
 		add(player);
 
@@ -148,12 +151,12 @@ class RexJumpState extends FlxState
 			player.y = y;
 		}
 		else if (entityName == 'p0')
-			grpParts0.add(new Ralph0(x, y));
+			grpParts0.add(new Rex0(x, y));
 	}
 
 	private function timeEnd(Timer:FlxTimer):Void
 	{
-		trace('ralph time end');
+		trace('rex time end');
 
 		failText = new FlxSprite(0, 193);
 		failText.loadGraphic('assets/images/ralphzero/ralph_fail_text.png');
@@ -168,7 +171,7 @@ class RexJumpState extends FlxState
 		failContinueButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(failContinueButton);
 
-		Registry.ralphFailed = true;
+		Registry.rexFailed = true;
 	}
 
 	private function helicopterInteract(Tile:FlxObject, Object:FlxObject):Void

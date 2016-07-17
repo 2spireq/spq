@@ -9,12 +9,12 @@ import flixel.addons.editors.ogmo.FlxOgmoLoader;
 import flixel.tweens.FlxTween;
 import flixel.tweens.FlxEase;
 
-class Rtg0 extends FlxSprite
+class Rex0 extends FlxSprite
 {
 	public function new(X:Float=0, Y:Float=0) 
 	{
 	    super(X, Y);
-	    loadGraphic('assets/images/rtgrun/p1.png', false, 8, 8);
+	    loadGraphic('assets/images/rexjump/rexpart.png', false, 7, 7);
 	}
 
 	override public function update():Void
@@ -25,6 +25,6 @@ class Rtg0 extends FlxSprite
 	override public function kill():Void
 	{
 	    alive = false;
-	    FlxTween.tween(this, {alpha: 0, y: y - 16 }, .33, {ease: FlxEase.circOut});
+	    FlxTween.tween(this, {alpha: 0, y: y - 16}, .33, {ease: FlxEase.circOut});
 	}
 }
