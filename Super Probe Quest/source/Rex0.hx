@@ -14,7 +14,7 @@ class Rex0 extends FlxSprite
 	public function new(X:Float=0, Y:Float=0) 
 	{
 	    super(X, Y);
-	    loadGraphic('assets/images/rexjump/rexpart.png', false, 7, 7);
+	    loadGraphic('assets/images/rexjump/rexpart.png', false, 13, 13);
 	}
 
 	override public function update():Void

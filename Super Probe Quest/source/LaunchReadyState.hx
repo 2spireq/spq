@@ -5,7 +5,7 @@ import flixel.FlxState;
 import flixel.FlxSprite;
 import flixel.ui.FlxButton;
 
-class LaunchIntroState extends FlxState
+class LaunchReadyState extends FlxState
 {
 	private var background:FlxSprite;
 	private var text0:FlxSprite;
@@ -14,10 +14,10 @@ class LaunchIntroState extends FlxState
 
 	override public function create():Void
 	{
-		FlxG.camera.flash(0xff000000, 1, null, false);
+		FlxG.camera.flash(0xffffffff, 1, null, false);
 
 		background = new FlxSprite(0, 0);
-		background.loadGraphic('assets/images/launchblock/launchintro.png');
+		background.loadGraphic('assets/images/launchblock/launchready.png');
 		add(background);
 
 		buttonNext = new FlxButton(287, 430, '', fadeNext);
@@ -40,11 +40,11 @@ class LaunchIntroState extends FlxState
 
 	private function fadeNext():Void
 	{
-		FlxG.camera.fade(0xffffffff, 1, loadNext, false);
+		FlxG.camera.fade(0xff000000, 1, loadNext, false);
 	}
 
 	private function loadNext():Void
 	{
-		FlxG.switchState(new PadState());
+		FlxG.switchState(new LaunchIntroState());
 	}
 }

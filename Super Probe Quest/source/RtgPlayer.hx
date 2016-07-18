@@ -105,9 +105,9 @@ class RtgPlayer extends FlxSprite
 				else
 					animation.play('swimmingdown');
 
-				drag.x = 600;
-				drag.y = 600;
-				acceleration.y = 600;
+				//drag.x = 600;
+				//drag.y = 600;
+				acceleration.y = 250;
 			}
 			else
 			{

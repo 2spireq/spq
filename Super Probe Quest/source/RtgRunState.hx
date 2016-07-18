@@ -40,6 +40,7 @@ class RtgRunState extends FlxState
 
 	private var map:FlxOgmoLoader;
 	private var walls:FlxTilemap;
+	private var above:FlxTilemap;
 	private var player:RtgPlayer;
 	private var p0:Rtg0;
 	private var grpParts0:FlxTypedGroup<Rtg0>;
@@ -98,16 +99,9 @@ class RtgRunState extends FlxState
 		add(background);
 
 		map = new FlxOgmoLoader('assets/data/plats.oel');
+
 		walls = map.loadTilemap('assets/images/rtgrun/placeholder.png', 16, 16, 'walls');
 		add(walls);
-
-		grpParts0 = new FlxTypedGroup<Rtg0>();
-		add(grpParts0);
-
-		player = new RtgPlayer(20, 200);
-		map.loadEntities(placeEntities, 'entities');
-		add(player);
-
 		walls.setTileProperties(0, FlxObject.NONE);
 		walls.setTileProperties(1, FlxObject.NONE);
 		walls.setTileProperties(2, FlxObject.NONE);
@@ -138,6 +132,21 @@ class RtgRunState extends FlxState
 		walls.setTileProperties(106, FlxObject.NONE, helicopterInteract);
 		walls.setTileProperties(107, FlxObject.NONE);
 		walls.setTileProperties(108, FlxObject.NONE);
+
+		grpParts0 = new FlxTypedGroup<Rtg0>();
+		add(grpParts0);
+
+		player = new RtgPlayer(20, 200);
+		map.loadEntities(placeEntities, 'entities');
+		add(player);
+
+		above = map.loadTilemap('assets/images/rtgrun/placeholder.png', 16, 16, 'above');
+		add(above);
+		above.setTileProperties(0, FlxObject.NONE);
+		above.setTileProperties(1, FlxObject.NONE);
+		above.setTileProperties(2, FlxObject.NONE);
+		above.setTileProperties(3, FlxObject.NONE);
+		above.setTileProperties(4, FlxObject.NONE);
 
 		FlxG.camera.follow(player, FlxCamera.STYLE_PLATFORMER, 1);
 

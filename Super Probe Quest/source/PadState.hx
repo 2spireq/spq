@@ -22,8 +22,11 @@ class PadState extends FlxState
 	private var launchSound:FlxSound;
 	private var backButton:FlxButton;
 	private var timer:FlxTimer;
+	private var liftoffTimer:FlxTimer;
 
 	private var emitter:FlxEmitter;
+	private var emitter0:FlxEmitter;
+	private var emitter1:FlxEmitter;
 	private var emitter2:FlxEmitter;
 	private var emitter3:FlxEmitter;
 	private var particle:FlxParticle;
@@ -64,6 +67,29 @@ class PadState extends FlxState
 		add(backButton);
 
 		timer = new FlxTimer();
+		liftoffTimer = new FlxTimer();
+
+		emitter0 = new FlxEmitter(320, 420);
+		emitter0.gravity = 1000;
+		for (i in 0 ... 200)
+		{
+			particle = new FlxParticle();
+			particle.loadGraphic('assets/images/launchblock/particle3.png');
+			particle.exists = false;
+			emitter0.add(particle);
+		}
+		add(emitter0);
+
+		emitter1 = new FlxEmitter(320, 420);
+		emitter1.gravity = 1000;
+		for (i in 0 ... 200)
+		{
+			particle = new FlxParticle();
+			particle.loadGraphic('assets/images/launchblock/particle3.png');
+			particle.exists = false;
+			emitter1.add(particle);
+		}
+		add(emitter1);
 
 		emitter = new FlxEmitter(320, 421);
 		emitter.gravity = 1000;
@@ -77,7 +103,7 @@ class PadState extends FlxState
 			particle.exists = false;
 			emitter.add(particle);
 		}
-		add(emitter2);
+		add(emitter);
 
 		emitter2 = new FlxEmitter(320, 431);
 		emitter2.gravity = 1000;
@@ -160,10 +186,20 @@ class PadState extends FlxState
 
 	private function launch():Void
 	{
+		liftoffTimer.start(2, liftoff, 1);
+		emitter0.start(false, 2, 0.01);
+		emitter1.start(false, 2, 0.01);
+	}
+
+	private function liftoff(Timer:FlxTimer):Void
+	{
 		launched = true;
 		emitter.start(false, 2, 0.01);
 		emitter2.start(false, 2, 0.01);
 		emitter3.start(false, 2, 0.01);
+		emitter0.kill();
+		emitter1.kill();
+
 		launchSound.play();
 		timer.start(3, timeEnd, 1);
 	}

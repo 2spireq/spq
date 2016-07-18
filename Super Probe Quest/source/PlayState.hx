@@ -36,6 +36,7 @@ class PlayState extends FlxState
 
 	private var starBack:FlxSprite;
 	private var overlay:FlxSprite;
+	private var launchOverlay:FlxSprite;
 
 	private var hubPauseState:HubPauseState;
 
@@ -57,6 +58,9 @@ class PlayState extends FlxState
 		overlay.loadGraphic('assets/images/hub/hub_overlay.png');
 		add(overlay);
 
+		launchOverlay = new FlxSprite(0, 0);
+		launchOverlay.loadGraphic('assets/images/hub/launch_overlay.png');
+
 		/*
 		aliceButton = new FlxButton(startX, startY, '', fadeAlice);
 		lorriButton = new FlxButton(startX + 66, startY, '', fadeLorri);
@@ -77,8 +81,11 @@ class PlayState extends FlxState
 
 		trace(Registry.partsNo);
 
-		if (Registry.partsNo == 6)
+		if (Registry.partsNo == 0)
+		{
 			Registry.launchReady = true;
+			add(launchOverlay);
+		}
 
 		if (Registry.haveAlice == true)
 		{
@@ -427,7 +434,7 @@ class PlayState extends FlxState
 		if (Registry.launchReady != true)
 			FlxG.switchState(new PadState());
 		else
-			FlxG.switchState(new LaunchIntroState());
+			FlxG.switchState(new LaunchReadyState());
 	}
 
 	private function loadPause():Void

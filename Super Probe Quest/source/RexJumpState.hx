@@ -24,6 +24,7 @@ class RexJumpState extends FlxState
 
 	private var map:FlxOgmoLoader;
 	private var walls:FlxTilemap;
+	private var above:FlxTilemap;
 	private var player:RalphPlayer;
 	private var background:FlxSprite;
 	private var partGet:FlxSound;
@@ -48,7 +49,7 @@ class RexJumpState extends FlxState
 
 		partGet = FlxG.sound.load('assets/sounds/rtgpickup.wav');
 
-		helicopterText = new FlxText(140, 14, 100);
+		helicopterText = new FlxText(5, 64, 100);
 		helicopterText.text = 'GET TO HELICOPTER!';
 		helicopterText.setFormat(8, FlxColor.YELLOW);
 		helicopterText.scrollFactor.x = 0;
@@ -58,14 +59,14 @@ class RexJumpState extends FlxState
 
 		timerLeftInt = Std.int(timer.timeLeft);
 		timerLeft = 'TIME: ' + timerLeftInt;
-		timeText = new FlxText(10, 40, 100);
+		timeText = new FlxText(5, 40, 100);
 		timeText.text = timerLeft;
 		timeText.setFormat(8, FlxColor.WHITE);
 		timeText.scrollFactor.x = 0;
 		timeText.scrollFactor.y = 0;
 
-		pointsText = new FlxText(10, 70, 100);
-		pointsText.text = 'PARTS: ' + rexPartsFound + ' /7';
+		pointsText = new FlxText(5, 52, 100);
+		pointsText.text = 'PARTS: ' + rexPartsFound + ' /1';
 		pointsText.setFormat(8, FlxColor.WHITE);
 		pointsText.scrollFactor.x = 0;
 		pointsText.scrollFactor.y = 0;
@@ -75,17 +76,43 @@ class RexJumpState extends FlxState
 		add(background);
 
 		map = new FlxOgmoLoader('assets/data/tower.oel');
+
 		walls = map.loadTilemap('assets/images/rexjump/rextiles.png', 16, 16, 'tiles');
 		add(walls);
+		walls.setTileProperties(0, FlxObject.NONE);
+		walls.setTileProperties(61, FlxObject.NONE);
+		walls.setTileProperties(62, FlxObject.NONE);
+		walls.setTileProperties(63, FlxObject.NONE);
+		walls.setTileProperties(66, FlxObject.NONE);
+		walls.setTileProperties(67, FlxObject.NONE);
+		walls.setTileProperties(68, FlxObject.NONE, helicopterInteract);
+		walls.setTileProperties(69, FlxObject.NONE);
+		walls.setTileProperties(70, FlxObject.NONE);
+		walls.setTileProperties(82, FlxObject.NONE);
+		walls.setTileProperties(83, FlxObject.NONE);
+		walls.setTileProperties(84, FlxObject.NONE, helicopterInteract);
+		walls.setTileProperties(85, FlxObject.NONE);
+		walls.setTileProperties(86, FlxObject.NONE);
 
 		grpParts0 = new FlxTypedGroup<Rex0>();
 		add(grpParts0);
 
-		walls.setTileProperties(0, FlxObject.NONE);
-
 		player = new RalphPlayer(100, 910);
 		map.loadEntities(placeEntities, 'entities');
 		add(player);
+
+		above = map.loadTilemap('assets/images/rexjump/rextiles.png', 16, 16, 'above');
+		add(above);
+		above.setTileProperties(14, FlxObject.NONE);
+		above.setTileProperties(28, FlxObject.NONE);
+		above.setTileProperties(29, FlxObject.NONE);
+		above.setTileProperties(30, FlxObject.NONE);
+		above.setTileProperties(43, FlxObject.NONE);
+		above.setTileProperties(44, FlxObject.NONE);
+		above.setTileProperties(45, FlxObject.NONE);
+		above.setTileProperties(68, FlxObject.NONE);
+		above.setTileProperties(83, FlxObject.NONE);
+		above.setTileProperties(98, FlxObject.NONE);
 
 		FlxG.camera.follow(player, FlxCamera.STYLE_PLATFORMER, 1);
 
@@ -114,7 +141,7 @@ class RexJumpState extends FlxState
 		timerLeft = 'TIME: ' + timerLeftInt;
 		timeText.text = timerLeft;
 
-		pointsText.text = 'PARTS: ' + rexPartsFound + ' /7';
+		pointsText.text = 'PARTS: ' + rexPartsFound + ' /1';
 
 		timer.active = true;
 
@@ -129,7 +156,7 @@ class RexJumpState extends FlxState
 			rexPartsFound++;
 			partGet.play();
 
-			if (rexPartsFound == 7)
+			if (rexPartsFound == 1)
 				add(helicopterText);
 		}
 	}
@@ -150,7 +177,7 @@ class RexJumpState extends FlxState
 			player.x = x;
 			player.y = y;
 		}
-		else if (entityName == 'p0')
+		else if (entityName == 'rex0')
 			grpParts0.add(new Rex0(x, y));
 	}
 
@@ -159,7 +186,7 @@ class RexJumpState extends FlxState
 		trace('rex time end');
 
 		failText = new FlxSprite(0, 193);
-		failText.loadGraphic('assets/images/ralphzero/ralph_fail_text.png');
+		failText.loadGraphic('assets/images/rexjump/rex_fail_text.png');
 		failText.scrollFactor.x = 0;
 		failText.scrollFactor.y = 0;
 		FlxFlicker.flicker(failText, 0.3, 0.03, true, false, null, null);
@@ -167,7 +194,7 @@ class RexJumpState extends FlxState
 		add(failText);
 
 		failContinueButton = new FlxButton(196, 420, '', failedNextState);
-		failContinueButton.loadGraphic('assets/images/ralphzero/fail_continue_button.png', false, 247, 53);
+		failContinueButton.loadGraphic('assets/images/rexjump/fail_continue_button.png', false, 247, 53);
 		failContinueButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(failContinueButton);
 
@@ -176,13 +203,13 @@ class RexJumpState extends FlxState
 
 	private function helicopterInteract(Tile:FlxObject, Object:FlxObject):Void
 	{
-		if (rexPartsFound == 7)
+		if (rexPartsFound == 1)
 			FlxG.camera.fade(0xff000000, 1, nextState, false);
 	}
 
 	private function nextState():Void
 	{
-		FlxG.switchState(new RalphFoundState());
+		FlxG.switchState(new RexFoundState());
 	}
 
 	private function failedNextState():Void
