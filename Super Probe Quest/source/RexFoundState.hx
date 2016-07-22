@@ -20,11 +20,11 @@ class RexFoundState extends FlxState
 		Registry.haveRex = true;
 
 		rexFound = new FlxSprite(0, 0);
-		rexFound.loadGraphic('assets/images/found/found_ralph.png');
+		rexFound.loadGraphic('assets/images/found/found_rex.png');
 		add(rexFound);
 
 		okButton = new FlxButton(196, 420, '', loadPlay);
-		okButton.loadGraphic('assets/images/found/found_ralph_button.png', false, 247, 53);
+		okButton.loadGraphic('assets/images/found/found_rex_button.png', false, 247, 53);
 		okButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(okButton);
 

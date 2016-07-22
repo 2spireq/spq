@@ -49,6 +49,6 @@ class AliceDialogState6 extends FlxState
 
 	private function loadNext():Void
 	{
-		FlxG.switchState(new AliceDialogState7());
+		FlxG.switchState(new AliceState());
 	}
 }

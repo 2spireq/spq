@@ -9,6 +9,8 @@ import flixel.effects.particles.FlxEmitter;
 import flixel.effects.particles.FlxParticle;
 import flixel.system.FlxSound;
 import flixel.util.FlxTimer;
+import flixel.util.FlxSpriteUtil;
+
 //import flixel.tweens.FlxTween;
 
 class PadState extends FlxState
@@ -17,6 +19,7 @@ class PadState extends FlxState
 	private var pad:FlxSprite;
 	private var rocket:FlxSprite;
 	private var cloud0:FlxSprite;
+	private var smoke:FlxSprite;
 	private var panel:FlxSprite;
 	private var buttonLaunch:FlxButton;
 	private var launchSound:FlxSound;
@@ -202,6 +205,15 @@ class PadState extends FlxState
 
 		launchSound.play();
 		timer.start(3, timeEnd, 1);
+		launchClouds();
+	}
+
+	private function launchClouds():Void
+	{
+		smoke = new FlxSprite(0, 0);
+		smoke.loadGraphic('assets/images/launchblock/smoke.png');
+		FlxSpriteUtil.fadeIn(smoke, 1, true, null);
+		add(smoke);
 	}
 
 	private function timeEnd(Timer:FlxTimer):Void
