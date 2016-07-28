@@ -55,7 +55,7 @@ class RtgRunState extends FlxState
 
 		FlxG.sound.play('assets/music/rtg_main.ogg', 1, true, false);
 
-		timer = new FlxTimer().start(100, timeEnd, 1);
+		timer = new FlxTimer().start(80, timeEnd, 1);
 		//timer = new FlxTimer().start(10, timeEnd, 1);
 
 		partGet = FlxG.sound.load('assets/sounds/rtgpickup.wav');
@@ -115,8 +115,6 @@ class RtgRunState extends FlxState
 		walls.setTileProperties(40, FlxObject.NONE, ladderOverlap);
 		walls.setTileProperties(41, FlxObject.NONE, ladderOverlap);
 		walls.setTileProperties(42, FlxObject.NONE, airOverlap);
-		walls.setTileProperties(52, FlxObject.NONE);
-		walls.setTileProperties(53, FlxObject.NONE); // green clothesline
 		walls.setTileProperties(56, FlxObject.NONE, waterOverlap);
 		walls.setTileProperties(64, FlxObject.NONE);
 		walls.setTileProperties(65, FlxObject.NONE);
@@ -147,6 +145,8 @@ class RtgRunState extends FlxState
 		above.setTileProperties(2, FlxObject.NONE);
 		above.setTileProperties(3, FlxObject.NONE);
 		above.setTileProperties(4, FlxObject.NONE);
+		above.setTileProperties(52, FlxObject.NONE);
+		above.setTileProperties(53, FlxObject.NONE);
 
 		FlxG.camera.follow(player, FlxCamera.STYLE_PLATFORMER, 1);
 
