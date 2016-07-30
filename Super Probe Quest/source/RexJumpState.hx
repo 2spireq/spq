@@ -25,13 +25,14 @@ class RexJumpState extends FlxState
 	private var map:FlxOgmoLoader;
 	private var walls:FlxTilemap;
 	private var above:FlxTilemap;
-	private var player:RalphPlayer;
+	private var player:RexPlayer;
 	private var background:FlxSprite;
 	private var partGet:FlxSound;
 	private var p0:Rex0;
 	private var grpParts0:FlxTypedGroup<Rex0>;
 	private var failContinueButton:FlxButton;
 	private var failText:FlxSprite;
+	private var healthBar:FlxSprite;
 
 	public static var timer:FlxTimer;
 	private var timeText:FlxText;
@@ -40,16 +41,17 @@ class RexJumpState extends FlxState
 	private var pointsText:FlxText;
 	private var helicopterText:FlxText;
 	private var rexPartsFound:Int = 0;
+	private var healthPoints:Int = 3;
 
 	override public function create():Void
 	{
-		Registry.ralphFailed = false;
+		Registry.rexFailed = false;
 
 		FlxG.camera.flash(0xff000000, 1, null, false);
 
 		partGet = FlxG.sound.load('assets/sounds/rtgpickup.wav');
 
-		helicopterText = new FlxText(5, 64, 100);
+		helicopterText = new FlxText(5, 69, 100);
 		helicopterText.text = 'GET TO HELICOPTER!';
 		helicopterText.setFormat(8, FlxColor.YELLOW);
 		helicopterText.scrollFactor.x = 0;
@@ -59,17 +61,22 @@ class RexJumpState extends FlxState
 
 		timerLeftInt = Std.int(timer.timeLeft);
 		timerLeft = 'TIME: ' + timerLeftInt;
-		timeText = new FlxText(5, 40, 100);
+		timeText = new FlxText(5, 45, 100);
 		timeText.text = timerLeft;
 		timeText.setFormat(8, FlxColor.WHITE);
 		timeText.scrollFactor.x = 0;
 		timeText.scrollFactor.y = 0;
 
-		pointsText = new FlxText(5, 52, 100);
+		pointsText = new FlxText(5, 57, 100);
 		pointsText.text = 'PARTS: ' + rexPartsFound + ' /1';
 		pointsText.setFormat(8, FlxColor.WHITE);
 		pointsText.scrollFactor.x = 0;
 		pointsText.scrollFactor.y = 0;
+
+		healthBar = new FlxSprite(5, 81);
+		healthBar.loadGraphic('assets/images/rexjump/health3.png');
+		healthBar.scrollFactor.x = 0;
+		healthBar.scrollFactor.y = 0;
 
 		background = new FlxSprite(0, 0);
 		background.loadGraphic('assets/images/rexjump/background.png');
@@ -80,6 +87,7 @@ class RexJumpState extends FlxState
 		walls = map.loadTilemap('assets/images/rexjump/rextiles.png', 16, 16, 'tiles');
 		add(walls);
 		walls.setTileProperties(0, FlxObject.NONE);
+		walls.setTileProperties(4, FlxObject.NONE, spikeInteract);
 		walls.setTileProperties(61, FlxObject.NONE);
 		walls.setTileProperties(62, FlxObject.NONE);
 		walls.setTileProperties(63, FlxObject.NONE);
@@ -97,7 +105,7 @@ class RexJumpState extends FlxState
 		grpParts0 = new FlxTypedGroup<Rex0>();
 		add(grpParts0);
 
-		player = new RalphPlayer(100, 910);
+		player = new RexPlayer(100, 910);
 		map.loadEntities(placeEntities, 'entities');
 		add(player);
 
@@ -123,7 +131,8 @@ class RexJumpState extends FlxState
 
 		add(timeText);
 		add(pointsText);
-		
+		add(healthBar);
+
 		super.create();
 	}
 
@@ -201,10 +210,49 @@ class RexJumpState extends FlxState
 		Registry.rexFailed = true;
 	}
 
+	private function healthEnd():Void
+	{
+		//trace('rex time end');
+
+		failText = new FlxSprite(0, 193);
+		failText.loadGraphic('assets/images/rexjump/rex_fail_text.png');
+		failText.scrollFactor.x = 0;
+		failText.scrollFactor.y = 0;
+		FlxFlicker.flicker(failText, 0.3, 0.03, true, false, null, null);
+		FlxSpriteUtil.fadeIn(failText, 1, true, null);
+		add(failText);
+
+		failContinueButton = new FlxButton(196, 420, '', failedNextState);
+		failContinueButton.loadGraphic('assets/images/rexjump/fail_continue_button.png', false, 247, 53);
+		failContinueButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
+		add(failContinueButton);
+
+		Registry.rexFailed = true;
+	}
+
 	private function helicopterInteract(Tile:FlxObject, Object:FlxObject):Void
 	{
 		if (rexPartsFound == 1)
 			FlxG.camera.fade(0xff000000, 1, nextState, false);
+	}
+
+	private function spikeInteract(Tile:FlxObject, Object:FlxObject):Void
+	{
+		healthPoints -= 1;
+		loseHealth();
+	}
+
+	private function loseHealth():Void
+	{
+		if (healthPoints == 3)
+			healthBar.loadGraphic('assets/images/rexjump/health3.png');
+		else if (healthPoints == 2)
+			healthBar.loadGraphic('assets/images/rexjump/health2.png');
+		else if (healthPoints == 1)
+			healthBar.loadGraphic('assets/images/rexjump/health1.png');
+		else if (healthPoints == 0)
+			healthBar.loadGraphic('assets/images/rexjump/health0.png');
+			healthEnd();
 	}
 
 	private function nextState():Void
