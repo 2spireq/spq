@@ -39,19 +39,33 @@ class RexJumpState extends FlxState
 	private var timerLeft:String;
 	private var timerLeftInt:Int;
 	private var pointsText:FlxText;
+	private var livesText:FlxText;
 	private var helicopterText:FlxText;
 	private var rexPartsFound:Int = 0;
 	private var healthPoints:Int = 3;
+	private var remainingLives:Int = 1;
+	private var onSpike:Bool = false;
+	private var helperBool:Bool = false;
+
+	private var health3:Bool = true;
+	private var health2:Bool = true;
+	private var health1:Bool = true;
+	private var health0:Bool = true;
 
 	override public function create():Void
 	{
+		health3 = true;
+		health2 = true;
+		health1 = true;
+		health0 = true;
+
 		Registry.rexFailed = false;
 
 		FlxG.camera.flash(0xff000000, 1, null, false);
 
 		partGet = FlxG.sound.load('assets/sounds/rtgpickup.wav');
 
-		helicopterText = new FlxText(5, 69, 100);
+		helicopterText = new FlxText(5, 81, 100);
 		helicopterText.text = 'GET TO HELICOPTER!';
 		helicopterText.setFormat(8, FlxColor.YELLOW);
 		helicopterText.scrollFactor.x = 0;
@@ -73,6 +87,12 @@ class RexJumpState extends FlxState
 		pointsText.scrollFactor.x = 0;
 		pointsText.scrollFactor.y = 0;
 
+		livesText = new FlxText(5, 69, 100);
+		livesText.text = 'LIVES: ' + remainingLives + ' /1';
+		livesText.setFormat(8, FlxColor.RED);
+		livesText.scrollFactor.x = 0;
+		livesText.scrollFactor.y = 0;
+
 		healthBar = new FlxSprite(5, 81);
 		healthBar.loadGraphic('assets/images/rexjump/health3.png');
 		healthBar.scrollFactor.x = 0;
@@ -87,7 +107,9 @@ class RexJumpState extends FlxState
 		walls = map.loadTilemap('assets/images/rexjump/rextiles.png', 16, 16, 'tiles');
 		add(walls);
 		walls.setTileProperties(0, FlxObject.NONE);
-		walls.setTileProperties(4, FlxObject.NONE, spikeInteract);
+		walls.setTileProperties(4, FlxObject.NONE, spikeSet);
+		//walls.setTileProperties(13, FlxObject.NONE, airInteract);
+		walls.setTileProperties(13, FlxObject.NONE);
 		walls.setTileProperties(61, FlxObject.NONE);
 		walls.setTileProperties(62, FlxObject.NONE);
 		walls.setTileProperties(63, FlxObject.NONE);
@@ -131,7 +153,8 @@ class RexJumpState extends FlxState
 
 		add(timeText);
 		add(pointsText);
-		add(healthBar);
+		add(livesText);
+		//add(healthBar);
 
 		super.create();
 	}
@@ -151,6 +174,12 @@ class RexJumpState extends FlxState
 		timeText.text = timerLeft;
 
 		pointsText.text = 'PARTS: ' + rexPartsFound + ' /1';
+
+		livesText.text = 'LIVES: ' + remainingLives + ' /1';
+
+		if (remainingLives <= 0)
+			livesText.text = 'LIVES: 0/1';
+
 
 		timer.active = true;
 
@@ -236,15 +265,38 @@ class RexJumpState extends FlxState
 			FlxG.camera.fade(0xff000000, 1, nextState, false);
 	}
 
-	private function spikeInteract(Tile:FlxObject, Object:FlxObject):Void
+	private function spikeSet(Tile:FlxObject, Object:FlxObject):Void
 	{
-		healthPoints -= 1;
-		loseHealth();
+		//if (onSpike == false)
+		spikeInteract();
+			//onSpike = true;
+			
+		//spikeInteract();
+
+		//if (helperBool == false)
+		//{
+		//	spikeInteract();
+		//	helperBool = true;
+		//}
 	}
 
-	private function loseHealth():Void
+	//private function spikeInteract(Tile:FlxObject, Object:FlxObject):Void
+	private function spikeInteract():Void
+	{	
+		remainingLives -= 1;
+		healthEnd();
+		//onSpike = true;
+	}
+
+	//private function airInteract(Tile:FlxObject, Object:FlxObject):Void
+	//{
+	//	onSpike = false;
+	//	helperBool = false;
+	//}
+
+	private function updateHealth():Void
 	{
-		if (healthPoints == 3)
+		/*if (healthPoints == 3)
 			healthBar.loadGraphic('assets/images/rexjump/health3.png');
 		else if (healthPoints == 2)
 			healthBar.loadGraphic('assets/images/rexjump/health2.png');
@@ -252,7 +304,19 @@ class RexJumpState extends FlxState
 			healthBar.loadGraphic('assets/images/rexjump/health1.png');
 		else if (healthPoints == 0)
 			healthBar.loadGraphic('assets/images/rexjump/health0.png');
-			healthEnd();
+			healthEnd();*/
+
+		/*/if (health3 == true && health2 == true && health1 == true)
+			healthBar.loadGraphic('assets/images/rexjump/health3.png');
+		else if (health2 == true && health1 == true && health3 == false)
+			healthBar.loadGraphic('assets/images/rexjump/health2.png');
+		else if (health1 == true && health2 == false && health3 == false)
+			healthBar.loadGraphic('assets/images/rexjump/health1.png');
+		else if (health1 == false && health2 == false && health3 == false)
+			healthBar.loadGraphic('assets/images/rexjump/health0.png');
+			healthEnd();*/
+
+		//onSpike = false;
 	}
 
 	private function nextState():Void
