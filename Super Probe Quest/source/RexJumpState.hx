@@ -29,7 +29,9 @@ class RexJumpState extends FlxState
 	private var background:FlxSprite;
 	private var partGet:FlxSound;
 	private var p0:Rex0;
+	private var a0:RexAir;
 	private var grpParts0:FlxTypedGroup<Rex0>;
+	private var grpAir0:FlxTypedGroup<RexAir>;
 	private var failContinueButton:FlxButton;
 	private var failText:FlxSprite;
 	private var healthBar:FlxSprite;
@@ -43,7 +45,7 @@ class RexJumpState extends FlxState
 	private var helicopterText:FlxText;
 	private var rexPartsFound:Int = 0;
 	private var healthPoints:Int = 3;
-	private var remainingLives:Int = 1;
+	private var remainingLives:Int = 3;
 	private var onSpike:Bool = false;
 	private var helperBool:Bool = false;
 
@@ -51,6 +53,8 @@ class RexJumpState extends FlxState
 	private var health2:Bool = true;
 	private var health1:Bool = true;
 	private var health0:Bool = true;
+
+	private var healthCounter:Int = 0;
 
 	override public function create():Void
 	{
@@ -127,6 +131,9 @@ class RexJumpState extends FlxState
 		grpParts0 = new FlxTypedGroup<Rex0>();
 		add(grpParts0);
 
+		grpAir0 = new FlxTypedGroup<RexAir>();
+		add(grpAir0);
+
 		player = new RexPlayer(100, 910);
 		map.loadEntities(placeEntities, 'entities');
 		add(player);
@@ -153,8 +160,8 @@ class RexJumpState extends FlxState
 
 		add(timeText);
 		add(pointsText);
-		add(livesText);
-		//add(healthBar);
+		//add(livesText);
+		add(healthBar);
 
 		super.create();
 	}
@@ -168,6 +175,9 @@ class RexJumpState extends FlxState
 	{	
 		FlxG.collide(walls, player);
 		FlxG.overlap(player, grpParts0, playerHitInteract);
+		FlxG.overlap(player, grpAir0, playerAirInteract);
+
+		
 
 		timerLeftInt = Std.int(timer.timeLeft);
 		timerLeft = 'TIME: ' + timerLeftInt;
@@ -175,11 +185,12 @@ class RexJumpState extends FlxState
 
 		pointsText.text = 'PARTS: ' + rexPartsFound + ' /1';
 
-		livesText.text = 'LIVES: ' + remainingLives + ' /1';
+		//livesText.text = 'LIVES: ' + remainingLives + ' /1';
 
 		if (remainingLives <= 0)
 			livesText.text = 'LIVES: 0/1';
 
+		//helperBool = false;
 
 		timer.active = true;
 
@@ -217,6 +228,8 @@ class RexJumpState extends FlxState
 		}
 		else if (entityName == 'rex0')
 			grpParts0.add(new Rex0(x, y));
+		else if (entityName == 'air')
+			grpAir0.add(new RexAir(x, y));
 	}
 
 	private function timeEnd(Timer:FlxTimer):Void
@@ -244,7 +257,7 @@ class RexJumpState extends FlxState
 		//trace('rex time end');
 
 		failText = new FlxSprite(0, 193);
-		failText.loadGraphic('assets/images/rexjump/rex_fail_text.png');
+		failText.loadGraphic('assets/images/rexjump/lives_fail_text.png');
 		failText.scrollFactor.x = 0;
 		failText.scrollFactor.y = 0;
 		FlxFlicker.flicker(failText, 0.3, 0.03, true, false, null, null);
@@ -283,16 +296,44 @@ class RexJumpState extends FlxState
 	//private function spikeInteract(Tile:FlxObject, Object:FlxObject):Void
 	private function spikeInteract():Void
 	{	
-		remainingLives -= 1;
-		healthEnd();
+		//trace('spike interact');
+
+		healthCounter++;
+
+		//trace(healthCounter);
+		if (FlxG.overlap(player, grpAir0, playerAirInteract) == false)
+		{
+			if (healthCounter == 1)
+				remainingLives -= 1;
+		}
+		//else if (healthCounter == 2)
+		//	healthCounter = 0;
+
+		updateHealth();
+
+		//helperBool = true;
+
+		//remainingLives -= 1;
+		//healthEnd();
 		//onSpike = true;
 	}
 
-	//private function airInteract(Tile:FlxObject, Object:FlxObject):Void
-	//{
-	//	onSpike = false;
-	//	helperBool = false;
-	//}
+	private function airInteract(Tile:FlxObject, Object:FlxObject):Void
+	{
+		//trace('air interact');
+
+		//if (helperBool == false)
+		healthCounter = 0;
+		//onSpike = false;
+		//helperBool = false;
+	}
+
+	private function playerAirInteract(P:Player, H:Ralph0):Void
+	{
+		//trace('air entity interact');
+
+		healthCounter = 0;
+	}
 
 	private function updateHealth():Void
 	{
@@ -315,6 +356,18 @@ class RexJumpState extends FlxState
 		else if (health1 == false && health2 == false && health3 == false)
 			healthBar.loadGraphic('assets/images/rexjump/health0.png');
 			healthEnd();*/
+
+		if (remainingLives == 3)
+			healthBar.loadGraphic('assets/images/rexjump/health3.png');
+		else if (remainingLives == 2)
+			healthBar.loadGraphic('assets/images/rexjump/health2.png');
+		else if (remainingLives == 1)
+			healthBar.loadGraphic('assets/images/rexjump/health1.png');
+		else if (remainingLives <= 0)
+		{
+			healthBar.loadGraphic('assets/images/rexjump/health0.png');
+			healthEnd();
+		}
 
 		//onSpike = false;
 	}
