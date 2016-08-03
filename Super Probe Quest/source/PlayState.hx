@@ -86,6 +86,8 @@ class PlayState extends FlxState
 			Registry.launchReady = true;
 			add(launchOverlay);
 		}
+		else
+			Registry.launchReady = false;
 
 		if (Registry.haveAlice == true)
 		{
