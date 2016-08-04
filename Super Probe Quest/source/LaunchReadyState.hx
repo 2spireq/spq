@@ -14,7 +14,7 @@ class LaunchReadyState extends FlxState
 
 	override public function create():Void
 	{
-		FlxG.camera.flash(0xffffffff, 1, null, false);
+		FlxG.camera.flash(0xff000000, 1, null, false);
 
 		background = new FlxSprite(0, 0);
 		background.loadGraphic('assets/images/launchblock/launchready.png');

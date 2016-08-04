@@ -15,34 +15,48 @@ import flixel.util.FlxSpriteUtil;
 
 class RocketState extends FlxState
 {
-	private var back:FlxSprite;
+	private var backTop:FlxSprite;
+	private var backBottom:FlxSprite;
+	private var trail:FlxSprite;
 	private var rocket:FlxSprite;
+	private var launchClouds:FlxSprite;
 	private var timer:FlxTimer;
 
-	private var emitter:FlxEmitter;
+	/*private var emitter:FlxEmitter;
 	private var emitter0:FlxEmitter;
 	private var emitter1:FlxEmitter;
 	private var emitter2:FlxEmitter;
 	private var emitter3:FlxEmitter;
-	private var particle:FlxParticle;
+	private var particle:FlxParticle;*/
 
 	override public function create():Void
 	{
-		FlxG.camera.shake(0.001, 300);
+		backTop = new FlxSprite(0, 0);
+		backTop.loadGraphic('assets/images/launchblock/liftofftop.png');
+		add(backTop);
 
-		back = new FlxSprite(-320, -240);
-		back.loadGraphic('assets/images/launchblock/atmosphereback.png');
-		add(back);
+		trail = new FlxSprite(4, 205);
+		trail.loadGraphic('assets/images/launchblock/trail.png');
+		add(trail);
 
-		rocket = new FlxSprite(0, 0);
-		rocket.loadGraphic('assets/images/launchblock/rocket.png');
+		backBottom = new FlxSprite(0, 229);
+		backBottom.loadGraphic('assets/images/launchblock/liftoffbottom.png');
+		add(backBottom);
+
+		launchClouds = new FlxSprite(0, 220);
+		launchClouds.loadGraphic('assets/images/launchblock/launchclouds.png');
+		add(launchClouds);
+
+		//rocket = new FlxSprite(0, 0);
+		//rocket.loadGraphic('assets/images/launchblock/rocket.png');
 		//rocket.scale = 0.5;
-		rocket.angle = 70;
-		add(rocket);
+		//rocket.angle = 70;
+		//add(rocket);
 
 		timer = new FlxTimer();
+		timer.start(4, timeEnd, 1);
 
-		emitter0 = new FlxEmitter(320, 420);
+		/*emitter0 = new FlxEmitter(320, 420);
 		emitter0.gravity = 1000;
 		for (i in 0 ... 200)
 		{
@@ -104,7 +118,7 @@ class RocketState extends FlxState
 			particle.exists = false;
 			emitter3.add(particle);
 		}
-		add(emitter3);
+		add(emitter3);*/
 
 		super.create();
 	}
@@ -116,10 +130,12 @@ class RocketState extends FlxState
 
 	override public function update():Void
 	{	
+		trail.y -= 0.3;
+
 		super.update();
 	}	
 
-	private function launch():Void
+	/*private function launch():Void
 	{
 		emitter0.start(false, 2, 0.01);
 		emitter1.start(false, 2, 0.01);
@@ -134,7 +150,7 @@ class RocketState extends FlxState
 		emitter1.kill();
 
 		timer.start(3, timeEnd, 1);
-	}
+	}*/
 
 	private function timeEnd(Timer:FlxTimer):Void
 	{

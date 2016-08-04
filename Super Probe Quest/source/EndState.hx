@@ -18,7 +18,7 @@ class EndState extends FlxState
 		back.loadGraphic('assets/images/menu/endscreen.png');
 		add(back);
 
-		okButton = new FlxButton(287, 430, '', loadNext);
+		okButton = new FlxButton(287, 430, '', fadeNext);
 		okButton.loadGraphic('assets/images/menu/button_f.png', false, 67, 32);
 		okButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
 		add(okButton);
@@ -35,6 +35,11 @@ class EndState extends FlxState
 	{
 		super.update();
 	}	
+
+	private function fadeNext():Void
+	{
+		FlxG.camera.fade(0xff000000, 1, loadNext, false);
+	}
 
 	private function loadNext():Void
 	{

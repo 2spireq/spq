@@ -79,7 +79,7 @@ class PlayState extends FlxState
 		rexButton = new FlxButton(startX + 84, startY + 84, '', fadeRex);
 		heatButton = new FlxButton(startX + 168, startY + 84, '', fadeHeat);
 
-		trace(Registry.partsNo);
+		trace(' PARTS FOUND: ' + Registry.partsNo);
 
 		if (Registry.partsNo == 0)
 		{
@@ -288,7 +288,7 @@ class PlayState extends FlxState
 
 	private function fadePad():Void
 	{
-		FlxG.camera.fade(0xffffffff, 1, loadPad, false);
+		FlxG.camera.fade(0xff000000, 1, loadPad, false);
 	}
 
 	private function loadAlice():Void

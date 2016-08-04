@@ -58,7 +58,7 @@ class MenuState extends FlxState
 		Registry.launchReady = false;
 		Registry.partsNo = 0;
 
-		trace('started');
+		trace(' started');
 
 		FlxG.mouse.useSystemCursor = true;
 		FlxG.mouse.visible = true;

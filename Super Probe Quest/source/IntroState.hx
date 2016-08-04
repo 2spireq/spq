@@ -21,7 +21,7 @@ class IntroState extends FlxState
 	override public function create():Void
 	{
 		trace('SUPER PROBE QUEST');
-		trace('Console output for debugging only - no attention required');
+		trace('Debug output - not part of game');
 		trace(FlxG.VERSION);
 
 		logo = new FlxSprite();

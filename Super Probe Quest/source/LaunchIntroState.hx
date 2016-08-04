@@ -40,7 +40,7 @@ class LaunchIntroState extends FlxState
 
 	private function fadeNext():Void
 	{
-		FlxG.camera.fade(0xffffffff, 1, loadNext, false);
+		FlxG.camera.fade(0xff000000, 1, loadNext, false);
 	}
 
 	private function loadNext():Void
