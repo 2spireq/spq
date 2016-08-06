@@ -54,6 +54,8 @@ class RexJumpState extends FlxState
 	private var health1:Bool = true;
 	private var health0:Bool = true;
 
+	private var endFlash:Int = 0;
+
 	private var healthCounter:Int = 0;
 
 	override public function create():Void
@@ -256,6 +258,9 @@ class RexJumpState extends FlxState
 	{
 		//trace('rex time end');
 
+		if (endFlash == 1)
+			FlxG.camera.flash(FlxColor.RED, 1, null, false);
+
 		failText = new FlxSprite(0, 193);
 		failText.loadGraphic('assets/images/rexjump/lives_fail_text.png');
 		failText.scrollFactor.x = 0;
@@ -366,6 +371,7 @@ class RexJumpState extends FlxState
 		else if (remainingLives <= 0)
 		{
 			healthBar.loadGraphic('assets/images/rexjump/health0.png');
+			endFlash++;
 			healthEnd();
 		}
 

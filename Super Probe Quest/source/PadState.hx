@@ -158,7 +158,7 @@ class PadState extends FlxState
 	override public function update():Void
 	{	
 		if (cloud0.x <= 640)
-			cloud0.x += 0.3;
+			cloud0.x += 0.2;
 		else if (cloud0.x >= 640)
 			cloud0.x = -776;
 
@@ -196,6 +196,7 @@ class PadState extends FlxState
 
 	private function liftoff(Timer:FlxTimer):Void
 	{
+		FlxG.camera.shake(0.003, 100);
 		launched = true;
 		emitter.start(false, 2, 0.01);
 		emitter2.start(false, 2, 0.01);

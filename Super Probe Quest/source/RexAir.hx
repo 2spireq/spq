@@ -14,7 +14,7 @@ class RexAir extends FlxSprite
 	public function new(X:Float=0, Y:Float=0) 
 	{
 	    super(X, Y);
-	    loadGraphic('assets/images/rexjump/rexpart.png', false, 13, 13);
+	    loadGraphic('assets/images/rexjump/rexair.png', false, 13, 13);
 	}
 
 	override public function update():Void
