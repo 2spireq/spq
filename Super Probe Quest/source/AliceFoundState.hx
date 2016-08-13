@@ -9,7 +9,7 @@ class AliceFoundState extends FlxState
 {
 	private var aliceFound:FlxSprite;
 	private var okButton:FlxButton;
-	private var aliceBackdrop:FlxSprite;
+	//private var aliceBackdrop:FlxSprite;
 
 	override public function create():Void
 	{
@@ -24,9 +24,9 @@ class AliceFoundState extends FlxState
 		aliceFound.loadGraphic('assets/images/found/found_alice.png');
 		add(aliceFound);
 
-		aliceBackdrop = new FlxSprite(200, 424);
-		aliceBackdrop.loadGraphic('assets/images/found/alice_button_backdrop.png');
-		add(aliceBackdrop);
+		//aliceBackdrop = new FlxSprite(200, 424);
+		//aliceBackdrop.loadGraphic('assets/images/found/alice_button_backdrop.png');
+		//add(aliceBackdrop);
 
 		okButton = new FlxButton(196, 420, '', loadPlay);
 		okButton.loadGraphic('assets/images/found/found_alice_button.png', false, 247, 53);
