@@ -26,6 +26,7 @@ class RalphZeroState extends FlxState
 	private var walls:FlxTilemap;
 	private var player:RalphPlayer;
 	private var background:FlxSprite;
+	private var landscape:FlxSprite;
 	private var partGet:FlxSound;
 	private var p0:Ralph0;
 	private var grpParts0:FlxTypedGroup<Ralph0>;
@@ -66,6 +67,11 @@ class RalphZeroState extends FlxState
 		pointsText.text = 'PARTS: ' + ralphPartsFound + ' /7';
 		pointsText.setFormat(8, FlxColor.BLACK);
 		pointsText.scrollFactor.x = 0;
+
+		landscape = new FlxSprite(0, 0);
+		landscape.loadGraphic('assets/images/ralphzero/backlandscape.png');
+		landscape.scrollFactor.x = 0;
+		add(landscape);
 
 		background = new FlxSprite(0, 0);
 		background.loadGraphic('assets/images/ralphzero/background.png');

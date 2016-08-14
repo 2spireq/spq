@@ -81,7 +81,7 @@ class PlayState extends FlxState
 
 		trace(' PARTS FOUND: ' + Registry.partsNo);
 
-		if (Registry.partsNo == 0)
+		if (Registry.partsNo == 1)
 		{
 			Registry.launchReady = true;
 			add(launchOverlay);
@@ -136,45 +136,45 @@ class PlayState extends FlxState
 		if (Registry.haveSwap == true)
 		{
 			swapButton.loadGraphic('assets/images/component/buttonsprites/comp_swap_d.png', false, 64, 64);
-			trace('SWAP TRUE');
+			trace('SWAP  TRUE');
 		}
 		else if (Registry.haveSwap == false)
 		{
 			swapButton.loadGraphic('assets/images/component/buttonsprites/comp_swap_alt.png', false, 64, 64);
-			trace('SWAP FALSE');
+			trace('SWAP  FALSE');
 		}
 
 		if (Registry.haveRtg == true)
 		{
 			rtgButton.loadGraphic('assets/images/component/buttonsprites/comp_rtg_d.png', false, 64, 64);
-			trace('RTG TRUE');
+			trace('RTG   TRUE');
 		}
 		else if (Registry.haveRtg == false)
 		{
 			rtgButton.loadGraphic('assets/images/component/buttonsprites/comp_rtg_alt.png', false, 64, 64);
-			trace('RTG FALSE');
+			trace('RTG   FALSE');
 		}
 
 		if (Registry.haveRex == true)
 		{
 			rexButton.loadGraphic('assets/images/component/buttonsprites/comp_rex_d.png', false, 64, 64);
-			trace('REX TRUE');
+			trace('REX   TRUE');
 		}
 		else if (Registry.haveRex == false)
 		{
 			rexButton.loadGraphic('assets/images/component/buttonsprites/comp_rex_alt.png', false, 64, 64);
-			trace('REX FALSE');
+			trace('REX   FALSE');
 		}
 
 		if (Registry.haveHeat == true)
 		{
 			heatButton.loadGraphic('assets/images/component/buttonsprites/comp_heat_d.png', false, 64, 64);
-			trace('HEAT TRUE');
+			trace('HEAT  TRUE');
 		}
 		else if (Registry.haveHeat == false)
 		{
 			heatButton.loadGraphic('assets/images/component/buttonsprites/comp_heat_alt.png', false, 64, 64);
-			trace('HEAT FALSE');
+			trace('HEAT  FALSE');
 		}
 
 		aliceButton.onOver.callback = aliceInfo;

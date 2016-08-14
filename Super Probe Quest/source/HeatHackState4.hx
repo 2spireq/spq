@@ -26,7 +26,7 @@ class HeatHackState4 extends FlxState
 		background.loadGraphic('assets/images/heathack/heat_back.png');
 		add(background);
 
-		question = new FlxTypeText(165, 153, 310, 'Question 4. In which year was Pluto\'s status as a planet revoked?\n1. 1964\n2. 1887\n3. 2006\n4. 2015', 8, true);
+		question = new FlxTypeText(165, 153, 310, 'Question 4. In which year was Pluto\'s status as a planet revoked?\n1. 1887\n2. 1964\n3. 2006\n4. 2015', 8, true);
 		question.delay = 0.1;
 		question.eraseDelay = 0.1;
 		question.showCursor = false;

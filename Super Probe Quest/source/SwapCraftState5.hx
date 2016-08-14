@@ -75,7 +75,7 @@ class SwapCraftState5 extends FlxState
 		previewX0 = 300;
 		previewY0 = 250;
 		
-		timer = new FlxTimer().start(9, timeEnd, 1);
+		timer = new FlxTimer().start(4, timeEnd, 1);
 
 		timerLeftInt = Std.int(timer.timeLeft);
 		timerLeft = 'TIME: ' + timerLeftInt;

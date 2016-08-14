@@ -71,7 +71,7 @@ class RexJumpState extends FlxState
 
 		partGet = FlxG.sound.load('assets/sounds/rtgpickup.wav');
 
-		helicopterText = new FlxText(5, 81, 100);
+		helicopterText = new FlxText(5, 101, 100);
 		helicopterText.text = 'GET TO HELICOPTER!';
 		helicopterText.setFormat(8, FlxColor.YELLOW);
 		helicopterText.scrollFactor.x = 0;

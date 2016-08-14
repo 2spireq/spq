@@ -42,14 +42,14 @@ class HeatHackState2 extends FlxState
 		input.callback = inputEntered;
 		add(input);
 
-		correct = new FlxTypeText(165, 250, 310, 'Correct. Now proceeding to next security question\nPress space to continue', 8, true);
+		correct = new FlxTypeText(165, 235, 310, 'Correct. Now proceeding to next security question\nPress space to continue', 8, true);
 		correct.delay = 0.1;
 		correct.eraseDelay = 0.1;
 		correct.showCursor = false;
 		correct.setTypingVariation(0.5, true);
 		correct.color = 0x8811EE11;
 
-		incorrect = new FlxTypeText(165, 250, 310, 'Incorrect\nAccess denied\nPress space to continue', 8, true);
+		incorrect = new FlxTypeText(165, 235, 310, 'Incorrect\nAccess denied\nPress space to continue', 8, true);
 		incorrect.delay = 0.1;
 		incorrect.eraseDelay = 0.1;
 		incorrect.showCursor = false;

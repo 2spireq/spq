@@ -19,6 +19,7 @@ class HeatHackVaultState extends FlxState
 	override public function create():Void
 	{
 		Registry.haveHeat = true;
+		Registry.partsNo++;
 
 		back = new FlxSprite(0, 0);
 		back.loadGraphic('assets/images/heathack/vault_back.png');
