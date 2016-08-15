@@ -38,8 +38,8 @@ class RalphPlayer extends FlxSprite
 		acceleration.y = 420;
 
 		maxVelocity.set(120, 200);
-		setSize(14, 14);
-		//offset.set(4, 2);
+		setSize(8, 14);
+		offset.set(4, 2);
 
 		jump = FlxG.sound.load('assets/sounds/jump.wav');
 	}
