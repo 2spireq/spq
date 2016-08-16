@@ -28,6 +28,7 @@ class RexJumpState extends FlxState
 	private var player:RexPlayer;
 	private var background:FlxSprite;
 	private var partGet:FlxSound;
+	private var hitGet:FlxSound;
 	private var p0:Rex0;
 	private var a0:RexAir;
 	private var grpParts0:FlxTypedGroup<Rex0>;
@@ -69,7 +70,10 @@ class RexJumpState extends FlxState
 
 		FlxG.camera.flash(0xff000000, 1, null, false);
 
+		FlxG.sound.play('assets/music/rex_main.ogg', 1, true, false);
+
 		partGet = FlxG.sound.load('assets/sounds/rtgpickup.wav');
+		hitGet = FlxG.sound.load('assets/sounds/hit.wav');
 
 		helicopterText = new FlxText(5, 101, 100);
 		helicopterText.text = 'GET TO HELICOPTER!';
@@ -178,8 +182,6 @@ class RexJumpState extends FlxState
 		FlxG.collide(walls, player);
 		FlxG.overlap(player, grpParts0, playerHitInteract);
 		FlxG.overlap(player, grpAir0, playerAirInteract);
-
-		
 
 		timerLeftInt = Std.int(timer.timeLeft);
 		timerLeft = 'TIME: ' + timerLeftInt;
@@ -309,7 +311,10 @@ class RexJumpState extends FlxState
 		if (FlxG.overlap(player, grpAir0, playerAirInteract) == false)
 		{
 			if (healthCounter == 1)
+			{
 				remainingLives -= 1;
+				hitGet.play();
+			}
 		}
 		//else if (healthCounter == 2)
 		//	healthCounter = 0;

@@ -24,6 +24,8 @@ class AliceState extends FlxState
 	override public function create():Void
 	{
 		FlxG.camera.flash(0xff000000, 1, null, false);
+
+		FlxG.sound.play('assets/music/rex_main.ogg', 1, true, false);
 		
 		map = new FlxOgmoLoader('assets/data/maze.oel');
 		walls = map.loadTilemap('assets/images/alicemaze/b-map.png', 16, 16, 'walls');

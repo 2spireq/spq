@@ -64,10 +64,13 @@ class PadState extends FlxState
 		rocket = new FlxSprite(0, 0);
 		rocket.loadGraphic('assets/images/launchblock/rocket.png');
 
-		backButton = new FlxButton(10, 10, '', loadMenu);
-		backButton.loadGraphic('assets/images/menu/button_back.png', false, 67, 32);
-		backButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
-		add(backButton);
+		if (Registry.launchReady == false)
+		{
+			backButton = new FlxButton(10, 10, '', loadMenu);
+			backButton.loadGraphic('assets/images/menu/button_back.png', false, 67, 32);
+			backButton.onDown.sound = FlxG.sound.load('assets/sounds/select.wav');
+			add(backButton);
+		}
 
 		timer = new FlxTimer();
 		liftoffTimer = new FlxTimer();

@@ -81,7 +81,7 @@ class PlayState extends FlxState
 
 		trace(' PARTS FOUND: ' + Registry.partsNo);
 
-		if (Registry.partsNo == 1)
+		if (Registry.partsNo == 6)
 		{
 			Registry.launchReady = true;
 			add(launchOverlay);

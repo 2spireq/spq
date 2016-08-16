@@ -47,6 +47,8 @@ class RalphZeroState extends FlxState
 
 		FlxG.camera.flash(0xff000000, 1, null, false);
 
+		FlxG.sound.play('assets/music/ralph_main.ogg', 1, true, false);
+
 		partGet = FlxG.sound.load('assets/sounds/rtgpickup.wav');
 
 		helicopterText = new FlxText(140, 14, 100);
