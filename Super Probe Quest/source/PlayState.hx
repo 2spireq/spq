@@ -92,7 +92,7 @@ class PlayState extends FlxState
 		if (Registry.haveAlice == true)
 		{
 			aliceButton.loadGraphic('assets/images/component/buttonsprites/comp_alice_d.png', false, 64, 64);
-			trace('ALICE TRUE');
+			trace(' ALICE TRUE');
 		}
 		else if (Registry.haveAlice == false)
 		{
